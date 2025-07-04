@@ -47,70 +47,60 @@ const FigmaSidebar = () => {
           "linear-gradient(145deg, #FFD700 0%, #FFA500 25%, #FFD700 50%, #FFA500 75%, #FFD700 100%) 1",
         borderRadius: "32px",
         fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif",
+        fontWeight: "500",
+        backdropFilter: "blur(20px)",
         boxShadow:
-          "0 30px 60px -12px rgba(255, 215, 0, 0.4), inset 0 1px 0 rgba(255, 215, 0, 0.15)",
+          "0 25px 50px rgba(0, 0, 0, 0.8), inset 0 1px 2px rgba(255, 215, 0, 0.1)",
       }}
     >
-      {/* Empire Header */}
+      {/* Circuit Background Pattern */}
       <div
-        className="relative z-10 p-6 border-b"
+        className="absolute inset-0 opacity-5"
         style={{
-          borderImage:
-            "linear-gradient(90deg, transparent, #FFD700, transparent) 1",
-          background:
-            "linear-gradient(135deg, rgba(255, 215, 0, 0.12), rgba(255, 165, 0, 0.08))",
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FFD700' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3Cpath d='M30 0v30M0 30h30M60 30H30M30 60V30'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }}
-      >
-        {/* FREE Badge - Top Right */}
-        <div className="absolute top-3 right-3">
-          <div
-            className="px-2 py-1 text-xs font-bold rounded-lg animate-pulse"
-            style={{
-              background: "linear-gradient(135deg, #8B5CF6, #A855F7)",
-              color: "#FFFFFF",
-              boxShadow: "0 4px 12px rgba(139, 92, 246, 0.4)",
-              border: "1px solid rgba(255, 215, 0, 0.3)",
-            }}
-          >
-            FREE 🔥
-          </div>
-        </div>
+      />
 
-        {/* Main Header Content */}
-        <div className="flex items-center gap-3 mb-4 pr-12">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F94f9caa020024caeb9b1c197e1a02d2d?format=webp&width=800"
-            alt="SaintSal Empire Logo"
-            className="w-14 h-14 object-contain"
-            style={{
-              filter: "drop-shadow(0 4px 12px rgba(255, 215, 0, 0.4))",
-            }}
-          />
-          <div className="flex-1">
+      {/* FREE Badge - Top Right */}
+      <div className="absolute top-3 right-3">
+        <div className="px-2 py-1 text-xs font-bold rounded-lg animate-pulse">
+          FREE 🔥
+        </div>
+      </div>
+
+      {/* Main Header Content */}
+      <div className="flex items-center gap-3 mb-4 pr-12 p-6 relative z-10">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F94f9caa020024caeb9b1c197e1a02d2d?format=webp&width=800"
+          alt="SaintVisionAI Logo"
+          className="w-12 h-12 object-contain rounded-lg"
+          style={{
+            filter: "drop-shadow(0 4px 12px rgba(255, 215, 0, 0.4))",
+          }}
+        />
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2 mb-1">
             <h1
-              className="text-xl font-black tracking-tight leading-tight"
+              className="text-lg font-black tracking-tight leading-tight"
               style={{
-                background:
-                  "linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                fontWeight: 900,
-                textShadow: "0 4px 8px rgba(255, 215, 0, 0.4)",
+                color: "#FDFFDC",
+                textShadow: "0 2px 8px rgba(255, 215, 0, 0.3)",
+                fontFamily: "Inter",
               }}
             >
               SaintVisionAI.com
             </h1>
-            <p
-              className="text-xs font-bold tracking-widest uppercase"
-              style={{
-                color: "#FDFFDC",
-                opacity: 0.9,
-                letterSpacing: "0.1em",
-              }}
-            >
-              EMPIRE HEADQUARTERS
-            </p>
           </div>
+          <p
+            className="text-xs font-bold tracking-widest uppercase"
+            style={{
+              color: "#FDFFDC",
+              opacity: 0.9,
+              letterSpacing: "0.1em",
+            }}
+          >
+            EMPIRE HEADQUARTERS
+          </p>
         </div>
       </div>
 
