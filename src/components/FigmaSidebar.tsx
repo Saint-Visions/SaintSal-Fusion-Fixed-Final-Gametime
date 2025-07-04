@@ -317,7 +317,7 @@ const FigmaSidebar = () => {
             }}
           >
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F237d88fcc7a742b8a495fce39e7a093b?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F836d0bbdd6524fb6b6b59ee27428ed45?format=webp&width=800"
               alt="SaintSal Logo"
               className="w-full h-full object-contain rounded-xl"
               style={{
