@@ -19,25 +19,39 @@
     };
   }
 
-  // Override styled-components and emotion
-  const interceptStyleObject = (obj) => {
-    if (obj && typeof obj === "object") {
-      if (obj.fontFamily === "Times") {
-        obj.fontFamily = "Inter, system-ui, -apple-system, sans-serif";
-      }
-      Object.keys(obj).forEach((key) => {
-        if (typeof obj[key] === "object") {
-          interceptStyleObject(obj[key]);
-        }
-      });
+  // Override styled-components and emotion with circular reference protection
+  const interceptStyleObject = (obj, visited = new WeakSet()) => {
+    if (!obj || typeof obj !== "object" || visited.has(obj)) {
+      return obj;
     }
+
+    visited.add(obj);
+
+    if (obj.fontFamily === "Times") {
+      obj.fontFamily = "Inter, system-ui, -apple-system, sans-serif";
+    }
+
+    Object.keys(obj).forEach((key) => {
+      if (typeof obj[key] === "object" && obj[key] !== null) {
+        interceptStyleObject(obj[key], visited);
+      }
+    });
+
     return obj;
   };
 
-  // Override Object.assign to catch style objects
+  // Override Object.assign to catch style objects (simplified)
   const originalAssign = Object.assign;
   Object.assign = function (target, ...sources) {
-    sources.forEach((source) => interceptStyleObject(source));
+    sources.forEach((source) => {
+      if (
+        source &&
+        typeof source === "object" &&
+        source.fontFamily === "Times"
+      ) {
+        source.fontFamily = "Inter, system-ui, -apple-system, sans-serif";
+      }
+    });
     return originalAssign.call(this, target, ...sources);
   };
 
