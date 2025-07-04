@@ -2,6 +2,10 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Home from "./pages/home";
+import Login from "./pages/login";
+import Signup from "./pages/signup";
+import Operations from "./pages/operations";
+import PartnerTech from "./pages/partnertech";
 import Pricing from "./pages/pricing";
 import Upgrade from "./pages/upgrade";
 import Chat from "./pages/chat";
@@ -16,6 +20,10 @@ export default function App() {
       <main className="flex-1 overflow-auto">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/operations" element={<Operations />} />
+          <Route path="/partnertech" element={<PartnerTech />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/upgrade" element={<Upgrade />} />
           <Route path="/chat" element={<Chat />} />
