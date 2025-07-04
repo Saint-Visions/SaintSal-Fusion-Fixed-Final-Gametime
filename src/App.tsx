@@ -57,7 +57,7 @@ export default function App() {
   //   return <Loading onComplete={() => setIsLoading(false)} />;
   // }
 
-  const isPublicPage = ["/", "/login", "/signup"].includes(location.pathname);
+  const isPublicPage = ["/login", "/signup"].includes(location.pathname);
 
   return (
     <>
@@ -66,7 +66,6 @@ export default function App() {
         // PUBLIC PAGES - Full screen, no sidebar
         <div className="min-h-screen w-full bg-black text-white font-sans">
           <Routes>
-            <Route path="/" element={<SaintSalHome />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
           </Routes>
