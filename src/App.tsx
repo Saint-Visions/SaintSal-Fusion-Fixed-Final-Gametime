@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
+import Loading from "./components/loading";
+import PushNotificationPrompt from "./components/PushNotificationPrompt";
 import Home from "./pages/home";
 import Hero from "./pages/hero";
 import Login from "./pages/login";
@@ -8,6 +10,7 @@ import Signup from "./pages/signup";
 import Operations from "./pages/operations";
 import PartnerTech from "./pages/partnertech";
 import Setup from "./pages/setup";
+import Settings from "./pages/settings";
 import AdminLogs from "./pages/admin-logs";
 import Pricing from "./pages/pricing";
 import Upgrade from "./pages/upgrade";
@@ -17,28 +20,58 @@ import Builder from "./pages/builder";
 import Crm from "./pages/crm";
 
 export default function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [showNotificationPrompt, setShowNotificationPrompt] = useState(false);
+
+  useEffect(() => {
+    // Simulate initial loading
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+      // Show notification prompt after loading
+      setTimeout(() => {
+        setShowNotificationPrompt(true);
+      }, 1000);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Loading onComplete={() => setIsLoading(false)} />;
+  }
+
   return (
-    <div className="flex min-h-screen w-full bg-black">
-      <Sidebar />
-      <main className="flex-1 overflow-auto">
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/operations" element={<Operations />} />
-          <Route path="/partnertech" element={<PartnerTech />} />
-          <Route path="/setup" element={<Setup />} />
-          <Route path="/admin/logs" element={<AdminLogs />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/upgrade" element={<Upgrade />} />
-          <Route path="/chat" element={<Chat />} />
-          <Route path="/console" element={<Chat />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/builder" element={<Builder />} />
-          <Route path="/crm" element={<Crm />} />
-        </Routes>
-      </main>
-    </div>
+    <>
+      <div className="flex min-h-screen w-full bg-black">
+        <Sidebar />
+        <main className="flex-1 overflow-auto">
+          <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/operations" element={<Operations />} />
+            <Route path="/partnertech" element={<PartnerTech />} />
+            <Route path="/setup" element={<Setup />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/admin/logs" element={<AdminLogs />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/upgrade" element={<Upgrade />} />
+            <Route path="/chat" element={<Chat />} />
+            <Route path="/console" element={<Chat />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/builder" element={<Builder />} />
+            <Route path="/crm" element={<Crm />} />
+          </Routes>
+        </main>
+      </div>
+
+      {showNotificationPrompt && (
+        <PushNotificationPrompt
+          onClose={() => setShowNotificationPrompt(false)}
+          onPermissionGranted={() => setShowNotificationPrompt(false)}
+        />
+      )}
+    </>
   );
 }

@@ -11,7 +11,7 @@ export default function Sidebar() {
     { path: "/partnertech", label: "PartnerTech.AI", icon: "🚀" },
     { path: "/crm", label: "CRM Tools", icon: "👥" },
     { path: "/pricing", label: "Pricing", icon: "💎" },
-    { path: "/setup", label: "Setup", icon: "⚙️" },
+    { path: "/settings", label: "Settings", icon: "⚙️" },
     { path: "/login", label: "Sign In", icon: "🔑" },
   ];
 
