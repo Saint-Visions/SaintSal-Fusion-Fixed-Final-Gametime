@@ -22,6 +22,7 @@ import Builder from "./pages/builder";
 import Crm from "./pages/crm";
 import EmpireLive from "./pages/empire-live";
 import TestHome from "./pages/test-home";
+import SimpleHome from "./pages/simple-home";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -50,7 +51,7 @@ export default function App() {
         <FigmaSidebar />
         <main className="flex-1 overflow-auto bg-black">
           <Routes>
-            <Route path="/" element={<TestHome />} />
+            <Route path="/" element={<SimpleHome />} />
             <Route path="/home" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
