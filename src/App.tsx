@@ -86,7 +86,7 @@ export default function App() {
           path="/*"
           element={
             <div className="flex min-h-screen w-full bg-black text-white font-sans">
-              <FigmaSidebar />
+              <EmpireSidebar />
               <main
                 className="flex-1 overflow-auto"
                 style={{
