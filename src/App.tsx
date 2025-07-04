@@ -127,6 +127,7 @@ export default function App() {
                   <Route path="/generator" element={<Chat />} />
                   <Route path="/portal" element={<Dashboard />} />
                   <Route path="/account" element={<Settings />} />
+                  <Route path="/logout" element={<Login />} />
                 </Routes>
               </main>
             </div>
