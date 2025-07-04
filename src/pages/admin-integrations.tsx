@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { createClient } from "@supabase/supabase-js";
 
-const supabase = createClient(
-  import.meta.env.VITE_SUPABASE_URL || "",
-  import.meta.env.VITE_SUPABASE_ANON_KEY || "",
-);
+// Initialize Supabase client with proper error handling
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+
+const supabase =
+  supabaseUrl && supabaseKey ? createClient(supabaseUrl, supabaseKey) : null;
 
 interface Integration {
   id: string;
@@ -193,11 +195,39 @@ export default function AdminIntegrations() {
 
   const saveNotes = async (integrationId: string, noteText: string) => {
     // Save to Supabase or local storage
+    if (supabase) {
+      try {
+        await supabase.from("integration_notes").upsert({
+          integration_id: integrationId,
+          notes: noteText,
+          updated_at: new Date().toISOString(),
+        });
+      } catch (error) {
+        console.warn("Supabase save failed, using local storage:", error);
+        localStorage.setItem(`integration_note_${integrationId}`, noteText);
+      }
+    } else {
+      // Fallback to localStorage when Supabase is not available
+      localStorage.setItem(`integration_note_${integrationId}`, noteText);
+    }
+
     setNotes((prev) => ({ ...prev, [integrationId]: noteText }));
     setEditingNotes(null);
   };
 
   useEffect(() => {
+    // Load existing notes from localStorage as fallback
+    const loadedNotes: Record<string, string> = {};
+    integrations.forEach((integration) => {
+      const savedNote = localStorage.getItem(
+        `integration_note_${integration.id}`,
+      );
+      if (savedNote) {
+        loadedNotes[integration.id] = savedNote;
+      }
+    });
+    setNotes(loadedNotes);
+
     // Real-time status monitoring
     const interval = setInterval(() => {
       // Simulate real-time status updates
