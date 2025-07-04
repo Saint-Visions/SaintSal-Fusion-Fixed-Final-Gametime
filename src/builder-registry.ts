@@ -1,4 +1,4 @@
-import { Builder } from "@builder.io/react";
+import { Builder, builder } from "@builder.io/react";
 
 // Import all Empire components
 import { EmpireButton } from "./components/core/EmpireButton";
