@@ -105,6 +105,12 @@ export default function App() {
               <Route path="/builder" element={<Builder />} />
               <Route path="/crm" element={<Crm />} />
               <Route path="/empire-live" element={<EmpireLive />} />
+              {/* Missing sidebar navigation routes */}
+              <Route path="/notes" element={<Dashboard />} />
+              <Route path="/tools" element={<Chat />} />
+              <Route path="/generator" element={<Chat />} />
+              <Route path="/portal" element={<Dashboard />} />
+              <Route path="/account" element={<Settings />} />
             </Routes>
           </main>
         </div>
