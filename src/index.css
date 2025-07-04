@@ -2,29 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import SaintSal Empire Design Tokens */
+@import "./styles/design-tokens.css";
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap");
 
 @layer base {
   * {
     @apply border-border;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-black text-white font-sans;
-    font-family: "Inter", system-ui, sans-serif;
+    @apply bg-black text-white font-sans antialiased;
+    font-family: var(--empire-font-family);
+    background: #000000;
+    color: #ffffff;
+  }
+
+  /* Ensure proper font loading */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--empire-font-family);
   }
 }
 
 @layer components {
+  /* Enhanced Empire Components */
   .empire-gradient {
-    background: linear-gradient(135deg, #10161c 0%, #1a1f26 50%, #10161c 100%);
+    background: linear-gradient(
+      135deg,
+      var(--empire-charcoal) 0%,
+      var(--empire-light) 50%,
+      var(--empire-charcoal) 100%
+    );
   }
 
   .gold-glow {
-    box-shadow: 0 0 20px rgba(255, 199, 0, 0.3);
+    box-shadow: var(--empire-shadow-gold);
+    transition: var(--empire-transition);
+  }
+
+  .gold-glow:hover {
+    box-shadow: var(--empire-shadow-gold-intense);
   }
 
   .nav-link {
-    @apply px-4 py-3 rounded-xl transition-all duration-300 text-white hover:text-gold hover:bg-charcoal/50 flex items-center gap-3 font-medium;
+    @apply px-4 py-3 rounded-empire transition-all duration-300 text-white hover:text-gold hover:bg-charcoal/50 flex items-center gap-3 font-medium;
+    border-radius: var(--empire-border-radius);
   }
 
   .nav-link.active {
@@ -32,14 +65,39 @@
   }
 
   .empire-card {
-    @apply bg-charcoal/80 backdrop-blur-sm border border-gold/20 rounded-2xl p-6 shadow-xl hover:shadow-2xl hover:border-gold/40 transition-all duration-300;
+    @apply bg-charcoal/80 backdrop-blur-empire border border-gold/20 rounded-empire p-6 shadow-xl hover:shadow-2xl hover:border-gold/40 transition-all duration-300;
   }
 
   .hero-text {
-    @apply text-6xl font-black bg-gradient-to-r from-gold via-glow-yellow to-gold bg-clip-text text-transparent;
+    @apply text-6xl font-black;
+    background: linear-gradient(
+      135deg,
+      var(--empire-gold) 0%,
+      var(--empire-glow) 50%,
+      var(--empire-gold) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--empire-font-family);
   }
 
   .btn-empire {
-    @apply bg-gold text-black px-8 py-4 rounded-xl font-bold hover:bg-glow-yellow transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl;
+    @apply bg-gold text-charcoal px-8 py-4 rounded-empire font-bold hover:bg-gold-hover transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl;
+    font-family: var(--empire-font-family);
+  }
+
+  /* Seamless.ai + SaintSal Fusion Styles */
+  .fusion-container {
+    @apply min-h-screen bg-black text-white;
+    font-family: var(--empire-font-family);
+  }
+
+  .partnertech-brand {
+    @apply text-5xl font-black text-white;
+  }
+
+  .partnertech-brand span {
+    @apply text-gold;
   }
 }
