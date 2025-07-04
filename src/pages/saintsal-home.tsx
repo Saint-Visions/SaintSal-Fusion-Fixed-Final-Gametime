@@ -92,7 +92,7 @@ export default function SaintSalHome() {
             <div className="mb-16 relative">
               <div className="bg-charcoal/80 backdrop-blur-lg border border-gold/30 rounded-2xl p-8 max-w-2xl mx-auto relative">
                 <div className="text-xl text-gold font-semibold mb-2">
-                  "SaintSal™ AI doesn't just answer."
+                  "SaintVisionAI™ doesn't just answer."
                 </div>
                 <div className="text-xl text-gold font-semibold mb-2">
                   It adapts. It empowers. It becomes yours...
