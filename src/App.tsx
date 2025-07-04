@@ -27,6 +27,7 @@ import SimpleHome from "./pages/simple-home";
 import SaintSalHome from "./pages/saintsal-home";
 
 export default function App() {
+  const location = useLocation();
   const [isLoading, setIsLoading] = useState(true);
   const [showNotificationPrompt, setShowNotificationPrompt] = useState(false);
   const [showInstallPrompt, setShowInstallPrompt] = useState(false);
