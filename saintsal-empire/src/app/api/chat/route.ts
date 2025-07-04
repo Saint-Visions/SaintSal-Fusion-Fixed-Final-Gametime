@@ -1,5 +1,5 @@
-import { NextRequest, NextResponse } from "next/server";
 import OpenAI from "openai";
+import { OpenAIStream, StreamingTextResponse } from "ai";
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY || process.env.AZURE_OPENAI_API_KEY,
@@ -16,7 +16,7 @@ const openai = new OpenAI({
     : undefined,
 });
 
-export async function POST(req: NextRequest) {
+export async function POST(req: Request) {
   try {
     const { messages, assistant = "saintvision" } = await req.json();
 
@@ -34,7 +34,7 @@ export async function POST(req: NextRequest) {
     };
 
     // Create streaming response
-    const stream = await openai.chat.completions.create({
+    const response = await openai.chat.completions.create({
       model: process.env.AZURE_DEPLOYMENT_NAME || "gpt-4o",
       messages: [systemMessage, ...messages],
       temperature: 0.7,
@@ -42,43 +42,14 @@ export async function POST(req: NextRequest) {
       stream: true,
     });
 
-    // Create readable stream for response
-    const encoder = new TextEncoder();
-    const readable = new ReadableStream({
-      async start(controller) {
-        try {
-          for await (const chunk of stream) {
-            const content = chunk.choices[0]?.delta?.content || "";
-            if (content) {
-              controller.enqueue(
-                encoder.encode(`data: ${JSON.stringify({ content })}\n\n`),
-              );
-            }
-          }
-          controller.enqueue(encoder.encode("data: [DONE]\n\n"));
-          controller.close();
-        } catch (error) {
-          console.error("Streaming error:", error);
-          controller.error(error);
-        }
-      },
-    });
-
-    return new Response(readable, {
-      headers: {
-        "Content-Type": "text/event-stream",
-        "Cache-Control": "no-cache",
-        Connection: "keep-alive",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "POST",
-        "Access-Control-Allow-Headers": "Content-Type",
-      },
-    });
+    // Use ai package for cleaner streaming
+    const stream = OpenAIStream(response);
+    return new StreamingTextResponse(stream);
   } catch (error) {
     console.error("Chat API error:", error);
-    return NextResponse.json(
-      { error: "Failed to process chat request" },
-      { status: 500 },
+    return new Response(
+      JSON.stringify({ error: "Failed to process chat request" }),
+      { status: 500, headers: { "Content-Type": "application/json" } },
     );
   }
 }
