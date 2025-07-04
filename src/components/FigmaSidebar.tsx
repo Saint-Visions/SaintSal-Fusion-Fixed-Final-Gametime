@@ -77,16 +77,16 @@ const FigmaSidebar = () => {
       </div>
 
       {/* Navigation */}
-      <div className="flex-1 p-2 overflow-y-auto">
-        <div className="space-y-1">
+      <div className="flex-1 p-3 overflow-y-auto">
+        <div className="space-y-2">
           {navItems.map((item, index) => (
             <Link
               key={index}
               to={item.path}
-              className="flex items-center gap-4 px-4 py-4 rounded-[32px] border transition-all duration-200"
+              className="flex items-center gap-3 px-3 py-3 rounded-2xl border transition-all duration-200"
               style={{
-                height: "56px",
-                margin: "2px 0",
+                height: "44px",
+                margin: "1px 0",
                 background:
                   isActive(item.path) || (index === 0 && isActive("/"))
                     ? "#71717A"
@@ -103,7 +103,7 @@ const FigmaSidebar = () => {
                   isActive(item.path) || (index === 0 && isActive("/"))
                     ? 600
                     : 400,
-                fontSize: "16px",
+                fontSize: "14px",
                 textDecoration: "none",
               }}
               onMouseEnter={(e) => {
@@ -117,7 +117,7 @@ const FigmaSidebar = () => {
                 }
               }}
             >
-              <span style={{ lineHeight: "24px" }}>{item.label}</span>
+              <span style={{ lineHeight: "20px" }}>{item.label}</span>
             </Link>
           ))}
         </div>
