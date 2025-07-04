@@ -1,9 +1,45 @@
-/* index.css — basic reset and font for build */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background-color: #f5f5f5;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-black text-white font-sans;
+    font-family: "Inter", system-ui, sans-serif;
+  }
 }
 
+@layer components {
+  .empire-gradient {
+    background: linear-gradient(135deg, #10161c 0%, #1a1f26 50%, #10161c 100%);
+  }
+
+  .gold-glow {
+    box-shadow: 0 0 20px rgba(255, 199, 0, 0.3);
+  }
+
+  .nav-link {
+    @apply px-4 py-3 rounded-xl transition-all duration-300 text-white hover:text-gold hover:bg-charcoal/50 flex items-center gap-3 font-medium;
+  }
+
+  .nav-link.active {
+    @apply bg-gold/20 text-gold border-l-4 border-gold;
+  }
+
+  .empire-card {
+    @apply bg-charcoal/80 backdrop-blur-sm border border-gold/20 rounded-2xl p-6 shadow-xl hover:shadow-2xl hover:border-gold/40 transition-all duration-300;
+  }
+
+  .hero-text {
+    @apply text-6xl font-black bg-gradient-to-r from-gold via-glow-yellow to-gold bg-clip-text text-transparent;
+  }
+
+  .btn-empire {
+    @apply bg-gold text-black px-8 py-4 rounded-xl font-bold hover:bg-glow-yellow transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl;
+  }
+}
