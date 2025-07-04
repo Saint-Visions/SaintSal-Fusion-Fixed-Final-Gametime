@@ -17,13 +17,13 @@ export default function Loading({ onComplete }: LoadingProps) {
     ];
 
     let messageIndex = 0;
-    let progressValue = 5; // Start with initial progress
+    let progressValue = 10; // Start with more initial progress
 
     // Set initial progress immediately
-    setProgress(5);
+    setProgress(10);
 
     const interval = setInterval(() => {
-      progressValue += Math.random() * 20 + 15;
+      progressValue += Math.random() * 25 + 20; // Faster progress
 
       if (progressValue >= 100) {
         progressValue = 100;
@@ -31,7 +31,7 @@ export default function Loading({ onComplete }: LoadingProps) {
         clearInterval(interval);
         setTimeout(() => {
           onComplete?.();
-        }, 800);
+        }, 300); // Shorter delay
         return;
       }
 
@@ -46,7 +46,7 @@ export default function Loading({ onComplete }: LoadingProps) {
         messageIndex = newMessageIndex;
         setMessage(messages[messageIndex]);
       }
-    }, 200);
+    }, 150); // Faster updates
 
     return () => clearInterval(interval);
   }, [onComplete]);
