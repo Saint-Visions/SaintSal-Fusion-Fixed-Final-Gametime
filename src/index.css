@@ -5,6 +5,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* SaintSal™ Premium Color Palette */
+:root {
+  --saintsal-charcoal: #10161c;
+  --saintsal-gold: #ffd700;
+  --saintsal-light: #1c2431;
+  --saintsal-shadow-gold: 0 0 20px rgba(255, 215, 0, 0.3);
+  --saintsal-shadow-gold-intense: 0 0 40px rgba(255, 215, 0, 0.5);
+  --saintsal-border-radius: 1rem;
+  --saintsal-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --saintsal-font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
