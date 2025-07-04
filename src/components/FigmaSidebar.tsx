@@ -60,10 +60,10 @@ const FigmaSidebar = () => {
           </div>
         </div>
         <div
-          className="absolute top-4 right-4 px-3 py-1 text-xs font-bold rounded-full"
+          className="absolute top-3 right-3 px-2 py-1 text-xs font-bold rounded-full"
           style={{
-            background: "#FFFBEB",
-            color: "#4A4A4A",
+            background: "#8B5CF6",
+            color: "#FFFFFF",
             fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif",
             fontWeight: 700,
           }}
