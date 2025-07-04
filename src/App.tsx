@@ -29,6 +29,7 @@ import SaintSalHome from "./pages/saintsal-home";
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [showNotificationPrompt, setShowNotificationPrompt] = useState(false);
+  const [showInstallPrompt, setShowInstallPrompt] = useState(false);
 
   useEffect(() => {
     // Let the loading component handle its own completion
