@@ -76,11 +76,11 @@ export default function SaintSalHome() {
 
             {/* Main Brand Text */}
             <div className="mb-12">
-              <h1 className="text-8xl md:text-9xl font-black mb-4 bg-gradient-to-r from-gold via-yellow-300 to-gold bg-clip-text text-transparent">
-                SaintSal™
+              <h1 className="text-6xl md:text-7xl font-black mb-4 bg-gradient-to-r from-gold via-yellow-300 to-gold bg-clip-text text-transparent">
+                SaintVisionAI™
               </h1>
-              <div className="text-3xl md:text-4xl text-gold font-light tracking-wide mb-6">
-                Cookin' Knowledge.
+              <div className="text-2xl md:text-3xl text-gold font-light tracking-wide mb-6">
+                AI RESEARCH & DEVELOPMENT
               </div>
               <div className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
                 AI doesn't just answer. It adapts. It empowers. It becomes
