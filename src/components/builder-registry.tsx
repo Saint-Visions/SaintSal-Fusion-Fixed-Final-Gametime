@@ -1,19 +1,26 @@
 import React from "react";
-import { builder } from "@builder.io/react";
-import SaintVisionAIPricingCards from "./SaintVisionAIPricingCards";
-import EmpireButton from "./core/EmpireButton";
-import EmpireCard from "./core/EmpireCard";
-import EmpireInput from "./core/EmpireInput";
+// Using new @builder.io/sdk-react - old registry replaced by src/builder-registry.ts
+// This file is deprecated and should not be used
 
 // Initialize Builder with environment key (disabled to prevent errors)
 // builder.init(import.meta.env.VITE_BUILDER_API_KEY || "your-public-api-key");
 
 // SaintSal™ Hero Component
 const SaintSalHero: React.FC<any> = (props) => (
-  <section className="relative empire-gradient pt-20 pb-32 px-8">
+  <section
+    className="relative empire-gradient pt-20 pb-32 px-8"
+    style={{
+      fontFamily: "Inter, system-ui, -apple-system, sans-serif !important",
+    }}
+  >
     <div className="max-w-7xl mx-auto text-center">
-      <h1 className="hero-text mb-8 leading-tight">
-        {props.title || "SAINT VISION AI"}
+      <h1
+        className="hero-text mb-8 leading-tight"
+        style={{
+          fontFamily: "Inter, system-ui, -apple-system, sans-serif !important",
+        }}
+      >
+        {props.title || "SaintSal™ EMPIRE"}
       </h1>
       <p className="text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
         {props.subtitle || "The future of AI-powered business intelligence."}
