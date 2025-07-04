@@ -47,8 +47,8 @@ const FigmaSidebar = () => {
       >
         <div className="flex items-center gap-3">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fac436fc84fcc40789c93464d58a120d4?format=webp&width=800"
-            alt="SaintVisionAI Logo"
+            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fb4d1baacd79944e59033e0f3fcf7229e?format=webp&width=800"
+            alt="SaintSal Logo"
             className="w-16 h-16 object-contain"
           />
           <div>
@@ -61,7 +61,7 @@ const FigmaSidebar = () => {
                 fontWeight: 700,
               }}
             >
-              SaintVisionAi™
+              SaintSal™
             </h1>
           </div>
         </div>
