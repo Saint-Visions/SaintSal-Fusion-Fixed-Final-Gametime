@@ -1,9 +1,10 @@
-import { BuilderComponent, builder } from "@builder.io/react";
+import { Content, builder } from "@builder.io/sdk-react";
 import { useEffect, useState } from "react";
-import "../components/builder-registry"; // Register SaintSal™ components
 
 // Initialize Builder with SaintSal™ empire configuration
-builder.init(import.meta.env.VITE_BUILDER_API_KEY || "your-public-api-key");
+builder.init(
+  import.meta.env.VITE_BUILDER_API_KEY || "d83998c6a81f466db4fb83ab90c7ba25",
+);
 
 export default function BuilderPage() {
   const [content, setContent] = useState<any>(null);
@@ -46,24 +47,48 @@ export default function BuilderPage() {
   }
 
   return (
-    <div className="min-h-screen bg-black">
+    <div
+      className="min-h-screen bg-black"
+      style={{
+        fontFamily: "Inter, system-ui, -apple-system, sans-serif !important",
+      }}
+    >
       {content ? (
-        <BuilderComponent
-          model="page"
-          content={content}
-          // Pass empire-level styling context
-          data={{
-            theme: "empire",
-            brandColors: {
-              gold: "#FFC700",
-              charcoal: "#10161C",
-              glowYellow: "#FDE68A",
-            },
+        <div
+          style={{
+            fontFamily:
+              "Inter, system-ui, -apple-system, sans-serif !important",
           }}
-        />
+        >
+          <Content
+            model="page"
+            content={content}
+            // Pass empire-level styling context
+            data={{
+              theme: "empire",
+              brandColors: {
+                gold: "#FFC700",
+                charcoal: "#10161C",
+                glowYellow: "#FDE68A",
+              },
+            }}
+          />
+        </div>
       ) : (
-        <div className="min-h-screen bg-black flex items-center justify-center">
-          <div className="empire-card text-center max-w-2xl">
+        <div
+          className="min-h-screen bg-black flex items-center justify-center"
+          style={{
+            fontFamily:
+              "Inter, system-ui, -apple-system, sans-serif !important",
+          }}
+        >
+          <div
+            className="empire-card text-center max-w-2xl"
+            style={{
+              fontFamily:
+                "Inter, system-ui, -apple-system, sans-serif !important",
+            }}
+          >
             <h1 className="text-3xl font-black text-gold mb-4">
               BUILDER COMMAND DECK
             </h1>
