@@ -178,54 +178,58 @@ const FigmaSidebar = () => {
           🎛️ COMMAND CENTER
         </h3>
         <div className="space-y-2">
-          {mainNavItems.map((item, index) => (
-            <Link
-              key={`nav-${index}`}
-              to={item.path}
-              className="group flex items-center px-4 py-3 rounded-xl transition-all duration-300 hover:scale-105"
-              style={{
-                background: isActive(item.path)
-                  ? "linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 165, 0, 0.15))"
-                  : "rgba(255, 255, 255, 0.03)",
-                border: isActive(item.path)
-                  ? "2px solid rgba(255, 215, 0, 0.6)"
-                  : "2px solid transparent",
-                color: isActive(item.path) ? "#FFD700" : "#A1A1AA",
-                fontWeight: isActive(item.path) ? 700 : 500,
-                fontSize: "14px",
-                textDecoration: "none",
-                boxShadow: isActive(item.path)
-                  ? "0 8px 25px rgba(255, 215, 0, 0.25)"
-                  : "none",
-                transform: isActive(item.path)
-                  ? "translateX(6px)"
-                  : "translateX(0)",
-              }}
-            >
-              <span
-                className="mr-3 text-lg transition-transform duration-300 group-hover:scale-125"
-                style={{
-                  filter: isActive(item.path)
-                    ? "drop-shadow(0 2px 4px rgba(255, 215, 0, 0.6))"
-                    : "none",
-                }}
+          {mainNavItems.map((item, index) => {
+            const linkStyle = {
+              background: isActive(item.path)
+                ? "linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 165, 0, 0.15))"
+                : "rgba(255, 255, 255, 0.03)",
+              border: isActive(item.path)
+                ? "2px solid rgba(255, 215, 0, 0.6)"
+                : "2px solid transparent",
+              color: isActive(item.path) ? "#FFD700" : "#A1A1AA",
+              fontWeight: isActive(item.path) ? 700 : 500,
+              fontSize: "14px",
+              textDecoration: "none",
+              boxShadow: isActive(item.path)
+                ? "0 8px 25px rgba(255, 215, 0, 0.25)"
+                : "none",
+              transform: isActive(item.path)
+                ? "translateX(6px)"
+                : "translateX(0)",
+            };
+
+            return (
+              <Link
+                key={`nav-${index}`}
+                to={item.path}
+                className="group flex items-center px-4 py-3 rounded-xl transition-all duration-300 hover:scale-105"
+                style={linkStyle}
               >
-                {item.icon}
-              </span>
-              <span className="font-semibold tracking-wide">
-                {item.label.replace(item.icon + " ", "")}
-              </span>
-              {isActive(item.path) && (
-                <div
-                  className="ml-auto w-2.5 h-2.5 rounded-full animate-pulse"
+                <span
+                  className="mr-3 text-lg transition-transform duration-300 group-hover:scale-125"
                   style={{
-                    background: "#FFD700",
-                    boxShadow: "0 0 12px #FFD700",
+                    filter: isActive(item.path)
+                      ? "drop-shadow(0 2px 4px rgba(255, 215, 0, 0.6))"
+                      : "none",
                   }}
-                />
-              )}
-            </Link>
-          ))}
+                >
+                  {item.icon}
+                </span>
+                <span className="font-semibold tracking-wide">
+                  {item.label.replace(item.icon + " ", "")}
+                </span>
+                {isActive(item.path) && (
+                  <div
+                    className="ml-auto w-2.5 h-2.5 rounded-full animate-pulse"
+                    style={{
+                      background: "#FFD700",
+                      boxShadow: "0 0 12px #FFD700",
+                    }}
+                  />
+                )}
+              </Link>
+            );
+          })}
         </div>
       </div>
 
