@@ -107,7 +107,7 @@ const SaintSalCRM: React.FC<any> = (props) => (
 );
 
 // Register all SaintSal™ Empire Components
-Builder.registerComponent(SaintVisionAIPricingCards, {
+builder.registerComponent(SaintVisionAIPricingCards, {
   name: "SaintVisionAI Pricing Cards",
   description: "Enterprise-grade pricing tiers with Stripe integration",
   inputs: [
@@ -127,7 +127,7 @@ Builder.registerComponent(SaintVisionAIPricingCards, {
   ],
 });
 
-Builder.registerComponent(SaintSalHero, {
+builder.registerComponent(SaintSalHero, {
   name: "SaintSal Hero Section",
   description: "Command deck hero with divine branding",
   inputs: [
