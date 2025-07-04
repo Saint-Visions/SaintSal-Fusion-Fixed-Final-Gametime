@@ -64,7 +64,9 @@ select {
 [style*="times"],
 div[style*="fontFamily"],
 span[style*="fontFamily"],
-p[style*="fontFamily"] {
+p[style*="fontFamily"],
+div[css*="fontFamily"],
+span[css*="fontFamily"] {
   font-family:
     "Inter",
     system-ui,
@@ -75,7 +77,18 @@ p[style*="fontFamily"] {
 /* Builder.io specific overrides */
 .builder-block,
 .builder-component,
-.builder-element {
+.builder-element,
+[data-builder-component],
+[data-builder-element] {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif !important;
+}
+
+/* CSS-in-JS override for Times font */
+div[css] {
   font-family:
     "Inter",
     system-ui,
