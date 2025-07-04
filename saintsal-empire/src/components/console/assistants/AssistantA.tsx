@@ -12,20 +12,87 @@ export function AssistantAComponent() {
     },
   ]);
 
-  const handleSend = () => {
+  const handleSend = async () => {
     if (!message.trim()) return;
 
-    const newMessages = [
-      ...messages,
-      { role: "user", content: message },
-      {
-        role: "assistant",
-        content:
-          "Processing your request through SaintVision AI cognitive systems...",
-      },
-    ];
+    const userMessage = { role: "user", content: message };
+    const newMessages = [...messages, userMessage];
     setMessages(newMessages);
     setMessage("");
+
+    // Log event to analytics
+    await fetch("/api/events", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        event_type: "ai_query",
+        assistant_type: "saintvision",
+        details: { message: message.substring(0, 100) },
+      }),
+    });
+
+    // Start streaming response
+    try {
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          messages: newMessages,
+          assistant: "saintvision",
+        }),
+      });
+
+      if (!response.body) return;
+
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let assistantMessage = "";
+
+      // Add empty assistant message that we'll stream into
+      setMessages((prev) => [...prev, { role: "assistant", content: "" }]);
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        const chunk = decoder.decode(value);
+        const lines = chunk.split("\n");
+
+        for (const line of lines) {
+          if (line.startsWith("data: ")) {
+            const data = line.slice(6);
+            if (data === "[DONE]") return;
+
+            try {
+              const parsed = JSON.parse(data);
+              if (parsed.content) {
+                assistantMessage += parsed.content;
+                // Update the last message with streaming content
+                setMessages((prev) => {
+                  const updated = [...prev];
+                  updated[updated.length - 1] = {
+                    role: "assistant",
+                    content: assistantMessage,
+                  };
+                  return updated;
+                });
+              }
+            } catch (e) {
+              // Ignore parse errors
+            }
+          }
+        }
+      }
+    } catch (error) {
+      console.error("Chat error:", error);
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "assistant",
+          content: "Sorry, I encountered an error. Please try again.",
+        },
+      ]);
+    }
   };
 
   return (
