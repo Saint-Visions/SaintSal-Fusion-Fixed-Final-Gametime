@@ -1,12 +1,12 @@
 import React from "react";
-import { builder } from "@builder.io/react";
+import { Builder } from "@builder.io/react";
 import SaintVisionAIPricingCards from "./SaintVisionAIPricingCards";
 import EmpireButton from "./core/EmpireButton";
 import EmpireCard from "./core/EmpireCard";
 import EmpireInput from "./core/EmpireInput";
 
 // Initialize Builder with environment key
-builder.init(import.meta.env.VITE_BUILDER_API_KEY || "your-public-api-key");
+Builder.init(import.meta.env.VITE_BUILDER_API_KEY || "your-public-api-key");
 
 // SaintSal™ Hero Component
 const SaintSalHero: React.FC<any> = (props) => (
@@ -107,7 +107,7 @@ const SaintSalCRM: React.FC<any> = (props) => (
 );
 
 // Register all SaintSal™ Empire Components
-builder.registerComponent(SaintVisionAIPricingCards, {
+Builder.registerComponent(SaintVisionAIPricingCards, {
   name: "SaintVisionAI Pricing Cards",
   description: "Enterprise-grade pricing tiers with Stripe integration",
   inputs: [
