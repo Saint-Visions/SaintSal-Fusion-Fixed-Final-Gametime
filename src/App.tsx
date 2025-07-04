@@ -41,9 +41,9 @@ export default function App() {
 
   return (
     <>
-      <div className="flex min-h-screen w-full bg-black">
+      <div className="flex min-h-screen w-full bg-black text-white font-sans">
         <Sidebar />
-        <main className="flex-1 overflow-auto">
+        <main className="flex-1 overflow-auto bg-black">
           <Routes>
             <Route path="/" element={<Hero />} />
             <Route path="/home" element={<Home />} />
