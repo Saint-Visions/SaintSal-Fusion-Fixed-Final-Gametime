@@ -62,15 +62,65 @@ export default function App() {
   return (
     <>
       <FontOverride />
-      {isPublicPage ? (
-        // PUBLIC PAGES - Full screen, no sidebar
-        <div className="min-h-screen w-full bg-black text-white font-sans">
-          <Routes>
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-          </Routes>
-        </div>
-      ) : (
+      <Routes>
+        {/* PUBLIC PAGES - Full screen, no sidebar */}
+        <Route path="/login" element={
+          <div className="min-h-screen w-full bg-black text-white font-sans">
+            <Login />
+          </div>
+        } />
+        <Route path="/signup" element={
+          <div className="min-h-screen w-full bg-black text-white font-sans">
+            <Signup />
+          </div>
+        } />
+
+        {/* AUTH PAGES - With sidebar */}
+        <Route path="/*" element={
+          <div className="flex min-h-screen w-full bg-black text-white font-sans">
+            <FigmaSidebar />
+            <main
+              className="flex-1 overflow-auto"
+              style={{
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fd277f0ca010843b4bd70b0c64b3d86fd?format=webp&width=800')`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundAttachment: "fixed",
+              }}
+            >
+              <Routes>
+                <Route path="/" element={<Dashboard />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/operations" element={<Operations />} />
+                <Route path="/partnertech" element={<PartnerTech />} />
+                <Route path="/setup" element={<Setup />} />
+                <Route path="/settings" element={<Settings />} />
+                <Route path="/admin/logs" element={<AdminLogs />} />
+                <Route
+                  path="/admin/integrations"
+                  element={<AdminIntegrations />}
+                />
+                <Route path="/console/settings" element={<AdminIntegrations />} />
+                <Route path="/pricing" element={<Pricing />} />
+                <Route path="/upgrade" element={<Upgrade />} />
+                <Route path="/chat" element={<Chat />} />
+                <Route path="/console" element={<Chat />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/builder" element={<Builder />} />
+                <Route path="/crm" element={<Crm />} />
+                <Route path="/empire-live" element={<EmpireLive />} />
+                {/* Missing sidebar navigation routes */}
+                <Route path="/notes" element={<Dashboard />} />
+                <Route path="/tools" element={<Chat />} />
+                <Route path="/generator" element={<Chat />} />
+                <Route path="/portal" element={<Dashboard />} />
+                <Route path="/account" element={<Settings />} />
+              </Routes>
+            </main>
+          </div>
+        } />
+      </Routes>
         // AUTH PAGES - With sidebar
         <div className="flex min-h-screen w-full bg-black text-white font-sans">
           <FigmaSidebar />
