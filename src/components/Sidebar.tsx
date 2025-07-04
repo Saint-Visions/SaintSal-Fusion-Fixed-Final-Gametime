@@ -27,16 +27,19 @@ export default function Sidebar() {
 
       {/* Navigation */}
       <nav className="flex-1 p-6 space-y-2">
-        {navItems.map((item) => (
-          <Link
-            key={item.path}
-            to={item.path}
-            className={`nav-link ${location.pathname === item.path ? "active" : ""}`}
-          >
-            <span className="text-xl">{item.icon}</span>
-            <span>{item.label}</span>
-          </Link>
-        ))}
+        {navItems.map((item) => {
+          const isActive = location.pathname === item.path;
+          return (
+            <Link
+              key={item.path}
+              to={item.path}
+              className={`nav-link ${isActive ? "active" : ""}`}
+            >
+              <span className="text-xl">{item.icon}</span>
+              <span>{item.label}</span>
+            </Link>
+          );
+        })}
       </nav>
 
       {/* Partner Section */}
