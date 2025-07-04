@@ -61,52 +61,55 @@ const FigmaSidebar = () => {
             "linear-gradient(135deg, rgba(255, 215, 0, 0.12), rgba(255, 165, 0, 0.08))",
         }}
       >
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center gap-3">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F94f9caa020024caeb9b1c197e1a02d2d?format=webp&width=800"
-              alt="SaintSal Empire Logo"
-              className="w-14 h-14 object-contain"
-              style={{
-                filter: "drop-shadow(0 4px 12px rgba(255, 215, 0, 0.4))",
-              }}
-            />
-            <div>
-              <h1
-                className="text-xl font-black tracking-tight leading-tight"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  fontWeight: 900,
-                  textShadow: "0 4px 8px rgba(255, 215, 0, 0.4)",
-                }}
-              >
-                SaintVisionAI.com
-              </h1>
-              <p
-                className="text-xs font-bold tracking-widest uppercase"
-                style={{
-                  color: "#FDFFDC",
-                  opacity: 0.9,
-                  letterSpacing: "0.1em",
-                }}
-              >
-                EMPIRE HEADQUARTERS
-              </p>
-            </div>
-          </div>
+        {/* FREE Badge - Top Right */}
+        <div className="absolute top-3 right-3">
           <div
-            className="px-3 py-2 text-xs font-black rounded-xl animate-pulse"
+            className="px-2 py-1 text-xs font-bold rounded-lg animate-pulse"
             style={{
               background: "linear-gradient(135deg, #8B5CF6, #A855F7)",
               color: "#FFFFFF",
-              boxShadow: "0 6px 16px rgba(139, 92, 246, 0.5)",
-              border: "2px solid rgba(255, 215, 0, 0.4)",
+              boxShadow: "0 4px 12px rgba(139, 92, 246, 0.4)",
+              border: "1px solid rgba(255, 215, 0, 0.3)",
             }}
           >
             FREE 🔥
+          </div>
+        </div>
+
+        {/* Main Header Content */}
+        <div className="flex items-center gap-3 mb-4 pr-12">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F94f9caa020024caeb9b1c197e1a02d2d?format=webp&width=800"
+            alt="SaintSal Empire Logo"
+            className="w-14 h-14 object-contain"
+            style={{
+              filter: "drop-shadow(0 4px 12px rgba(255, 215, 0, 0.4))",
+            }}
+          />
+          <div className="flex-1">
+            <h1
+              className="text-xl font-black tracking-tight leading-tight"
+              style={{
+                background:
+                  "linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                fontWeight: 900,
+                textShadow: "0 4px 8px rgba(255, 215, 0, 0.4)",
+              }}
+            >
+              SaintVisionAI.com
+            </h1>
+            <p
+              className="text-xs font-bold tracking-widest uppercase"
+              style={{
+                color: "#FDFFDC",
+                opacity: 0.9,
+                letterSpacing: "0.1em",
+              }}
+            >
+              EMPIRE HEADQUARTERS
+            </p>
           </div>
         </div>
       </div>
