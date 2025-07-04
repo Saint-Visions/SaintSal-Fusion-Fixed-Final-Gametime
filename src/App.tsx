@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import FigmaSidebar from "./components/FigmaSidebar";
+import EmpireSidebar from "./components/EmpireSidebar";
 import Loading from "./components/loading";
 import PushNotificationPrompt from "./components/PushNotificationPrompt";
 import FontOverride from "./components/FontOverride";
