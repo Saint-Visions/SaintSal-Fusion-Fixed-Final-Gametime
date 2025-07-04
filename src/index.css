@@ -119,6 +119,44 @@ p[style*="fontFamily"] {
     sans-serif !important;
 }
 
+/* ULTIMATE TIMES FONT DESTROYER */
+* {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif !important;
+}
+*:before,
+*:after {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif !important;
+}
+div,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button,
+input,
+textarea,
+select,
+label {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif !important;
+}
+
 h1,
 h2,
 h3,
