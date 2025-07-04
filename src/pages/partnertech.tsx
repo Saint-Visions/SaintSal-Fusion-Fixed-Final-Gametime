@@ -34,56 +34,27 @@ export default function PartnerTech() {
 
       {/* Content Container */}
       <div style={{ position: "relative", zIndex: 2, width: "100%" }}>
-        {/* Premium Logo */}
+        {/* Premium Cookin' Knowledge Logo */}
         <div
           style={{
-            width: "140px",
-            height: "140px",
-            background:
-              "linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%)",
-            borderRadius: "2rem",
+            width: "180px",
+            height: "160px",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             marginBottom: "1.5rem",
             position: "relative",
-            boxShadow:
-              "0 20px 40px rgba(255, 215, 0, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.2)",
-            border: "3px solid rgba(255, 215, 0, 0.3)",
             margin: "0 auto 1.5rem auto",
           }}
         >
-          <div
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F29856441de964e35a366faa6c7cd2b37?format=webp&width=800"
+            alt="Sv. Cookin' Knowledge Logo"
             style={{
-              fontSize: "3.5rem",
-              fontWeight: "900",
-              color: "#000000",
-              textShadow: "0 2px 4px rgba(0,0,0,0.3)",
-            }}
-          >
-            Sv
-          </div>
-          {/* Premium circuit effect */}
-          <div
-            style={{
-              position: "absolute",
-              top: "15px",
-              left: "15px",
-              right: "15px",
-              bottom: "15px",
-              border: "3px solid rgba(0,0,0,0.2)",
-              borderRadius: "1rem",
-            }}
-          />
-          <div
-            style={{
-              position: "absolute",
-              top: "25px",
-              left: "25px",
-              right: "25px",
-              bottom: "25px",
-              border: "2px solid rgba(0,0,0,0.1)",
-              borderRadius: "0.75rem",
+              width: "100%",
+              height: "100%",
+              objectFit: "contain",
+              filter: "drop-shadow(0 12px 30px rgba(255, 215, 0, 0.4))",
             }}
           />
         </div>
