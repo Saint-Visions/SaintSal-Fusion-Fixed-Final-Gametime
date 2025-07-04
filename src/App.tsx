@@ -85,7 +85,7 @@ export default function App() {
         <Route
           path="/*"
           element={
-            <div className="flex min-h-screen w-full bg-white text-gray-900 font-sans">
+            <div className="flex min-h-screen w-full bg-black text-white font-sans">
               <ProfessionalSidebar />
               <main
                 className="flex-1 overflow-auto"
