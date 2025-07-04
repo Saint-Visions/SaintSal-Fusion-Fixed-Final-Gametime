@@ -296,6 +296,11 @@ const FigmaSidebar = () => {
             boxShadow: "0 12px 30px rgba(0, 0, 0, 0.4)",
           }}
         >
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Ff12c28f6f86b4411952404af1faa0443?format=webp&width=800"
+            alt="SaintSal Logo"
+            className="w-14 h-14 object-contain"
+          />
           <div className="flex-1 min-w-0">
             <div
               className="text-base font-black truncate"
