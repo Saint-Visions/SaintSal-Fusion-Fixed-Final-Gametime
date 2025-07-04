@@ -4,6 +4,7 @@ import FigmaSidebar from "./components/FigmaSidebar";
 import Loading from "./components/loading";
 import PushNotificationPrompt from "./components/PushNotificationPrompt";
 import FontOverride from "./components/FontOverride";
+import AIEmpireInstallPrompt from "./components/AIEmpireInstallPrompt";
 import Home from "./pages/home";
 import Hero from "./pages/hero";
 import Login from "./pages/login";
