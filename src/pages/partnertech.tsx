@@ -34,17 +34,24 @@ export default function PartnerTech() {
 
       {/* Content Container */}
       <div style={{ position: "relative", zIndex: 2, width: "100%" }}>
-        {/* Premium Cookin' Knowledge Logo */}
+        {/* Premium Logo with Natural Styling */}
         <div
           style={{
-            width: "180px",
+            width: "160px",
             height: "160px",
+            background:
+              "linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%)",
+            borderRadius: "2rem",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             marginBottom: "1.5rem",
             position: "relative",
+            boxShadow:
+              "0 20px 40px rgba(255, 215, 0, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.2)",
+            border: "3px solid rgba(255, 215, 0, 0.3)",
             margin: "0 auto 1.5rem auto",
+            padding: "1rem",
           }}
         >
           <img
@@ -54,7 +61,19 @@ export default function PartnerTech() {
               width: "100%",
               height: "100%",
               objectFit: "contain",
-              filter: "drop-shadow(0 12px 30px rgba(255, 215, 0, 0.4))",
+              filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.3))",
+            }}
+          />
+          {/* Premium circuit effect */}
+          <div
+            style={{
+              position: "absolute",
+              top: "15px",
+              left: "15px",
+              right: "15px",
+              bottom: "15px",
+              border: "3px solid rgba(0,0,0,0.1)",
+              borderRadius: "1rem",
             }}
           />
         </div>
