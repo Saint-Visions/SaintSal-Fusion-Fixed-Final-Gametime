@@ -64,7 +64,7 @@ const FigmaSidebar = () => {
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-3">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F278978d3cc604886bb81b36256c282ea?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F9526bb52a0ab4a08b17d990f3b881ef6?format=webp&width=800"
               alt="SaintSal Empire Logo"
               className="w-14 h-14 object-contain"
             />
