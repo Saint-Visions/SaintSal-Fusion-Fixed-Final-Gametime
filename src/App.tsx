@@ -24,17 +24,15 @@ export default function App() {
   const [showNotificationPrompt, setShowNotificationPrompt] = useState(false);
 
   useEffect(() => {
-    // Simulate initial loading
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-      // Show notification prompt after loading
-      setTimeout(() => {
+    // Let the loading component handle its own completion
+    // Show notification prompt after loading completes
+    if (!isLoading) {
+      const timer = setTimeout(() => {
         setShowNotificationPrompt(true);
       }, 1000);
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
+      return () => clearTimeout(timer);
+    }
+  }, [isLoading]);
 
   if (isLoading) {
     return <Loading onComplete={() => setIsLoading(false)} />;

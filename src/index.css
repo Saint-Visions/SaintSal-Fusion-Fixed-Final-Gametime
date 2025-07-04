@@ -15,7 +15,8 @@
 }
 
 html,
-body {
+body,
+#root {
   margin: 0;
   padding: 0;
   font-family:
@@ -26,6 +27,15 @@ body {
   background: #000000 !important;
   color: #ffffff !important;
   scroll-behavior: smooth;
+}
+
+/* Force override for any Times font */
+* {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif !important;
 }
 
 h1,
