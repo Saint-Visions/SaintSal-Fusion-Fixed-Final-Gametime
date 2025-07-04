@@ -75,7 +75,7 @@ export default function Chat() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyPress={(e) => e.key === "Enter" && handleSend()}
-              placeholder="Ask Saint Vision AI anything..."
+              placeholder="Ask SaintSal™ anything..."
               className="flex-1 bg-charcoal/50 border border-gold/30 rounded-xl px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20"
             />
             <button onClick={handleSend} className="btn-empire px-8">

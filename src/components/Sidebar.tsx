@@ -20,8 +20,8 @@ export default function Sidebar() {
       {/* Brand Header */}
       <div className="p-8 border-b border-gold/20">
         <Link to="/" className="block">
-          <h1 className="text-2xl font-black text-gold mb-2">SAINT VISION</h1>
-          <p className="text-sm text-gray-400 font-medium">AI EMPIRE</p>
+          <h1 className="text-2xl font-black text-gold mb-2">SaintSal™</h1>
+          <p className="text-sm text-gray-400 font-medium">EMPIRE</p>
         </Link>
       </div>
 
