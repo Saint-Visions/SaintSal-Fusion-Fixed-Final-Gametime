@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import MainNavigation from "./components/MainNavigation";
+import Sidebar from "./components/Sidebar";
 import Loading from "./components/loading";
 import PushNotificationPrompt from "./components/PushNotificationPrompt";
 import FontOverride from "./components/FontOverride";
@@ -86,7 +86,7 @@ export default function App() {
           path="/*"
           element={
             <div className="flex min-h-screen w-full bg-black text-white font-sans">
-              <MainNavigation />
+              <Sidebar />
               <main
                 className="flex-1 overflow-auto"
                 style={{
