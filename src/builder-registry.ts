@@ -276,5 +276,7 @@ Builder.registerComponent(EmpireStats, {
 
 // Initialize Builder.io
 if (typeof window !== "undefined") {
-  Builder.init(import.meta.env.VITE_BUILDER_API_KEY);
+  builder.init(
+    import.meta.env.VITE_BUILDER_API_KEY || "d83998c6a81f466db4fb83ab90c7ba25",
+  );
 }
