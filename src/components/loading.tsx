@@ -17,10 +17,13 @@ export default function Loading({ onComplete }: LoadingProps) {
     ];
 
     let messageIndex = 0;
-    let progressValue = 0;
+    let progressValue = 5; // Start with initial progress
+
+    // Set initial progress immediately
+    setProgress(5);
 
     const interval = setInterval(() => {
-      progressValue += Math.random() * 20 + 10;
+      progressValue += Math.random() * 20 + 15;
 
       if (progressValue >= 100) {
         progressValue = 100;

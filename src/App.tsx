@@ -12,6 +12,7 @@ import PartnerTech from "./pages/partnertech";
 import Setup from "./pages/setup";
 import Settings from "./pages/settings";
 import AdminLogs from "./pages/admin-logs";
+import AdminIntegrations from "./pages/admin-integrations";
 import Pricing from "./pages/pricing";
 import Upgrade from "./pages/upgrade";
 import Chat from "./pages/chat";
@@ -53,6 +54,8 @@ export default function App() {
             <Route path="/setup" element={<Setup />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/admin/logs" element={<AdminLogs />} />
+            <Route path="/admin/integrations" element={<AdminIntegrations />} />
+            <Route path="/console/settings" element={<AdminIntegrations />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/upgrade" element={<Upgrade />} />
             <Route path="/chat" element={<Chat />} />
