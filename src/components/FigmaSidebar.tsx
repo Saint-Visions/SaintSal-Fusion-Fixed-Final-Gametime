@@ -12,6 +12,12 @@ export default function FigmaSidebar() {
       active: location.pathname === "/",
     },
     {
+      path: "/empire-live",
+      label: "🚀 Empire LIVE",
+      icon: "⚡",
+      active: location.pathname === "/empire-live",
+    },
+    {
       path: "/operations",
       label: "📊 Operations",
       icon: "📊",
@@ -26,7 +32,7 @@ export default function FigmaSidebar() {
     {
       path: "/partnertech",
       label: "🚀 PartnerTech.AI",
-      icon: "🚀",
+      icon: "���",
       active: location.pathname === "/partnertech",
     },
     {
