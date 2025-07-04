@@ -40,8 +40,10 @@ const FigmaSidebar = () => {
       className="flex flex-col h-screen relative overflow-hidden"
       style={{
         width: "340px",
-        background:
-          "linear-gradient(145deg, #0a0a0a 0%, #1a1a1a 30%, #0f0f0f 70%, #0a0a0a 100%)",
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fd277f0ca010843b4bd70b0c64b3d86fd?format=webp&width=800')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
         border: "4px solid transparent",
         borderImage:
           "linear-gradient(145deg, #FFD700 0%, #FFA500 25%, #FFD700 50%, #FFA500 75%, #FFD700 100%) 1",
