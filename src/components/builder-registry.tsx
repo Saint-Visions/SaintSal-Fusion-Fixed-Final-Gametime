@@ -127,7 +127,7 @@ Builder.registerComponent(SaintVisionAIPricingCards, {
   ],
 });
 
-builder.registerComponent(SaintSalHero, {
+Builder.registerComponent(SaintSalHero, {
   name: "SaintSal Hero Section",
   description: "Command deck hero with divine branding",
   inputs: [
@@ -153,7 +153,7 @@ builder.registerComponent(SaintSalHero, {
   ],
 });
 
-builder.registerComponent(EmpireStats, {
+Builder.registerComponent(EmpireStats, {
   name: "Empire Stats Grid",
   description: "Dynamic statistics showcase for SaintSal™ metrics",
   inputs: [
@@ -166,7 +166,7 @@ builder.registerComponent(EmpireStats, {
   ],
 });
 
-builder.registerComponent(PartnerTechIntegration, {
+Builder.registerComponent(PartnerTechIntegration, {
   name: "PartnerTech Integration",
   description: "Strategic partnership showcase with live integrations",
   inputs: [
@@ -179,7 +179,7 @@ builder.registerComponent(PartnerTechIntegration, {
   ],
 });
 
-builder.registerComponent(SaintSalCRM, {
+Builder.registerComponent(SaintSalCRM, {
   name: "SaintSal CRM Dashboard",
   description: "Embedded CRM interface with Supabase sync",
   inputs: [
