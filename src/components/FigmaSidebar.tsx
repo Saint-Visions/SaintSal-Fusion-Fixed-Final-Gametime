@@ -1,272 +1,228 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-export default function FigmaSidebar() {
+const FigmaSidebar = () => {
   const location = useLocation();
 
+  const isActive = (path: string) => {
+    return location.pathname === path;
+  };
+
   const navItems = [
-    {
-      path: "/",
-      label: "🏠 Start Cookin",
-      icon: "🔥",
-      active: location.pathname === "/",
-    },
-    {
-      path: "/empire-live",
-      label: "🚀 Empire LIVE",
-      icon: "⚡",
-      active: location.pathname === "/empire-live",
-    },
-    {
-      path: "/operations",
-      label: "📊 Operations",
-      icon: "📊",
-      active: location.pathname === "/operations",
-    },
-    {
-      path: "/console",
-      label: "🤖 AI Console",
-      icon: "🤖",
-      active: location.pathname === "/console",
-    },
-    {
-      path: "/partnertech",
-      label: "🚀 PartnerTech.AI",
-      icon: "���",
-      active: location.pathname === "/partnertech",
-    },
-    {
-      path: "/crm",
-      label: "👥 CRM Tools",
-      icon: "👥",
-      active: location.pathname === "/crm",
-    },
-    {
-      path: "/pricing",
-      label: "💎 Pricing",
-      icon: "💎",
-      active: location.pathname === "/pricing",
-    },
-    {
-      path: "/settings",
-      label: "⚙️ Settings",
-      icon: "⚙️",
-      active: location.pathname === "/settings",
-    },
-    {
-      path: "/login",
-      label: "🔑 Sign In",
-      icon: "🔑",
-      active: location.pathname === "/login",
-    },
+    { label: "Main Dashboard", path: "/" },
+    { label: "My Companion 🧠", path: "/console" },
+    { label: "My Business 📁", path: "/operations" },
+    { label: "Sticky Notes ✍️", path: "/notes" },
+    { label: "Ai Tools 🛠️🌃", path: "/tools" },
+    { label: "Image Generator 🤖", path: "/generator" },
+    { label: "SVG Launchpad 🚀", path: "/launchpad" },
+    { label: "Feedback & Help 🗣️", path: "/help" },
+    { label: "PartnerTech.ai CRM", path: "/partnertech" },
+    { label: "Client Portal 🏟️", path: "/portal" },
+    { label: "SVT Institute of AI (R + D) 🏛️", path: "/institute" },
+    { label: "Upgrade Tier ⚡️", path: "/upgrade" },
+    { label: "My Account 💫", path: "/account" },
+    { label: "Logout 👀", path: "/logout" },
   ];
 
   return (
     <div
+      className="flex flex-col min-h-screen relative"
       style={{
-        width: "320px",
-        minHeight: "100vh",
-        background: "linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%)",
-        borderRight: "1px solid rgba(255, 199, 0, 0.2)",
-        display: "flex",
-        flexDirection: "column",
-        fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+        width: "331px",
+        background: "#000000",
+        border: "4px solid #FDFFDC",
+        borderRadius: "32px",
+        fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif",
       }}
     >
-      {/* Brand Header - Matching your Figma exactly */}
+      {/* Header with Logo */}
       <div
+        className="flex items-center justify-center p-4 relative"
         style={{
-          padding: "32px 24px",
-          borderBottom: "1px solid rgba(255, 199, 0, 0.2)",
+          height: "84px",
+          borderBottom: "1px solid #FDFFDC",
+          borderRadius: "32px 32px 0 0",
         }}
       >
-        <Link
-          to="/"
-          style={{
-            textDecoration: "none",
-            display: "block",
-          }}
-        >
-          <h1
-            style={{
-              fontSize: "24px",
-              fontWeight: "900",
-              color: "#FFC700",
-              marginBottom: "8px",
-              fontFamily:
-                "Inter, system-ui, -apple-system, sans-serif !important",
-              letterSpacing: "-0.02em",
-            }}
-          >
-            SaintSal™
-          </h1>
-          <p
-            style={{
-              fontSize: "14px",
-              color: "#9CA3AF",
-              fontWeight: "500",
-              fontFamily:
-                "Inter, system-ui, -apple-system, sans-serif !important",
-            }}
-          >
-            EMPIRE
-          </p>
-        </Link>
-      </div>
-
-      {/* Navigation - Matching your Figma design */}
-      <nav
-        style={{
-          flex: 1,
-          padding: "24px 16px",
-          display: "flex",
-          flexDirection: "column",
-          gap: "8px",
-        }}
-      >
-        {navItems.map((item) => (
-          <Link
-            key={item.path}
-            to={item.path}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "12px",
-              padding: "12px 16px",
-              borderRadius: "12px",
-              textDecoration: "none",
-              transition: "all 0.2s ease",
-              background: item.active
-                ? "rgba(255, 199, 0, 0.15)"
-                : "transparent",
-              border: item.active
-                ? "1px solid rgba(255, 199, 0, 0.3)"
-                : "1px solid transparent",
-              fontFamily:
-                "Inter, system-ui, -apple-system, sans-serif !important",
-            }}
-            onMouseEnter={(e) => {
-              if (!item.active) {
-                e.currentTarget.style.background = "rgba(255, 199, 0, 0.08)";
-              }
-            }}
-            onMouseLeave={(e) => {
-              if (!item.active) {
-                e.currentTarget.style.background = "transparent";
-              }
-            }}
-          >
-            <span
+        <div className="flex items-center gap-3">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fac436fc84fcc40789c93464d58a120d4?format=webp&width=800"
+            alt="SaintVisionAI Logo"
+            className="w-16 h-16 object-contain"
+          />
+          <div>
+            <h1
+              className="text-2xl font-bold tracking-tight"
               style={{
-                fontSize: "20px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "24px",
-                height: "24px",
-              }}
-            >
-              {item.icon}
-            </span>
-            <span
-              style={{
-                fontSize: "15px",
-                fontWeight: item.active ? "600" : "500",
-                color: item.active ? "#FFC700" : "#FFFFFF",
+                color: "#FDFFDC",
                 fontFamily:
-                  "Inter, system-ui, -apple-system, sans-serif !important",
+                  "Inter, -apple-system, Roboto, Helvetica, sans-serif",
+                fontWeight: 700,
               }}
             >
-              {item.label}
-            </span>
-          </Link>
-        ))}
-      </nav>
-
-      {/* Partner Section - Matching your Figma */}
-      <div
-        style={{
-          padding: "24px",
-          borderTop: "1px solid rgba(255, 199, 0, 0.2)",
-        }}
-      >
+              SaintVisionAi™
+            </h1>
+          </div>
+        </div>
         <div
+          className="absolute top-4 right-4 px-3 py-1 text-xs font-bold rounded-full"
           style={{
-            background: "rgba(255, 199, 0, 0.1)",
-            border: "1px solid rgba(255, 199, 0, 0.2)",
-            borderRadius: "16px",
-            padding: "20px",
-            textAlign: "center",
+            background: "#FFFBEB",
+            color: "#4A4A4A",
+            fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif",
+            fontWeight: 700,
           }}
         >
-          <h3
-            style={{
-              fontSize: "18px",
-              fontWeight: "700",
-              color: "#FFC700",
-              marginBottom: "8px",
-              fontFamily:
-                "Inter, system-ui, -apple-system, sans-serif !important",
-            }}
-          >
-            PARTNERTECH.AI
-          </h3>
-          <p
-            style={{
-              fontSize: "13px",
-              color: "#9CA3AF",
-              marginBottom: "16px",
-              fontFamily:
-                "Inter, system-ui, -apple-system, sans-serif !important",
-            }}
-          >
-            Strategic Integrations
-          </p>
-          <Link
-            to="/crm"
-            style={{
-              display: "inline-block",
-              fontSize: "12px",
-              background: "rgba(255, 199, 0, 0.2)",
-              color: "#FFC700",
-              padding: "8px 12px",
-              borderRadius: "8px",
-              textDecoration: "none",
-              transition: "all 0.2s ease",
-              fontFamily:
-                "Inter, system-ui, -apple-system, sans-serif !important",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = "rgba(255, 199, 0, 0.3)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = "rgba(255, 199, 0, 0.2)";
-            }}
-          >
-            Explore Partners
-          </Link>
+          FREE🔥
         </div>
       </div>
 
-      {/* Footer - Your signature tagline */}
-      <div
-        style={{
-          padding: "24px",
-          textAlign: "center",
-        }}
-      >
-        <p
+      {/* Navigation */}
+      <div className="flex-1 p-2 overflow-y-auto">
+        <div className="space-y-1">
+          {navItems.map((item, index) => (
+            <Link
+              key={index}
+              to={item.path}
+              className="flex items-center gap-4 px-4 py-4 rounded-[32px] border transition-all duration-200"
+              style={{
+                height: "56px",
+                margin: "2px 0",
+                background:
+                  isActive(item.path) || (index === 0 && isActive("/"))
+                    ? "#71717A"
+                    : "#18181B",
+                borderColor: "#FDFFDC",
+                opacity:
+                  isActive(item.path) || (index === 0 && isActive("/"))
+                    ? 1
+                    : 0.3,
+                color: "#FDFFDC",
+                fontFamily:
+                  "Inter, -apple-system, Roboto, Helvetica, sans-serif",
+                fontWeight:
+                  isActive(item.path) || (index === 0 && isActive("/"))
+                    ? 600
+                    : 400,
+                fontSize: "16px",
+                textDecoration: "none",
+              }}
+              onMouseEnter={(e) => {
+                if (!(isActive(item.path) || (index === 0 && isActive("/")))) {
+                  e.currentTarget.style.opacity = "1";
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (!(isActive(item.path) || (index === 0 && isActive("/")))) {
+                  e.currentTarget.style.opacity = "0.3";
+                }
+              }}
+            >
+              <span style={{ lineHeight: "24px" }}>{item.label}</span>
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      {/* Bottom Logo */}
+      <div className="p-4 flex justify-center">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fac436fc84fcc40789c93464d58a120d4?format=webp&width=800"
+          alt="SaintVisionAI Logo"
+          className="w-20 h-28 object-contain border-4 border-[#FDFFDC] rounded-[24px] shadow-lg"
           style={{
-            fontSize: "12px",
-            color: "#6B7280",
-            fontWeight: "500",
-            fontFamily:
-              "Inter, system-ui, -apple-system, sans-serif !important",
+            transform: "rotate(-0.304deg)",
+            aspectRatio: "81.54/116.08",
+          }}
+        />
+      </div>
+
+      {/* Upgrade Section */}
+      <div className="p-6 border-t border-[#FDFFDC]">
+        <div className="text-center mb-4">
+          <div
+            className="text-lg font-bold mb-2"
+            style={{
+              color: "#FDFFDC",
+              fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif",
+              fontWeight: 700,
+              fontSize: "18px",
+            }}
+          >
+            Upgrade to Unlimited
+          </div>
+          <div
+            className="text-sm mb-4"
+            style={{
+              color: "#A1A1AA",
+              fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif",
+              fontWeight: 400,
+              fontSize: "14px",
+              lineHeight: "20px",
+            }}
+          >
+            Generate Premium Content by upgrading to an unlimited plan!
+          </div>
+        </div>
+        <button
+          className="w-full py-4 px-4 rounded-[32px] font-bold mb-4"
+          style={{
+            background: "#FDFFDC",
+            color: "#09090B",
+            fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif",
+            fontWeight: 700,
+            fontSize: "16px",
+            lineHeight: "24px",
+            border: "none",
+            cursor: "pointer",
           }}
         >
-          "Yeah... I GOTTA GUY™"
-        </p>
+          Get started with PRO
+        </button>
+        <div
+          className="text-center text-sm"
+          style={{
+            color: "#A1A1AA",
+            fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif",
+            fontWeight: 400,
+            fontSize: "14px",
+            lineHeight: "20px",
+          }}
+        >
+          Join 80,000+ users now
+        </div>
+      </div>
+
+      {/* User Section */}
+      <div className="flex items-center justify-between p-4 border border-[#FDFFDC] rounded-[32px] mx-2 mb-4">
+        <div className="flex items-center gap-3">
+          <div
+            className="w-10 h-10 rounded-full flex items-center justify-center text-[#FDFFDC] font-bold"
+            style={{
+              background: "#A1A1AA",
+              fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif",
+              fontWeight: 700,
+              fontSize: "16px",
+            }}
+          >
+            AP
+          </div>
+          <div
+            className="text-sm font-semibold"
+            style={{
+              color: "#FDFFDC",
+              fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif",
+              fontWeight: 700,
+              fontSize: "14px",
+            }}
+          >
+            Saint Gottaguy
+          </div>
+        </div>
       </div>
     </div>
   );
-}
+};
+
+export default FigmaSidebar;
