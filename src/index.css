@@ -96,6 +96,29 @@ div[css] {
     sans-serif !important;
 }
 
+/* Builder.io content override */
+[data-builder-component] *,
+[data-builder-block] *,
+.builder-blocks *,
+.builder-content * {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif !important;
+}
+
+/* Nuclear CSS-in-JS override */
+div[style*="fontFamily"],
+span[style*="fontFamily"],
+p[style*="fontFamily"] {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif !important;
+}
+
 h1,
 h2,
 h3,

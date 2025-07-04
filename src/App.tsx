@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import FigmaSidebar from "./components/FigmaSidebar";
 import Loading from "./components/loading";
 import PushNotificationPrompt from "./components/PushNotificationPrompt";
+import FontOverride from "./components/FontOverride";
 import Home from "./pages/home";
 import Hero from "./pages/hero";
 import Login from "./pages/login";
@@ -42,6 +43,7 @@ export default function App() {
 
   return (
     <>
+      <FontOverride />
       <div className="flex min-h-screen w-full bg-black text-white font-sans">
         <FigmaSidebar />
         <main className="flex-1 overflow-auto bg-black">
