@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Sidebar from "./components/Sidebar";
+import EmpireSidebarClean from "./components/EmpireSidebarClean";
 import Loading from "./components/loading";
 import PushNotificationPrompt from "./components/PushNotificationPrompt";
 import FontOverride from "./components/FontOverride";
@@ -86,7 +86,7 @@ export default function App() {
           path="/*"
           element={
             <div className="flex min-h-screen w-full bg-black text-white font-sans">
-              <Sidebar />
+              <EmpireSidebarClean />
               <main
                 className="flex-1 overflow-auto"
                 style={{
