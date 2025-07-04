@@ -1,6 +1,5 @@
-import React from "react";
-// Using new @builder.io/sdk-react - old registry replaced by src/builder-registry.ts
-// This file is deprecated and should not be used
+// THIS FILE IS DELETED - TIMES FONT SOURCE ELIMINATED
+// Use src/builder-registry.ts instead
 
 // Initialize Builder with environment key (disabled to prevent errors)
 // builder.init(import.meta.env.VITE_BUILDER_API_KEY || "your-public-api-key");
