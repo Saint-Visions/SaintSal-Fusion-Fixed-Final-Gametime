@@ -14,7 +14,7 @@ interface EmpireInputProps {
   variant?: "default" | "glass" | "minimal";
 }
 
-export default function EmpireInput({
+export function EmpireInput({
   type = "text",
   placeholder,
   value,
@@ -47,10 +47,10 @@ export default function EmpireInput({
   const disabledClasses = disabled ? "opacity-50 cursor-not-allowed" : "";
 
   const allClasses = `
-    ${baseClasses} 
-    ${variantClasses[variant]} 
-    ${sizeClasses[size]} 
-    ${disabledClasses} 
+    ${baseClasses}
+    ${variantClasses[variant]}
+    ${sizeClasses[size]}
+    ${disabledClasses}
     ${className}
   `.trim();
 
