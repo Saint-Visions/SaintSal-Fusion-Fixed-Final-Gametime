@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /* Import SaintSal Empire Design Tokens */
 @import url("./styles/design-tokens.css");
@@ -8,31 +8,113 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap");
 
-@layer base {
-  * {
-    @apply border-border;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  html {
-    scroll-behavior: smooth;
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif !important;
+  background: #000000 !important;
+  color: #ffffff !important;
+  scroll-behavior: smooth;
+}
 
-  body {
-    @apply bg-black text-white font-sans antialiased;
-    font-family: var(--empire-font-family);
-    background: #000000;
-    color: #ffffff;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+a {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif !important;
+}
 
-  /* Ensure proper font loading */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--empire-font-family);
-  }
+/* Force empire styling */
+aside {
+  background: linear-gradient(
+    135deg,
+    #10161c 0%,
+    #1c2431 50%,
+    #10161c 100%
+  ) !important;
+  color: #ffffff !important;
+  padding: 2rem !important;
+  width: 320px !important;
+  min-height: 100vh !important;
+}
+
+aside h1 {
+  color: #ffc700 !important;
+  font-size: 1.5rem !important;
+  font-weight: 900 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+aside p {
+  color: #9ca3af !important;
+  font-size: 0.875rem !important;
+}
+
+aside nav a {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
+  padding: 0.75rem 1rem !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  border-radius: 0.75rem !important;
+  margin: 0.25rem 0 !important;
+  transition: all 0.3s ease !important;
+}
+
+aside nav a:hover {
+  background: rgba(255, 199, 0, 0.1) !important;
+  color: #ffc700 !important;
+}
+
+main {
+  flex: 1 !important;
+  background: #000000 !important;
+  color: #ffffff !important;
+  padding: 2rem !important;
+}
+
+main h1 {
+  font-size: 3rem !important;
+  font-weight: 900 !important;
+  background: linear-gradient(
+    135deg,
+    #ffc700 0%,
+    #fde68a 50%,
+    #ffc700 100%
+  ) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  margin-bottom: 1rem !important;
+}
+
+main p {
+  color: #d1d5db !important;
+  font-size: 1.125rem !important;
+  line-height: 1.75 !important;
+  margin-bottom: 1rem !important;
 }
 
 @layer components {
