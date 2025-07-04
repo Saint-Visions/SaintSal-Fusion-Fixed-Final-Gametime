@@ -20,6 +20,7 @@ import Chat from "./pages/chat";
 import Dashboard from "./pages/dashboard";
 import Builder from "./pages/builder";
 import Crm from "./pages/crm";
+import EmpireLive from "./pages/empire-live";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -66,6 +67,7 @@ export default function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/builder" element={<Builder />} />
             <Route path="/crm" element={<Crm />} />
+            <Route path="/empire-live" element={<EmpireLive />} />
           </Routes>
         </main>
       </div>
