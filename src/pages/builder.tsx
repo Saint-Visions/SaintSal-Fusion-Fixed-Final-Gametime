@@ -73,9 +73,9 @@ export default function BuilderPage() {
             </p>
             <p className="text-gray-400 text-sm">
               This space powers SaintSal™ — the AI agent and digital executor
-              for Saint Vision Technologies. Every visual component is wired to
-              live systems: CRM sync, Supabase auth, GPT routing, Stripe
-              billing, Azure functions.
+              for your empire. Every visual component is wired to live systems:
+              CRM sync, Supabase auth, GPT routing, Stripe billing, Azure
+              functions.
             </p>
             <div className="mt-8 p-4 bg-gold/10 rounded-xl border border-gold/20">
               <p className="text-gold font-semibold">

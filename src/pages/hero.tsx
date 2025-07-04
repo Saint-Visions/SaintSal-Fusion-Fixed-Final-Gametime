@@ -995,7 +995,7 @@ export default function Hero() {
                 flexWrap: "wrap",
               }}
             >
-              <span>© 2025 Saint Vision Technologies™</span>
+              <span>© 2025 SaintSal™ Empire</span>
               <span>Patent #10,290,222</span>
             </div>
           </div>
@@ -1027,24 +1027,24 @@ export default function Hero() {
           0%, 100% { transform: translateY(0px); }
           50% { transform: translateY(-20px); }
         }
-        
+
         @keyframes spin {
           from { transform: rotate(0deg); }
           to { transform: rotate(360deg); }
         }
-        
+
         @keyframes pulse {
           0%, 100% { transform: scale(1); }
           50% { transform: scale(1.05); }
         }
-        
+
         @keyframes bounce {
           0%, 20%, 53%, 80%, 100% { transform: translateY(0); }
           40%, 43% { transform: translateY(-10px); }
           70% { transform: translateY(-5px); }
           90% { transform: translateY(-2px); }
         }
-        
+
         @keyframes fadeInUp {
           from {
             opacity: 0;

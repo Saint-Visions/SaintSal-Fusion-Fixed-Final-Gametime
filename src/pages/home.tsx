@@ -7,7 +7,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative empire-gradient pt-20 pb-32 px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="hero-text mb-8 leading-tight">SAINT VISION AI</h1>
+          <h1 className="hero-text mb-8 leading-tight">SaintSal™ EMPIRE</h1>
           <p className="text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
             The future of AI-powered business intelligence. Where vision meets
             execution. Where data becomes destiny.
