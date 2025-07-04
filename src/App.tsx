@@ -35,9 +35,10 @@ export default function App() {
     }
   }, [isLoading]);
 
-  if (isLoading) {
-    return <Loading onComplete={() => setIsLoading(false)} />;
-  }
+  // Temporarily disabled for Builder.io editing
+  // if (isLoading) {
+  //   return <Loading onComplete={() => setIsLoading(false)} />;
+  // }
 
   return (
     <>
