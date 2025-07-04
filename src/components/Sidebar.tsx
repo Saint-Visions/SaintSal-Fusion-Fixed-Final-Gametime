@@ -19,7 +19,7 @@ export default function Sidebar() {
     <aside className="w-80 min-h-screen empire-gradient border-r border-gold/20 flex flex-col">
       {/* Brand Header */}
       <div className="p-8 border-b border-gold/20">
-        <Link to="/" className="block">
+        <Link to="/" className="block" style={{ textDecoration: "none" }}>
           <h1 className="text-2xl font-black text-gold mb-2">SaintSal™</h1>
           <p className="text-sm text-gray-400 font-medium">EMPIRE</p>
         </Link>
@@ -28,12 +28,13 @@ export default function Sidebar() {
       {/* Navigation */}
       <nav className="flex-1 p-6 space-y-2">
         {navItems.map((item) => {
-          const isActive = location.pathname === item.path;
+          const isCurrentActive = location.pathname === item.path;
           return (
             <Link
               key={item.path}
               to={item.path}
-              className={`nav-link ${isActive ? "active" : ""}`}
+              className={`nav-link ${isCurrentActive ? "active" : ""}`}
+              style={{ textDecoration: "none" }}
             >
               <span className="text-xl">{item.icon}</span>
               <span>{item.label}</span>
@@ -50,6 +51,7 @@ export default function Sidebar() {
           <Link
             to="/crm"
             className="text-xs bg-gold/20 text-gold px-3 py-2 rounded-lg hover:bg-gold/30 transition-all"
+            style={{ textDecoration: "none" }}
           >
             Explore Partners
           </Link>
