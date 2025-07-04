@@ -9,14 +9,18 @@ const FigmaSidebar = () => {
   };
 
   const navItems = [
-    { label: "Dashboard", path: "/" },
-    { label: "AI Chat 🤖", path: "/console" },
-    { label: "Business 📊", path: "/operations" },
-    { label: "Notes ✍️", path: "/notes" },
-    { label: "Tools 🛠️", path: "/tools" },
+    { label: "Main Dashboard", path: "/" },
+    { label: "AI Companion 🧠", path: "/console" },
+    { label: "My Business 📁", path: "/operations" },
+    { label: "Sticky Notes ✍️", path: "/notes" },
+    { label: "AI Tools 🛠️", path: "/tools" },
+    { label: "Image Generator 🤖", path: "/generator" },
+    { label: "SVG Launchpad 🚀", path: "/launchpad" },
     { label: "PartnerTech CRM", path: "/partnertech" },
-    { label: "Pricing 💎", path: "/upgrade" },
-    { label: "Settings ⚙️", path: "/account" },
+    { label: "Client Portal 🏟️", path: "/portal" },
+    { label: "Upgrade Tier ⚡️", path: "/upgrade" },
+    { label: "My Account 💫", path: "/account" },
+    { label: "Logout 👀", path: "/logout" },
   ];
 
   return (
