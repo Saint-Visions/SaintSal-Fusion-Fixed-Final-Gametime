@@ -51,40 +51,6 @@ const FigmaSidebar = () => {
           "0 30px 60px -12px rgba(255, 215, 0, 0.4), inset 0 1px 0 rgba(255, 215, 0, 0.15)",
       }}
     >
-      {/* Premium Background Effects */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div
-          className="absolute w-3 h-3 rounded-full animate-pulse"
-          style={{
-            background: "radial-gradient(circle, #FFD700, transparent)",
-            top: "15%",
-            left: "8%",
-            animationDelay: "0s",
-            opacity: 0.4,
-          }}
-        />
-        <div
-          className="absolute w-2 h-2 rounded-full animate-pulse"
-          style={{
-            background: "radial-gradient(circle, #FFA500, transparent)",
-            top: "45%",
-            right: "12%",
-            animationDelay: "1.5s",
-            opacity: 0.3,
-          }}
-        />
-        <div
-          className="absolute w-1.5 h-1.5 rounded-full animate-pulse"
-          style={{
-            background: "radial-gradient(circle, #FFD700, transparent)",
-            bottom: "25%",
-            left: "15%",
-            animationDelay: "3s",
-            opacity: 0.5,
-          }}
-        />
-      </div>
-
       {/* Empire Header */}
       <div
         className="relative z-10 p-6 border-b"
