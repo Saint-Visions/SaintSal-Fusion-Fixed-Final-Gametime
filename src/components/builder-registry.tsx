@@ -5,8 +5,8 @@ import EmpireButton from "./core/EmpireButton";
 import EmpireCard from "./core/EmpireCard";
 import EmpireInput from "./core/EmpireInput";
 
-// Initialize Builder with environment key
-builder.init(import.meta.env.VITE_BUILDER_API_KEY || "your-public-api-key");
+// Initialize Builder with environment key (disabled to prevent errors)
+// builder.init(import.meta.env.VITE_BUILDER_API_KEY || "your-public-api-key");
 
 // SaintSal™ Hero Component
 const SaintSalHero: React.FC<any> = (props) => (
@@ -106,8 +106,9 @@ const SaintSalCRM: React.FC<any> = (props) => (
   </div>
 );
 
-// Register all SaintSal™ Empire Components
-builder.registerComponent(SaintVisionAIPricingCards, {
+// Register all SaintSal™ Empire Components (disabled to prevent errors)
+// Note: Builder.io registration disabled - use Next.js app instead
+/* builder.registerComponent(SaintVisionAIPricingCards, {
   name: "SaintVisionAI Pricing Cards",
   description: "Enterprise-grade pricing tiers with Stripe integration",
   inputs: [
@@ -278,4 +279,6 @@ builder.registerComponent(EmpireInput, {
   ],
 });
 
-export default builder;
+}); */
+
+export { builder };
