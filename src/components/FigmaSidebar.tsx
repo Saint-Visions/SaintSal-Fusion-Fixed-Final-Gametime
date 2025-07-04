@@ -309,15 +309,21 @@ const FigmaSidebar = () => {
           }}
         >
           <div
-            className="w-14 h-14 rounded-2xl flex items-center justify-center text-base font-black relative overflow-hidden"
+            className="w-14 h-14 rounded-2xl flex items-center justify-center relative overflow-hidden"
             style={{
               background: "linear-gradient(135deg, #FFD700, #FFA500)",
-              color: "#000000",
               boxShadow: "0 6px 16px rgba(255, 215, 0, 0.5)",
+              padding: "4px",
             }}
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
-            SG
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fbf76899949f24dcbac086b9cfa7365a4?format=webp&width=800"
+              alt="SaintSal Logo"
+              className="w-full h-full object-contain rounded-xl"
+              style={{
+                filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.3))",
+              }}
+            />
           </div>
           <div className="flex-1 min-w-0">
             <div
