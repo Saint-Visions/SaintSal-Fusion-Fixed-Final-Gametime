@@ -17,43 +17,73 @@ export default function PartnerTech() {
         position: "relative",
       }}
     >
-      {/* Circuit Brain Logo */}
+      {/* Premium AI Lab Overlay */}
       <div
         style={{
-          width: "120px",
-          height: "120px",
-          background: "linear-gradient(135deg, #FFC700 0%, #FFD700 100%)",
-          borderRadius: "1rem",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          marginBottom: "1rem",
-          position: "relative",
-          boxShadow: "0 0 30px rgba(255, 199, 0, 0.3)",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: "linear-gradient(145deg, rgba(0,0,0,0.3) 0%, rgba(10,10,10,0.5) 50%, rgba(0,0,0,0.7) 100%)",
+          backdropFilter: "blur(1px)",
+          zIndex: 1,
         }}
-      >
+      />
+
+      {/* Content Container */}
+      <div style={{ position: "relative", zIndex: 2, width: "100%" }}>
+        {/* Premium Logo */}
         <div
           style={{
-            fontSize: "3rem",
-            fontWeight: "900",
-            color: "#000000",
+            width: "140px",
+            height: "140px",
+            background: "linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%)",
+            borderRadius: "2rem",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            marginBottom: "1.5rem",
+            position: "relative",
+            boxShadow: "0 20px 40px rgba(255, 215, 0, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.2)",
+            border: "3px solid rgba(255, 215, 0, 0.3)",
+            margin: "0 auto 1.5rem auto",
           }}
         >
-          Sv
+          <div
+            style={{
+              fontSize: "3.5rem",
+              fontWeight: "900",
+              color: "#000000",
+              textShadow: "0 2px 4px rgba(0,0,0,0.3)",
+            }}
+          >
+            Sv
+          </div>
+          {/* Premium circuit effect */}
+          <div
+            style={{
+              position: "absolute",
+              top: "15px",
+              left: "15px",
+              right: "15px",
+              bottom: "15px",
+              border: "3px solid rgba(0,0,0,0.2)",
+              borderRadius: "1rem",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              top: "25px",
+              left: "25px",
+              right: "25px",
+              bottom: "25px",
+              border: "2px solid rgba(0,0,0,0.1)",
+              borderRadius: "0.75rem",
+            }}
+          />
         </div>
-        {/* Circuit lines */}
-        <div
-          style={{
-            position: "absolute",
-            top: "10px",
-            left: "10px",
-            right: "10px",
-            bottom: "10px",
-            border: "2px solid rgba(0,0,0,0.2)",
-            borderRadius: "0.5rem",
-          }}
-        />
-      </div>
 
       <div
         style={{
