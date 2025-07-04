@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 import "./builder-registry";
+import "./utils/fontFix.js";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

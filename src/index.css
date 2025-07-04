@@ -59,6 +59,30 @@ select {
   --tw-text-opacity: 1;
 }
 
+/* Nuclear option: Override ALL Times font */
+[style*="Times"],
+[style*="times"],
+div[style*="fontFamily"],
+span[style*="fontFamily"],
+p[style*="fontFamily"] {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif !important;
+}
+
+/* Builder.io specific overrides */
+.builder-block,
+.builder-component,
+.builder-element {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif !important;
+}
+
 h1,
 h2,
 h3,
