@@ -5,13 +5,14 @@ export default function Sidebar() {
   const location = useLocation();
 
   const navItems = [
-    { path: "/", label: "Home", icon: "🏠" },
-    { path: "/dashboard", label: "Dashboard", icon: "📊" },
-    { path: "/chat", label: "AI Chat", icon: "💬" },
-    { path: "/builder", label: "Builder", icon: "🚀" },
+    { path: "/", label: "Start Cookin", icon: "🔥" },
+    { path: "/operations", label: "Operations", icon: "📊" },
+    { path: "/console", label: "AI Console", icon: "🤖" },
+    { path: "/partnertech", label: "PartnerTech.AI", icon: "🚀" },
     { path: "/crm", label: "CRM Tools", icon: "👥" },
     { path: "/pricing", label: "Pricing", icon: "💎" },
-    { path: "/upgrade", label: "Upgrade", icon: "⚡" },
+    { path: "/setup", label: "Setup", icon: "⚙️" },
+    { path: "/login", label: "Sign In", icon: "🔑" },
   ];
 
   return (
