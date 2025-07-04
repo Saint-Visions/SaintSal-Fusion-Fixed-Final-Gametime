@@ -248,7 +248,7 @@ Builder.registerComponent(EmpireCard, {
   ],
 });
 
-Builder.registerComponent(EmpireInput, {
+builder.registerComponent(EmpireInput, {
   name: "Empire Input",
   description: "SaintSal™ branded input field with variants",
   inputs: [
