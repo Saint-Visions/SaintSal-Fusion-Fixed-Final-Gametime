@@ -311,9 +311,12 @@ const FigmaSidebar = () => {
           }}
         >
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Ff12c28f6f86b4411952404af1faa0443?format=webp&width=800"
+            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F78d52a90ab9b43068c7d69b54e2111d6?format=webp&width=800"
             alt="SaintSal Logo"
             className="w-14 h-14 object-contain"
+            style={{
+              filter: "drop-shadow(0 4px 12px rgba(255, 215, 0, 0.4))",
+            }}
           />
           <div className="flex-1 min-w-0">
             <div
