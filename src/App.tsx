@@ -92,6 +92,17 @@ export default function App() {
           onPermissionGranted={() => setShowNotificationPrompt(false)}
         />
       )}
+
+      {showInstallPrompt && (
+        <AIEmpireInstallPrompt
+          onClose={() => setShowInstallPrompt(false)}
+          onInstall={() => {
+            setShowInstallPrompt(false);
+            // PWA install logic would go here
+            console.log("Installing SaintSal Empire...");
+          }}
+        />
+      )}
     </>
   );
 }
