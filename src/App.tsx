@@ -21,6 +21,7 @@ import Dashboard from "./pages/dashboard";
 import Builder from "./pages/builder";
 import Crm from "./pages/crm";
 import EmpireLive from "./pages/empire-live";
+import TestHome from "./pages/test-home";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
