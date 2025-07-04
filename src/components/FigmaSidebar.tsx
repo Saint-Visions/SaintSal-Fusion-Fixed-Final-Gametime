@@ -72,7 +72,7 @@ const FigmaSidebar = () => {
               }}
             >
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F237d88fcc7a742b8a495fce39e7a093b?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F33cf43dbeaeb4dd2b0f5d9bb7363e528?format=webp&width=800"
                 alt="SaintSal Empire Logo"
                 className="w-14 h-14 object-contain rounded-xl"
                 style={{
@@ -265,7 +265,7 @@ const FigmaSidebar = () => {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              ���� ASCEND TO EMPIRE ELITE
+              👑 ASCEND TO EMPIRE ELITE
             </div>
             <div
               className="text-xs font-semibold leading-relaxed"
