@@ -3,17 +3,18 @@ export default function PartnerTech() {
     <div
       style={{
         minHeight: "100vh",
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F00b1e16606ad4b05a57c2810666c63fa?format=webp&width=800')`,
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fa0de47a13f81485185ab52961085693d?format=webp&width=800')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         color: "#ffffff",
         fontFamily: "Inter, system-ui, sans-serif",
-        padding: "3rem 1rem",
+        padding: "2rem 1rem",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
+        position: "relative",
       }}
     >
       {/* Circuit Brain Logo */}
