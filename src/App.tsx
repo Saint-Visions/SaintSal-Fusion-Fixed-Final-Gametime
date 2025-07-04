@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import EmpireSidebar from "./components/EmpireSidebar";
+import ProfessionalSidebar from "./components/ProfessionalSidebar";
 import Loading from "./components/loading";
 import PushNotificationPrompt from "./components/PushNotificationPrompt";
 import FontOverride from "./components/FontOverride";
@@ -85,8 +85,8 @@ export default function App() {
         <Route
           path="/*"
           element={
-            <div className="flex min-h-screen w-full bg-black text-white font-sans">
-              <EmpireSidebar />
+            <div className="flex min-h-screen w-full bg-white text-gray-900 font-sans">
+              <ProfessionalSidebar />
               <main
                 className="flex-1 overflow-auto"
                 style={{
