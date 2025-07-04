@@ -194,7 +194,7 @@ Builder.registerComponent(SaintSalCRM, {
 });
 
 // Register Core Empire Components
-builder.registerComponent(EmpireButton, {
+Builder.registerComponent(EmpireButton, {
   name: "Empire Button",
   description: "SaintSal™ branded button with animations and variants",
   inputs: [
@@ -224,7 +224,7 @@ builder.registerComponent(EmpireButton, {
   ],
 });
 
-builder.registerComponent(EmpireCard, {
+Builder.registerComponent(EmpireCard, {
   name: "Empire Card",
   description: "SaintSal™ branded card container with variants",
   inputs: [
@@ -248,7 +248,7 @@ builder.registerComponent(EmpireCard, {
   ],
 });
 
-builder.registerComponent(EmpireInput, {
+Builder.registerComponent(EmpireInput, {
   name: "Empire Input",
   description: "SaintSal™ branded input field with variants",
   inputs: [
@@ -278,4 +278,4 @@ builder.registerComponent(EmpireInput, {
   ],
 });
 
-export default builder;
+export default Builder;
