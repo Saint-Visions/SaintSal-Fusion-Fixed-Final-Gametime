@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import Sidebar from "./components/Sidebar";
+import FigmaSidebar from "./components/FigmaSidebar";
 import Loading from "./components/loading";
 import PushNotificationPrompt from "./components/PushNotificationPrompt";
 import Home from "./pages/home";
@@ -43,7 +43,7 @@ export default function App() {
   return (
     <>
       <div className="flex min-h-screen w-full bg-black text-white font-sans">
-        <Sidebar />
+        <FigmaSidebar />
         <main className="flex-1 overflow-auto bg-black">
           <Routes>
             <Route path="/" element={<Hero />} />
