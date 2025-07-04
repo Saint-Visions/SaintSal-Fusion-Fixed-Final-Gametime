@@ -63,11 +63,25 @@ const FigmaSidebar = () => {
       >
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-3">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fd419802543f244e1809a598728f3f1f7?format=webp&width=800"
-              alt="SaintSal Empire Logo"
-              className="w-14 h-14 object-contain rounded-xl"
-            />
+            <div
+              className="w-14 h-14 rounded-xl flex items-center justify-center relative overflow-hidden"
+              style={{
+                background:
+                  "linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 165, 0, 0.05))",
+                border: "2px solid rgba(255, 215, 0, 0.3)",
+                boxShadow:
+                  "0 8px 25px rgba(255, 215, 0, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.1)",
+              }}
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fd419802543f244e1809a598728f3f1f7?format=webp&width=800"
+                alt="SaintSal Empire Logo"
+                className="w-12 h-12 object-contain"
+                style={{
+                  filter: "drop-shadow(0 4px 12px rgba(255, 215, 0, 0.6))",
+                }}
+              />
+            </div>
             <div>
               <h1
                 className="text-xl font-black tracking-tight leading-tight"
