@@ -47,7 +47,7 @@ const FigmaSidebar = () => {
           />
           <div>
             <h1
-              className="text-2xl font-bold tracking-tight"
+              className="text-lg font-bold tracking-tight"
               style={{
                 color: "#FDFFDC",
                 fontFamily:
@@ -55,7 +55,7 @@ const FigmaSidebar = () => {
                 fontWeight: 700,
               }}
             >
-              SaintSal™
+              SaintVisionAI.com
             </h1>
           </div>
         </div>
