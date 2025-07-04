@@ -4,20 +4,25 @@ import { Link, useLocation } from "react-router-dom";
 const EmpireSidebar = () => {
   const location = useLocation();
 
+  // User status - you can make this dynamic later
+  const isProUser = false; // Change to true for pro users
+  const scriptLevel = "Level 3"; // Dynamic script level
+  const empireMode = true; // Dynamic empire mode status
+
   const isActive = (path: string) => {
     return location.pathname === path;
   };
 
   const mainNavItems = [
-    { label: "🏛️ Empire Command Center", path: "/dashboard", icon: "🏛️" },
-    { label: "🧠 AI Saint Companion", path: "/console", icon: "🧠" },
-    { label: "📊 Business Operations", path: "/operations", icon: "📊" },
-    { label: "📝 Sacred Knowledge", path: "/notes", icon: "📝" },
-    { label: "⚡ AI Power Arsenal", path: "/tools", icon: "⚡" },
-    { label: "🎨 Vision Generator", path: "/generator", icon: "🎨" },
-    { label: "🤝 PartnerTech.ai Hub", path: "/partnertech", icon: "🤝" },
-    { label: "🚪 Client Gateway", path: "/portal", icon: "🚪" },
-    { label: "👑 Empire Profile", path: "/account", icon: "👑" },
+    { label: "Empire Command Center", path: "/dashboard", icon: "🏛️" },
+    { label: "AI Saint Companion", path: "/console", icon: "🧠" },
+    { label: "Business Operations", path: "/operations", icon: "📊" },
+    { label: "Sacred Knowledge", path: "/notes", icon: "📝" },
+    { label: "AI Power Arsenal", path: "/tools", icon: "⚡" },
+    { label: "Vision Generator", path: "/generator", icon: "🎨" },
+    { label: "PartnerTech.ai Hub", path: "/partnertech", icon: "🤝" },
+    { label: "Client Gateway", path: "/portal", icon: "🚪" },
+    { label: "Empire Profile", path: "/account", icon: "👑" },
   ];
 
   const empireLinks = [
@@ -53,6 +58,7 @@ const EmpireSidebar = () => {
           "0 25px 50px rgba(0, 0, 0, 0.8), inset 0 1px 2px rgba(255, 215, 0, 0.1)",
       }}
     >
+      {/* Circuit Background Pattern */}
       <div
         className="absolute inset-0 opacity-5"
         style={{
@@ -60,13 +66,31 @@ const EmpireSidebar = () => {
         }}
       />
 
-      <div className="absolute top-3 right-3">
-        <div className="px-2 py-1 text-xs font-bold rounded-lg animate-pulse">
-          FREE 🔥
+      {/* Empire Mode Status - Top Right */}
+      {empireMode && (
+        <div className="absolute top-3 right-3 flex items-center gap-2">
+          <div
+            className="w-3 h-3 rounded-full animate-pulse"
+            style={{
+              background: "#22C55E",
+              boxShadow: "0 0 12px #22C55E",
+            }}
+          />
+          <div
+            className="px-2 py-1 text-xs font-bold rounded-lg"
+            style={{
+              background: "rgba(34, 197, 94, 0.2)",
+              color: "#22C55E",
+              border: "1px solid rgba(34, 197, 94, 0.4)",
+            }}
+          >
+            EMPIRE MODE
+          </div>
         </div>
-      </div>
+      )}
 
-      <div className="flex items-center gap-3 mb-4 pr-12 p-6 relative z-10">
+      {/* Main Header Content */}
+      <div className="flex items-center gap-3 mb-6 p-6 relative z-10">
         <img
           src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F94f9caa020024caeb9b1c197e1a02d2d?format=webp&width=800"
           alt="SaintVisionAI Logo"
@@ -101,7 +125,8 @@ const EmpireSidebar = () => {
         </div>
       </div>
 
-      <div className="relative z-10 p-4 border-b border-[#FFD700]/20">
+      {/* Empire Network Section */}
+      <div className="relative z-10 p-4 border-b border-[#FFD700]/20 mb-4">
         <h3
           className="text-sm font-bold mb-3 tracking-wide uppercase"
           style={{
@@ -162,9 +187,10 @@ const EmpireSidebar = () => {
         </div>
       </div>
 
+      {/* Main Navigation - More Spacious */}
       <div className="flex-1 p-4 overflow-y-auto relative z-10">
         <h3
-          className="text-sm font-bold mb-3 tracking-wide uppercase"
+          className="text-sm font-bold mb-4 tracking-wide uppercase"
           style={{
             color: "#FFD700",
             textShadow: "0 2px 4px rgba(255, 215, 0, 0.3)",
@@ -172,12 +198,12 @@ const EmpireSidebar = () => {
         >
           🎛️ COMMAND CENTER
         </h3>
-        <div className="space-y-2">
+        <div className="space-y-3">
           {mainNavItems.map((item, index) => (
             <Link
               key={`nav-${index}`}
               to={item.path}
-              className="group flex items-center px-4 py-3 rounded-xl transition-all duration-300 hover:scale-105"
+              className="group flex items-center px-4 py-4 rounded-xl transition-all duration-300 hover:scale-105"
               style={{
                 background: isActive(item.path)
                   ? "linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 165, 0, 0.15))"
@@ -198,7 +224,7 @@ const EmpireSidebar = () => {
               }}
             >
               <span
-                className="mr-3 text-lg transition-transform duration-300 group-hover:scale-125"
+                className="mr-4 text-lg transition-transform duration-300 group-hover:scale-125"
                 style={{
                   filter: isActive(item.path)
                     ? "drop-shadow(0 2px 4px rgba(255, 215, 0, 0.6))"
@@ -207,9 +233,7 @@ const EmpireSidebar = () => {
               >
                 {item.icon}
               </span>
-              <span className="font-semibold tracking-wide">
-                {item.label.replace(item.icon + " ", "")}
-              </span>
+              <span className="font-semibold tracking-wide">{item.label}</span>
               {isActive(item.path) && (
                 <div
                   className="ml-auto w-2.5 h-2.5 rounded-full animate-pulse"
@@ -224,58 +248,33 @@ const EmpireSidebar = () => {
         </div>
       </div>
 
+      {/* User Profile Section - Clean & Easy to See */}
       <div className="p-5 relative z-10">
-        <div
-          className="p-5 rounded-2xl mb-4"
-          style={{
-            background:
-              "linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 165, 0, 0.1))",
-            border: "3px solid rgba(255, 215, 0, 0.4)",
-            boxShadow: "0 16px 40px rgba(255, 215, 0, 0.2)",
-          }}
-        >
-          <div className="text-center mb-4">
-            <div
-              className="text-lg font-black mb-2"
+        {/* Unlock Empire Button for Non-Pro Users */}
+        {!isProUser && (
+          <div className="mb-4">
+            <Link
+              to="/upgrade"
+              className="flex items-center justify-center w-full py-4 rounded-2xl font-black transition-all duration-300 hover:scale-105 group"
               style={{
-                background: "linear-gradient(135deg, #FFD700, #FFA500)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
+                background:
+                  "linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%)",
+                color: "#000000",
+                fontSize: "15px",
+                textDecoration: "none",
+                boxShadow:
+                  "0 12px 30px rgba(255, 215, 0, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.2)",
+                border: "2px solid rgba(255, 255, 255, 0.1)",
               }}
             >
-              👑 ASCEND TO EMPIRE ELITE
-            </div>
-            <div
-              className="text-xs font-semibold leading-relaxed"
-              style={{
-                color: "#A1A1AA",
-                lineHeight: "1.5",
-              }}
-            >
-              Unlock unlimited AI power, premium features, and exclusive access
-              to the Saint Empire network
-            </div>
+              <span className="mr-2 group-hover:animate-bounce">👑</span>
+              UNLOCK EMPIRE
+              <span className="ml-2 group-hover:animate-bounce">🚀</span>
+            </Link>
           </div>
-          <Link
-            to="/upgrade"
-            className="flex items-center justify-center w-full py-4 rounded-2xl font-black transition-all duration-300 hover:scale-105 group"
-            style={{
-              background:
-                "linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%)",
-              color: "#000000",
-              fontSize: "15px",
-              textDecoration: "none",
-              boxShadow:
-                "0 12px 30px rgba(255, 215, 0, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.2)",
-              border: "2px solid rgba(255, 255, 255, 0.1)",
-            }}
-          >
-            <span className="mr-2 group-hover:animate-bounce">👑</span>
-            UNLOCK EMPIRE POWER
-            <span className="ml-2 group-hover:animate-bounce">🚀</span>
-          </Link>
-        </div>
+        )}
 
+        {/* User Profile Card */}
         <div
           className="flex items-center gap-4 p-4 rounded-2xl"
           style={{
@@ -295,7 +294,7 @@ const EmpireSidebar = () => {
           />
           <div className="flex-1 min-w-0">
             <div
-              className="text-sm font-black"
+              className="text-sm font-black mb-1"
               style={{
                 color: "#FDFFDC",
                 textShadow: "0 2px 4px rgba(0, 0, 0, 0.5)",
@@ -305,7 +304,7 @@ const EmpireSidebar = () => {
               Saint Gottaguy
             </div>
             <div
-              className="text-xs font-bold tracking-wide"
+              className="text-xs font-bold tracking-wide mb-2"
               style={{
                 background: "linear-gradient(135deg, #FFD700, #FFA500)",
                 WebkitBackgroundClip: "text",
@@ -313,6 +312,17 @@ const EmpireSidebar = () => {
               }}
             >
               EMPIRE FOUNDER & CEO 👑
+            </div>
+            {/* Script Level */}
+            <div
+              className="text-xs font-semibold px-2 py-1 rounded-lg inline-block"
+              style={{
+                background: "rgba(34, 197, 94, 0.2)",
+                color: "#22C55E",
+                border: "1px solid rgba(34, 197, 94, 0.4)",
+              }}
+            >
+              {scriptLevel}
             </div>
           </div>
           <Link
