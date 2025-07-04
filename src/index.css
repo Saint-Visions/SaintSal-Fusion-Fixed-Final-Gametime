@@ -336,14 +336,35 @@ aside nav a.active {
 }
 
 @layer components {
-  /* Enhanced Empire Components */
+  /* SaintSal™ Premium Components */
   .empire-gradient {
     background: linear-gradient(
       135deg,
-      var(--empire-charcoal) 0%,
-      var(--empire-light) 50%,
-      var(--empire-charcoal) 100%
+      var(--saintsal-charcoal) 0%,
+      var(--saintsal-light) 50%,
+      var(--saintsal-charcoal) 100%
     );
+  }
+
+  .saintsal-gradient {
+    background: linear-gradient(
+      135deg,
+      var(--saintsal-charcoal) 0%,
+      var(--saintsal-light) 30%,
+      var(--saintsal-charcoal) 100%
+    );
+  }
+
+  .gold-text-gradient {
+    background: linear-gradient(
+      135deg,
+      var(--saintsal-gold) 0%,
+      #fde68a 50%,
+      var(--saintsal-gold) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .gold-glow {
