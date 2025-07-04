@@ -61,7 +61,7 @@ export default function Loading({ onComplete }: LoadingProps) {
         alignItems: "center",
         justifyContent: "center",
         color: "#ffffff",
-        fontFamily: "Inter, system-ui, sans-serif",
+        fontFamily: "Inter, system-ui, sans-serif !important",
         zIndex: 9999,
       }}
     >
@@ -221,16 +221,20 @@ export default function Loading({ onComplete }: LoadingProps) {
 
       {/* CSS Animations */}
       <style>{`
+        * {
+          font-family: "Inter", system-ui, -apple-system, sans-serif !important;
+        }
+
         @keyframes spin {
           from { transform: rotate(0deg); }
           to { transform: rotate(360deg); }
         }
-        
+
         @keyframes float {
           0%, 100% { transform: translateY(0px); }
           50% { transform: translateY(-10px); }
         }
-        
+
         @keyframes pulse {
           0%, 100% { opacity: 1; }
           50% { opacity: 0.7; }
