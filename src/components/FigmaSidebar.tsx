@@ -265,7 +265,7 @@ const FigmaSidebar = () => {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              👑 ASCEND TO EMPIRE ELITE
+              ���� ASCEND TO EMPIRE ELITE
             </div>
             <div
               className="text-xs font-semibold leading-relaxed"
@@ -317,7 +317,7 @@ const FigmaSidebar = () => {
             }}
           >
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fbf76899949f24dcbac086b9cfa7365a4?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F237d88fcc7a742b8a495fce39e7a093b?format=webp&width=800"
               alt="SaintSal Logo"
               className="w-full h-full object-contain rounded-xl"
               style={{
