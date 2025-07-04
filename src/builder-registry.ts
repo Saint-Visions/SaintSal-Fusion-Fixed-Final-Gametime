@@ -18,6 +18,9 @@ import { EmpireFeatureGrid } from "./components/sections/EmpireFeatureGrid";
 import { EmpireCTA } from "./components/sections/EmpireCTA";
 import { EmpireStats } from "./components/sections/EmpireStats";
 
+// Import Clean Sidebar
+import EmpireSidebarClean from "./components/EmpireSidebarClean";
+
 // Register Core Components
 Builder.registerComponent(EmpireButton, {
   name: "EmpireButton",
@@ -272,6 +275,12 @@ Builder.registerComponent(EmpireStats, {
     { name: "cols", type: "number", enum: [1, 2, 3, 4, 6], defaultValue: 3 },
     { name: "className", type: "string" },
   ],
+});
+
+// Register Clean Sidebar
+Builder.registerComponent(EmpireSidebarClean, {
+  name: "EmpireSidebar",
+  inputs: [],
 });
 
 // Initialize Builder.io
