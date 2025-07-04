@@ -180,7 +180,7 @@ const FigmaSidebar = () => {
         <div className="space-y-2">
           {mainNavItems.map((item, index) => (
             <Link
-              key={index}
+              key={`nav-${index}`}
               to={item.path}
               className="group flex items-center px-4 py-3 rounded-xl transition-all duration-300 hover:scale-105"
               style={{
