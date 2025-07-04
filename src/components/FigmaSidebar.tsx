@@ -311,10 +311,11 @@ const FigmaSidebar = () => {
           />
           <div className="flex-1 min-w-0">
             <div
-              className="text-base font-black truncate"
+              className="text-sm font-black"
               style={{
                 color: "#FDFFDC",
                 textShadow: "0 2px 4px rgba(0, 0, 0, 0.5)",
+                lineHeight: "1.2",
               }}
             >
               Saint Gottaguy
