@@ -9,7 +9,7 @@ interface EmpireCardProps {
   hoverable?: boolean;
 }
 
-export default function EmpireCard({
+export function EmpireCard({
   children,
   variant = "default",
   padding = "lg",
@@ -41,11 +41,11 @@ export default function EmpireCard({
   const clickableClasses = onClick ? "cursor-pointer" : "";
 
   const allClasses = `
-    ${baseClasses} 
-    ${variantClasses[variant]} 
-    ${paddingClasses[padding]} 
-    ${hoverClasses} 
-    ${clickableClasses} 
+    ${baseClasses}
+    ${variantClasses[variant]}
+    ${paddingClasses[padding]}
+    ${hoverClasses}
+    ${clickableClasses}
     ${className}
   `.trim();
 
