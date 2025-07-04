@@ -76,6 +76,7 @@ export default function App() {
           <FigmaSidebar />
           <main className="flex-1 overflow-auto bg-black">
             <Routes>
+              <Route path="/" element={<Dashboard />} />
               <Route path="/home" element={<Home />} />
               <Route path="/operations" element={<Operations />} />
               <Route path="/partnertech" element={<PartnerTech />} />
