@@ -46,82 +46,28 @@ export default function SaintSalHome() {
 
       {/* Main Content */}
       <div className="relative z-10">
-        {/* Hero Section */}
-        <section className="min-h-screen flex items-center justify-center px-4 py-20">
-          <div className="max-w-6xl mx-auto text-center">
-            {/* Central Brain/Logo */}
+        {/* Hero Section with your actual background */}
+        <section
+          className="min-h-screen flex items-center justify-center px-4 py-20 relative"
+          style={{
+            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F36e26211262e4494bf3aa95ef3d71f06?format=webp&width=800')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          {/* Dark overlay to ensure text readability */}
+          <div className="absolute inset-0 bg-black/40"></div>
+
+          <div className="max-w-6xl mx-auto text-center relative z-10">
+            {/* Your actual SaintSal logo */}
             <div className="mb-12 relative">
-              <div className="w-80 h-80 mx-auto relative">
-                {/* Circuit Brain Pattern */}
-                <svg
-                  className="w-full h-full"
-                  viewBox="0 0 320 320"
-                  fill="none"
-                >
-                  {/* Brain outline with circuits */}
-                  <path
-                    d="M160 40 C200 40 240 80 240 120 C240 140 230 160 220 180 C210 200 190 220 160 240 C130 220 110 200 100 180 C90 160 80 140 80 120 C80 80 120 40 160 40 Z"
-                    stroke="#FFD700"
-                    strokeWidth="3"
-                    fill="rgba(255, 215, 0, 0.1)"
-                  />
-
-                  {/* Internal circuit paths */}
-                  <path
-                    d="M120 100 L160 100 L180 120 L200 120"
-                    stroke="#FFD700"
-                    strokeWidth="2"
-                    fill="none"
-                  />
-                  <path
-                    d="M140 80 L160 80 L160 120 L140 140"
-                    stroke="#FFD700"
-                    strokeWidth="2"
-                    fill="none"
-                  />
-                  <path
-                    d="M180 140 L200 140 L200 180 L180 180"
-                    stroke="#FFD700"
-                    strokeWidth="2"
-                    fill="none"
-                  />
-                  <path
-                    d="M120 160 L140 160 L160 180 L180 180"
-                    stroke="#FFD700"
-                    strokeWidth="2"
-                    fill="none"
-                  />
-
-                  {/* Circuit nodes */}
-                  <circle cx="120" cy="100" r="4" fill="#FFD700" />
-                  <circle cx="160" cy="100" r="4" fill="#FFD700" />
-                  <circle cx="180" cy="120" r="4" fill="#FFD700" />
-                  <circle cx="200" cy="120" r="4" fill="#FFD700" />
-                  <circle cx="160" cy="80" r="4" fill="#FFD700" />
-                  <circle cx="140" cy="140" r="4" fill="#FFD700" />
-                  <circle cx="180" cy="140" r="4" fill="#FFD700" />
-                  <circle cx="160" cy="180" r="4" fill="#FFD700" />
-
-                  {/* Central chip */}
-                  <rect
-                    x="140"
-                    y="140"
-                    width="40"
-                    height="40"
-                    rx="8"
-                    fill="#FFD700"
-                    stroke="#000"
-                    strokeWidth="2"
-                  />
-                  <text
-                    x="160"
-                    y="165"
-                    textAnchor="middle"
-                    className="text-sm font-bold fill-black"
-                  >
-                    Sv
-                  </text>
-                </svg>
+              <div className="w-80 h-80 mx-auto relative flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fac436fc84fcc40789c93464d58a120d4?format=webp&width=800"
+                  alt="SaintSal™ Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
 
               {/* Pulsing glow effect */}
