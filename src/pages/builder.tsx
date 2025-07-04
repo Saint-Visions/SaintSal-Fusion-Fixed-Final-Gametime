@@ -1,9 +1,9 @@
-import { BuilderComponent, builder } from "@builder.io/react";
+import { BuilderComponent, Builder } from "@builder.io/react";
 import { useEffect, useState } from "react";
 import "../components/builder-registry"; // Register SaintSal™ components
 
 // Initialize Builder with SaintSal™ empire configuration
-builder.init(import.meta.env.VITE_BUILDER_API_KEY || "your-public-api-key");
+Builder.init(import.meta.env.VITE_BUILDER_API_KEY || "your-public-api-key");
 
 export default function Builder() {
   const [content, setContent] = useState<any>(null);
@@ -11,15 +11,14 @@ export default function Builder() {
 
   useEffect(() => {
     // Fetch Builder content with SaintSal™ context
-    builder
-      .get("page", {
-        url: window.location.pathname,
-        // Include user context for conditional rendering
-        userAttributes: {
-          tier: "enterprise", // Dynamic from Supabase auth
-          isAuthenticated: true,
-        },
-      })
+    Builder.get("page", {
+      url: window.location.pathname,
+      // Include user context for conditional rendering
+      userAttributes: {
+        tier: "enterprise", // Dynamic from Supabase auth
+        isAuthenticated: true,
+      },
+    })
       .toPromise()
       .then((res) => {
         setContent(res);
