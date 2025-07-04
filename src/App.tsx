@@ -38,7 +38,16 @@ export default function App() {
       const timer = setTimeout(() => {
         setShowNotificationPrompt(true);
       }, 1000);
-      return () => clearTimeout(timer);
+
+      // Show AI Empire install prompt after 3 seconds
+      const installTimer = setTimeout(() => {
+        setShowInstallPrompt(true);
+      }, 3000);
+
+      return () => {
+        clearTimeout(timer);
+        clearTimeout(installTimer);
+      };
     }
   }, [isLoading]);
 
