@@ -117,6 +117,83 @@ main p {
   margin-bottom: 1rem !important;
 }
 
+/* Empire Cards */
+.empire-card {
+  background: rgba(16, 22, 28, 0.8) !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 199, 0, 0.2) !important;
+  border-radius: 1.5rem !important;
+  padding: 1.5rem !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.empire-card:hover {
+  border-color: rgba(255, 199, 0, 0.4) !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Empire Buttons */
+.btn-empire {
+  background: #ffc700 !important;
+  color: #000000 !important;
+  padding: 1rem 2rem !important;
+  border-radius: 0.75rem !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn-empire:hover {
+  background: #fde68a !important;
+  transform: scale(1.05) !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Navigation active states */
+aside nav a.active {
+  background: rgba(255, 199, 0, 0.2) !important;
+  color: #ffc700 !important;
+  border-left: 4px solid #ffc700 !important;
+}
+
+/* Grid layouts */
+.stats-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+  gap: 1.5rem !important;
+  margin: 2rem 0 !important;
+}
+
+.stats-card {
+  background: rgba(16, 22, 28, 0.8) !important;
+  border: 1px solid rgba(255, 199, 0, 0.2) !important;
+  border-radius: 1.5rem !important;
+  padding: 1.5rem !important;
+  text-align: center !important;
+}
+
+.stats-card .number {
+  font-size: 2.5rem !important;
+  font-weight: 900 !important;
+  color: #ffc700 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.stats-card .label {
+  color: #d1d5db !important;
+  font-size: 1.125rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.stats-card .description {
+  color: #9ca3af !important;
+  font-size: 0.875rem !important;
+}
+
 @layer components {
   /* Enhanced Empire Components */
   .empire-gradient {
