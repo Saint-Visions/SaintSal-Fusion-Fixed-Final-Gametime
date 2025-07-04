@@ -80,7 +80,7 @@ const FigmaSidebar = () => {
                   textShadow: "0 4px 8px rgba(255, 215, 0, 0.4)",
                 }}
               >
-                SaintSal™
+                SaintVisionAI.com
               </h1>
               <p
                 className="text-xs font-bold tracking-widest uppercase"
