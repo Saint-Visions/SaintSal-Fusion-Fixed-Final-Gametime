@@ -1,4 +1,4 @@
-import { Content, builder } from "@builder.io/sdk-react";
+import { BuilderComponent, builder } from "@builder.io/react";
 import { useEffect, useState } from "react";
 
 // Initialize Builder with SaintSal™ empire configuration
@@ -60,7 +60,7 @@ export default function BuilderPage() {
               "Inter, system-ui, -apple-system, sans-serif !important",
           }}
         >
-          <Content
+          <BuilderComponent
             model="page"
             content={content}
             // Pass empire-level styling context
