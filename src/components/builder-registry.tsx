@@ -1,26 +1,5 @@
-// THIS FILE IS DELETED - TIMES FONT SOURCE ELIMINATED
-// Use src/builder-registry.ts instead
-
-// Initialize Builder with environment key (disabled to prevent errors)
-// builder.init(import.meta.env.VITE_BUILDER_API_KEY || "your-public-api-key");
-
-// SaintSal™ Hero Component
-const SaintSalHero: React.FC<any> = (props) => (
-  <section
-    className="relative empire-gradient pt-20 pb-32 px-8"
-    style={{
-      fontFamily: "Inter, system-ui, -apple-system, sans-serif !important",
-    }}
-  >
-    <div className="max-w-7xl mx-auto text-center">
-      <h1
-        className="hero-text mb-8 leading-tight"
-        style={{
-          fontFamily: "Inter, system-ui, -apple-system, sans-serif !important",
-        }}
-      >
-        {props.title || "SaintSal™ EMPIRE"}
-      </h1>
+// DELETED - This file has been completely removed
+// All functionality moved to src/builder-registry.ts with proper named exports
       <p className="text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
         {props.subtitle || "The future of AI-powered business intelligence."}
       </p>
