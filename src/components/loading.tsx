@@ -20,14 +20,16 @@ export default function Loading({ onComplete }: LoadingProps) {
     let progressValue = 0;
 
     const interval = setInterval(() => {
-      progressValue += Math.random() * 15 + 5;
+      progressValue += Math.random() * 20 + 10;
 
-      if (progressValue > 100) {
+      if (progressValue >= 100) {
         progressValue = 100;
+        setProgress(100);
         clearInterval(interval);
         setTimeout(() => {
           onComplete?.();
-        }, 500);
+        }, 800);
+        return;
       }
 
       setProgress(progressValue);
