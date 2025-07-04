@@ -278,4 +278,4 @@ Builder.registerComponent(EmpireInput, {
   ],
 });
 
-export default Builder;
+export default builder;
