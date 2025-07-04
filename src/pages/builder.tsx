@@ -5,7 +5,7 @@ import "../components/builder-registry"; // Register SaintSal™ components
 // Initialize Builder with SaintSal™ empire configuration
 Builder.init(import.meta.env.VITE_BUILDER_API_KEY || "your-public-api-key");
 
-export default function Builder() {
+export default function BuilderPage() {
   const [content, setContent] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
