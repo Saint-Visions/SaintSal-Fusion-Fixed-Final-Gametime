@@ -46,11 +46,11 @@ export default function SaintSalHome() {
 
       {/* Main Content */}
       <div className="relative z-10">
-        {/* Hero Section with your actual SaintVisionAI team background */}
+        {/* Hero Section with AI lab scene - handsome Italian guy and team */}
         <section
           className="min-h-screen flex items-center justify-center px-4 py-20 relative"
           style={{
-            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F70c3c192e68d414f9eeae9569714128a?format=webp&width=800')`,
+            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fa674f6888a2c4b26900cbae4e96b4b0a?format=webp&width=800')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
