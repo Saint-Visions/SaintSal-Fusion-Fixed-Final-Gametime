@@ -34,10 +34,34 @@ export default function PartnerTech() {
 
       {/* Content Container */}
       <div style={{ position: "relative", zIndex: 2, width: "100%" }}>
+        {/* Logo with transparent background */}
+        <div
+          style={{
+            width: "120px",
+            height: "120px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            marginBottom: "2rem",
+            margin: "0 auto 2rem auto",
+          }}
+        >
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F29856441de964e35a366faa6c7cd2b37?format=webp&width=800"
+            alt="Sv. Cookin' Knowledge Logo"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "contain",
+              filter: "drop-shadow(0 8px 20px rgba(255, 215, 0, 0.3))",
+            }}
+          />
+        </div>
+
         {/* Main Heading */}
         <h1
           style={{
-            fontSize: "4rem",
+            fontSize: "3rem",
             fontWeight: "900",
             background:
               "linear-gradient(135deg, #FFC700 0%, #FFD700 50%, #FFC700 100%)",
