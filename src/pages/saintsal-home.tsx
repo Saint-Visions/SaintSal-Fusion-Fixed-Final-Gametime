@@ -46,26 +46,26 @@ export default function SaintSalHome() {
 
       {/* Main Content */}
       <div className="relative z-10">
-        {/* Hero Section with your actual background */}
+        {/* Hero Section with your actual SaintVisionAI team background */}
         <section
           className="min-h-screen flex items-center justify-center px-4 py-20 relative"
           style={{
-            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F36e26211262e4494bf3aa95ef3d71f06?format=webp&width=800')`,
+            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F70c3c192e68d414f9eeae9569714128a?format=webp&width=800')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
         >
           {/* Dark overlay to ensure text readability */}
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/60"></div>
 
           <div className="max-w-6xl mx-auto text-center relative z-10">
-            {/* Your actual SaintSal logo */}
+            {/* Your actual SaintVisionAI logo */}
             <div className="mb-12 relative">
               <div className="w-80 h-80 mx-auto relative flex items-center justify-center">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fac436fc84fcc40789c93464d58a120d4?format=webp&width=800"
-                  alt="SaintSal™ Logo"
+                  alt="SaintVisionAI™ Logo"
                   className="w-full h-full object-contain"
                 />
               </div>
