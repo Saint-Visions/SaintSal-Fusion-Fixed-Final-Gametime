@@ -49,7 +49,7 @@ export default function App() {
         <FigmaSidebar />
         <main className="flex-1 overflow-auto bg-black">
           <Routes>
-            <Route path="/" element={<Hero />} />
+            <Route path="/" element={<TestHome />} />
             <Route path="/home" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
