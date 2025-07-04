@@ -438,8 +438,7 @@ export default function PartnerTech() {
           color: "#6B7280",
         }}
       >
-        © 2024 Saint Vision Technologies • Patent info 290.222 • Enterprise
-        Ready
+        © 2024 SaintSal™ Empire • Patent info 290.222 • Enterprise Ready
       </div>
     </div>
   );
