@@ -193,4 +193,89 @@ builder.registerComponent(SaintSalCRM, {
   ],
 });
 
+// Register Core Empire Components
+builder.registerComponent(EmpireButton, {
+  name: "Empire Button",
+  description: "SaintSal™ branded button with animations and variants",
+  inputs: [
+    {
+      name: "children",
+      type: "string",
+      defaultValue: "Empire Action",
+      helperText: "Button text",
+    },
+    {
+      name: "variant",
+      type: "string",
+      enum: ["primary", "secondary", "ghost"],
+      defaultValue: "primary",
+    },
+    {
+      name: "size",
+      type: "string",
+      enum: ["sm", "md", "lg", "xl"],
+      defaultValue: "md",
+    },
+    {
+      name: "href",
+      type: "string",
+      helperText: "Link URL (optional)",
+    },
+  ],
+});
+
+builder.registerComponent(EmpireCard, {
+  name: "Empire Card",
+  description: "SaintSal™ branded card container with variants",
+  inputs: [
+    {
+      name: "variant",
+      type: "string",
+      enum: ["default", "glass", "glow", "premium"],
+      defaultValue: "default",
+    },
+    {
+      name: "padding",
+      type: "string",
+      enum: ["sm", "md", "lg", "xl"],
+      defaultValue: "lg",
+    },
+    {
+      name: "hoverable",
+      type: "boolean",
+      defaultValue: false,
+    },
+  ],
+});
+
+builder.registerComponent(EmpireInput, {
+  name: "Empire Input",
+  description: "SaintSal™ branded input field with variants",
+  inputs: [
+    {
+      name: "placeholder",
+      type: "string",
+      defaultValue: "Enter empire data...",
+    },
+    {
+      name: "type",
+      type: "string",
+      enum: ["text", "email", "password", "number"],
+      defaultValue: "text",
+    },
+    {
+      name: "variant",
+      type: "string",
+      enum: ["default", "glass", "minimal"],
+      defaultValue: "default",
+    },
+    {
+      name: "size",
+      type: "string",
+      enum: ["sm", "md", "lg"],
+      defaultValue: "md",
+    },
+  ],
+});
+
 export default builder;
