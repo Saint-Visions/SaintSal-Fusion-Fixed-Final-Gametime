@@ -10,9 +10,10 @@ interface EmpireButtonProps {
   disabled?: boolean;
   icon?: React.ReactNode;
   animate?: boolean;
+  as?: "button" | "a";
 }
 
-export default function EmpireButton({
+export function EmpireButton({
   children,
   variant = "primary",
   size = "md",
@@ -22,6 +23,7 @@ export default function EmpireButton({
   disabled = false,
   icon,
   animate = true,
+  as,
 }: EmpireButtonProps) {
   const baseClasses =
     "font-semibold rounded-empire transition-all duration-300 flex items-center justify-center gap-2";
@@ -49,11 +51,11 @@ export default function EmpireButton({
     : "cursor-pointer";
 
   const allClasses = `
-    ${baseClasses} 
-    ${variantClasses[variant]} 
-    ${sizeClasses[size]} 
-    ${animateClasses} 
-    ${disabledClasses} 
+    ${baseClasses}
+    ${variantClasses[variant]}
+    ${sizeClasses[size]}
+    ${animateClasses}
+    ${disabledClasses}
     ${className}
   `.trim();
 
@@ -64,7 +66,7 @@ export default function EmpireButton({
     </>
   );
 
-  if (href && !disabled) {
+  if ((href || as === "a") && !disabled) {
     return (
       <a href={href} className={allClasses} onClick={onClick}>
         {content}
