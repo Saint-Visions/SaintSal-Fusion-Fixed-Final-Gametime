@@ -56,35 +56,49 @@ export default function App() {
   //   return <Loading onComplete={() => setIsLoading(false)} />;
   // }
 
+  const isPublicPage = ["/", "/login", "/signup"].includes(location.pathname);
+
   return (
     <>
       <FontOverride />
-      <div className="flex min-h-screen w-full bg-black text-white font-sans">
-        <FigmaSidebar />
-        <main className="flex-1 overflow-auto bg-black">
+      {isPublicPage ? (
+        // PUBLIC PAGES - Full screen, no sidebar
+        <div className="min-h-screen w-full bg-black text-white font-sans">
           <Routes>
             <Route path="/" element={<SaintSalHome />} />
-            <Route path="/home" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/operations" element={<Operations />} />
-            <Route path="/partnertech" element={<PartnerTech />} />
-            <Route path="/setup" element={<Setup />} />
-            <Route path="/settings" element={<Settings />} />
-            <Route path="/admin/logs" element={<AdminLogs />} />
-            <Route path="/admin/integrations" element={<AdminIntegrations />} />
-            <Route path="/console/settings" element={<AdminIntegrations />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/upgrade" element={<Upgrade />} />
-            <Route path="/chat" element={<Chat />} />
-            <Route path="/console" element={<Chat />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/builder" element={<Builder />} />
-            <Route path="/crm" element={<Crm />} />
-            <Route path="/empire-live" element={<EmpireLive />} />
           </Routes>
-        </main>
-      </div>
+        </div>
+      ) : (
+        // AUTH PAGES - With sidebar
+        <div className="flex min-h-screen w-full bg-black text-white font-sans">
+          <FigmaSidebar />
+          <main className="flex-1 overflow-auto bg-black">
+            <Routes>
+              <Route path="/home" element={<Home />} />
+              <Route path="/operations" element={<Operations />} />
+              <Route path="/partnertech" element={<PartnerTech />} />
+              <Route path="/setup" element={<Setup />} />
+              <Route path="/settings" element={<Settings />} />
+              <Route path="/admin/logs" element={<AdminLogs />} />
+              <Route
+                path="/admin/integrations"
+                element={<AdminIntegrations />}
+              />
+              <Route path="/console/settings" element={<AdminIntegrations />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/upgrade" element={<Upgrade />} />
+              <Route path="/chat" element={<Chat />} />
+              <Route path="/console" element={<Chat />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/builder" element={<Builder />} />
+              <Route path="/crm" element={<Crm />} />
+              <Route path="/empire-live" element={<EmpireLive />} />
+            </Routes>
+          </main>
+        </div>
+      )}
 
       {showNotificationPrompt && (
         <PushNotificationPrompt
