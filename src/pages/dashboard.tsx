@@ -31,14 +31,14 @@ export default function Dashboard() {
           {/* Enhanced Header with Authority Assets */}
           <div className="mb-12 relative">
             <div className="flex items-center gap-6 mb-6">
-              <div
-                className="w-16 h-16 rounded-xl bg-gold flex items-center justify-center"
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F4fc64208ddf14c6e898d03dab82562ec?format=webp&width=800"
+                alt="SaintSal Empire Authority"
+                className="w-16 h-16 rounded-xl"
                 style={{
                   filter: "drop-shadow(0 0 15px rgba(255, 215, 0, 0.6))",
                 }}
-              >
-                <span className="text-black font-bold text-xl">Sv.</span>
-              </div>
+              />
               <div>
                 <h1 className="text-4xl font-black text-white mb-2">
                   Command <span className="text-gold">Center</span>
@@ -64,9 +64,11 @@ export default function Dashboard() {
               className="group bg-gray-900/40 backdrop-blur-sm border border-gold/20 rounded-lg p-4 hover:border-gold/50 transition-all duration-300 hover:shadow-lg"
             >
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-gold rounded-lg flex items-center justify-center text-sm font-bold text-black">
-                  AI
-                </div>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F4fc64208ddf14c6e898d03dab82562ec?format=webp&width=800"
+                  alt="AI"
+                  className="w-8 h-8 rounded-lg"
+                />
                 <div>
                   <h3 className="text-lg font-bold text-white group-hover:text-gold transition-colors">
                     Dual AI Console
@@ -189,7 +191,7 @@ export default function Dashboard() {
                   </div>
                   <div className="flex justify-between items-center p-4 bg-green-900/20 rounded-lg border border-green-500/30">
                     <span className="text-white">Builder Platform</span>
-                    <span className="text-green-400 font-bold">�� ONLINE</span>
+                    <span className="text-green-400 font-bold">✅ ONLINE</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-green-900/20 rounded-lg border border-green-500/30">
                     <span className="text-white">CRM Integration</span>

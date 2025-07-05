@@ -49,14 +49,14 @@ export default function EmpireSidebarClean() {
         className={`bg-black text-white h-screen p-6 w-80 border-r border-gold/20 fixed lg:relative z-40 transform transition-transform ${isMobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
       >
         <div className="flex items-center gap-3 mb-8">
-          <div
-            className="w-16 h-16 bg-gold rounded-lg flex items-center justify-center"
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F4fc64208ddf14c6e898d03dab82562ec?format=webp&width=800"
+            alt="SaintSal Logo"
+            className="w-16 h-16"
             style={{
               filter: "drop-shadow(0 0 20px rgba(255, 215, 0, 0.8))",
             }}
-          >
-            <span className="text-black font-bold text-xl">Sv.</span>
-          </div>
+          />
           <div>
             <h2 className="text-xl font-bold text-gold">SaintSal™</h2>
             <p className="text-xs text-gray-400">Empire Platform</p>
