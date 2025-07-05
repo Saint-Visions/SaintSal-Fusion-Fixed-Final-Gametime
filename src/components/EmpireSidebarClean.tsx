@@ -46,14 +46,16 @@ export default function EmpireSidebarClean() {
 
       {/* Sidebar */}
       <aside
-        className={`relative bg-[#0D1117] text-white h-screen px-6 py-10 w-80 border-r border-gold/20 fixed lg:relative z-40 transform transition-transform overflow-hidden ${isMobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
+        className={`relative w-80 h-screen bg-[#0D1117] text-white px-6 py-10 overflow-hidden border-r border-gold/20 fixed lg:relative z-40 transform transition-transform ${isMobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
       >
-        {/* Cookin' Knowledge Watermark Background */}
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F33bf8d6300414c609f7ec7f4433536a6?format=webp&width=800"
-          alt=""
-          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-[120px] opacity-[0.05] pointer-events-none z-0"
-        />
+        {/* Cookin' Knowledge Watermark - Corrected Placement & Opacity */}
+        <div className="absolute inset-0 flex justify-center items-end pointer-events-none">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F33bf8d6300414c609f7ec7f4433536a6?format=webp&width=800"
+            alt=""
+            className="w-[120px] opacity-[0.03] mb-6"
+          />
+        </div>
         <div className="relative z-10 flex items-center gap-3 mb-8">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F5430f28bed284f988e7c62c0ed586ceb?format=webp&width=800"
