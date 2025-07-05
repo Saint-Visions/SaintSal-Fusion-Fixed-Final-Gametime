@@ -46,7 +46,7 @@ export default function EmpireSidebarClean() {
 
       {/* Sidebar */}
       <aside
-        className={`relative bg-[#0A0E13] text-white h-screen p-6 w-80 border-r border-gold/20 fixed lg:relative z-40 transform transition-transform overflow-hidden ${isMobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
+        className={`relative bg-[#0D1117] text-white h-screen px-6 py-10 w-80 border-r border-gold/20 fixed lg:relative z-40 transform transition-transform overflow-hidden ${isMobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
       >
         {/* Cookin' Knowledge Watermark Background */}
         <img
