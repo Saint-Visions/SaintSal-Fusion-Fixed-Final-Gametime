@@ -87,7 +87,7 @@ export default function AdminIntegrations() {
       endpoint: "/api/twilio-speech",
       config: {
         accountSid: "✓ Active",
-        authToken: "✓ Configured",
+        authentication: "✓ Configured",
         phoneNumber: "+1 (555) 123-4567",
       },
     },
