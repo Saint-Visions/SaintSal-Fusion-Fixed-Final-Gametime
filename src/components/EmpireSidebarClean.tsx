@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { SAINTAL_LOGOS } from "../lib/logos";
 
 const navLinks = [
   { label: "Main Dashboard", path: "/dashboard" },
