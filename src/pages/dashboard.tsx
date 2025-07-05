@@ -92,65 +92,67 @@ export default function Dashboard() {
 
             <Link
               to="/partnertech"
-              className="group bg-gray-900/40 backdrop-blur-sm border border-gold/20 rounded-lg p-4 hover:border-gold/50 transition-all duration-300 hover:shadow-lg"
+              className="group bg-gray-900/60 border border-gold/30 rounded-lg p-3 hover:border-gold transition-all duration-200 text-center"
             >
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-sm font-bold text-white">
-                  ⚡
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-white group-hover:text-gold transition-colors">
-                    PartnerTech.ai
-                  </h3>
-                  <p className="text-gray-400 text-sm">Lead Discovery</p>
-                </div>
+              <div className="w-6 h-6 bg-blue-600 rounded mx-auto mb-2 flex items-center justify-center text-xs">
+                ⚡
               </div>
-              <p className="text-gray-300 text-lg leading-relaxed">
-                Intent-triggered SaaS platform that executes actions, not just
-                collects data.
-              </p>
-              <div className="flex items-center gap-3 mt-6">
-                <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">
-                  ACTIVE
-                </span>
-                <span className="text-gold text-sm font-semibold">
-                  U.S. Patent 10,290,222
-                </span>
-              </div>
+              <h3 className="text-sm font-semibold text-white group-hover:text-gold">
+                PartnerTech
+              </h3>
+              <p className="text-xs text-gray-400">CRM</p>
             </Link>
 
             <Link
               to="/companion"
-              className="group bg-gray-900/40 backdrop-blur-sm border border-gold/20 rounded-lg p-4 hover:border-gold/50 transition-all duration-300 hover:shadow-lg"
+              className="group bg-gray-900/60 border border-gold/30 rounded-lg p-3 hover:border-gold transition-all duration-200 text-center"
             >
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center text-sm font-bold text-white">
-                  🤖
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-white group-hover:text-gold transition-colors">
-                    My Companion
-                  </h3>
-                  <p className="text-gray-400 text-sm">AI Assistant</p>
-                </div>
+              <div className="w-6 h-6 bg-green-600 rounded mx-auto mb-2 flex items-center justify-center text-xs">
+                🤖
               </div>
+              <h3 className="text-sm font-semibold text-white group-hover:text-gold">
+                Companion
+              </h3>
+              <p className="text-xs text-gray-400">Assistant</p>
             </Link>
 
             <Link
               to="/ai-tools"
-              className="group bg-gray-900/40 backdrop-blur-sm border border-gold/20 rounded-lg p-4 hover:border-gold/50 transition-all duration-300 hover:shadow-lg"
+              className="group bg-gray-900/60 border border-gold/30 rounded-lg p-3 hover:border-gold transition-all duration-200 text-center"
             >
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center text-sm font-bold text-white">
-                  🛠️
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-white group-hover:text-gold transition-colors">
-                    AI Tools
-                  </h3>
-                  <p className="text-gray-400 text-sm">Automation</p>
-                </div>
+              <div className="w-6 h-6 bg-purple-600 rounded mx-auto mb-2 flex items-center justify-center text-xs">
+                🛠️
               </div>
+              <h3 className="text-sm font-semibold text-white group-hover:text-gold">
+                AI Tools
+              </h3>
+              <p className="text-xs text-gray-400">Automation</p>
+            </Link>
+
+            <Link
+              to="/my-business"
+              className="group bg-gray-900/60 border border-gold/30 rounded-lg p-3 hover:border-gold transition-all duration-200 text-center"
+            >
+              <div className="w-6 h-6 bg-orange-600 rounded mx-auto mb-2 flex items-center justify-center text-xs">
+                💼
+              </div>
+              <h3 className="text-sm font-semibold text-white group-hover:text-gold">
+                Business
+              </h3>
+              <p className="text-xs text-gray-400">Analytics</p>
+            </Link>
+
+            <Link
+              to="/image-generator"
+              className="group bg-gray-900/60 border border-gold/30 rounded-lg p-3 hover:border-gold transition-all duration-200 text-center"
+            >
+              <div className="w-6 h-6 bg-pink-600 rounded mx-auto mb-2 flex items-center justify-center text-xs">
+                🎨
+              </div>
+              <h3 className="text-sm font-semibold text-white group-hover:text-gold">
+                Generator
+              </h3>
+              <p className="text-xs text-gray-400">Images</p>
             </Link>
           </div>
 
