@@ -31,15 +31,17 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-[#10161C] text-white">
       {/* Hero Section with Wall Street Background */}
-      <div className="relative bg-[url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F0cb04442c273431d870617f9f63e0177?format=webp&width=800')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 py-24 text-center px-6 sm:px-12">
-          <h1 className="text-[#FFD700] text-4xl sm:text-5xl font-bold">
-            Command Center
-          </h1>
-          <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
-            Your AI empire at a glance. Monitor, manage, scale.
-          </p>
+      <div className="relative min-h-screen bg-[url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F0cb04442c273431d870617f9f63e0177?format=webp&width=800')] bg-cover bg-center bg-fixed">
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 flex items-center justify-center min-h-screen text-center px-6 sm:px-12">
+          <div>
+            <h1 className="text-[#FFD700] text-5xl sm:text-6xl font-bold mb-6">
+              Command Center
+            </h1>
+            <p className="text-gray-200 text-xl max-w-3xl mx-auto">
+              Your AI empire at a glance. Monitor, manage, scale.
+            </p>
+          </div>
         </div>
       </div>
 
