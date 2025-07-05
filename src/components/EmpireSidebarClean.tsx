@@ -48,11 +48,12 @@ export default function EmpireSidebarClean() {
       <aside
         className={`relative w-80 h-screen text-white overflow-hidden border-r border-gold/20 fixed lg:relative z-40 transform transition-transform ${isMobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
         style={{
-          backgroundColor: "#0D1117",
+          backgroundColor: "#0D1117 !important",
           paddingLeft: "24px",
           paddingRight: "24px",
           paddingTop: "40px",
           paddingBottom: "40px",
+          background: "#0D1117",
         }}
       >
         {/* Cookin' Knowledge Watermark - Bigger & Centered */}
