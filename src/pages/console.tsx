@@ -9,7 +9,7 @@ export default function Console() {
       <div
         className="absolute inset-0 opacity-25"
         style={{
-          backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F0af8b173487f46b5bcd14fa868c21dca?format=webp&width=800")`,
+          backgroundImage: `url("https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2125")`,
           backgroundSize: "cover",
           backgroundPosition: "center top",
         }}
