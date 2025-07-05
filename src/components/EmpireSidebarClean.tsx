@@ -2,22 +2,22 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
-  { label: "Main Dashboard", path: "/dashboard", icon: "🏢" },
-  { label: "Start Cookin'", path: "/search", icon: "🔍" },
-  { label: "My Companion", path: "/companion", icon: "🤖" },
-  { label: "Dual AI Console", path: "/console", icon: "⚡" },
-  { label: "AI Tools", path: "/ai-tools", icon: "🛠️" },
-  { label: "Image Generator", path: "/image-generator", icon: "🎨" },
-  { label: "My Business", path: "/my-business", icon: "💼" },
-  { label: "Sticky Notes", path: "/sticky-notes", icon: "📝" },
-  { label: "PartnerTech.ai CRM", path: "/partnertech", icon: "⚡" },
-  { label: "Client Portal", path: "/client-portal", icon: "👥" },
-  { label: "SVG Launchpad", path: "/svg-launchpad", icon: "🚀" },
-  { label: "Feedback & Help", path: "/help", icon: "💬" },
-  { label: "SVT Institute of AI", path: "/institution", icon: "🎓" },
-  { label: "Upgrade Tier", path: "/upgrade", icon: "⭐" },
-  { label: "My Account", path: "/account", icon: "👤" },
-  { label: "Logout", path: "/logout", icon: "🚪" },
+  { label: "Main Dashboard", path: "/dashboard" },
+  { label: "Start Cookin'", path: "/search" },
+  { label: "My Companion", path: "/companion" },
+  { label: "Dual AI Console", path: "/console" },
+  { label: "AI Tools", path: "/ai-tools" },
+  { label: "Image Generator", path: "/image-generator" },
+  { label: "My Business", path: "/my-business" },
+  { label: "Sticky Notes", path: "/sticky-notes" },
+  { label: "PartnerTech.ai CRM", path: "/partnertech" },
+  { label: "Client Portal", path: "/client-portal" },
+  { label: "SVG Launchpad", path: "/svg-launchpad" },
+  { label: "Feedback & Help", path: "/help" },
+  { label: "SVT Institute of AI", path: "/institution" },
+  { label: "Upgrade Tier", path: "/upgrade" },
+  { label: "My Account", path: "/account" },
+  { label: "Logout", path: "/logout" },
 ];
 
 export default function EmpireSidebarClean() {
