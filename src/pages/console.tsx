@@ -90,89 +90,66 @@ export default function Console() {
             </div>
           </div>
 
-          {/* Executive Command Interface */}
-          <div className="bg-gradient-to-br from-gray-900/50 to-black/70 backdrop-blur-xl border-2 border-gold/30 rounded-3xl overflow-hidden shadow-2xl">
-            <div className="p-8 bg-gradient-to-r from-gray-800/80 to-gray-900/80 border-b border-gold/20">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-gold to-yellow-400 rounded-2xl flex items-center justify-center shadow-xl">
-                    <span className="text-xl font-black text-black">AI</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-white mb-1">
-                      Executive AI Console
-                    </h3>
-                    <p className="text-gray-400">
-                      Azure Cognitive + OpenAI GPT-4o Turbo
-                    </p>
-                  </div>
-                </div>
-                <div className="bg-green-500/20 border border-green-500/40 text-green-300 px-4 py-2 rounded-xl font-bold">
-                  🔹 ENTERPRISE ACTIVE
+          {/* Clean Executive Command Interface */}
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-gradient-to-br from-gray-900/30 to-black/50 backdrop-blur-xl border border-gold/20 rounded-3xl p-12">
+              {/* Welcome Message */}
+              <div className="text-center mb-12">
+                <div className="text-2xl text-white mb-6 leading-relaxed max-w-3xl mx-auto">
+                  <span className="text-gold font-semibold">
+                    Executive AI at your command.
+                  </span>
+                  Patent-protected intelligence for strategic decision making.
                 </div>
               </div>
-            </div>
 
-            <div className="p-8 min-h-[300px]">
-              <div className="bg-gradient-to-r from-gold/10 to-yellow-500/10 border border-gold/30 rounded-2xl p-6 mb-6">
-                <div className="text-white text-lg leading-relaxed">
-                  <strong className="text-gold">
-                    Welcome to your Executive AI Console.
-                  </strong>
-                  This patent-protected system combines Azure's enterprise
-                  infrastructure with OpenAI's most advanced models to deliver
-                  intelligent automation for strategic decision making.
+              {/* Executive Input */}
+              <div className="mb-8">
+                <div className="flex gap-6">
+                  <input
+                    type="text"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    placeholder="Enter strategic query or command..."
+                    className="flex-1 bg-black/30 text-white rounded-2xl px-8 py-6 border border-gold/20 focus:border-gold/50 focus:outline-none text-xl placeholder-gray-400 backdrop-blur-sm"
+                  />
+                  <button className="bg-gradient-to-r from-gold to-yellow-400 text-black px-12 py-6 rounded-2xl font-bold text-lg hover:shadow-xl hover:shadow-gold/40 transition-all duration-300 transform hover:scale-105">
+                    Execute
+                  </button>
                 </div>
               </div>
-            </div>
 
-            <div className="p-8 bg-gradient-to-r from-gray-800/50 to-gray-900/50 border-t border-gold/20">
-              <div className="flex gap-4 mb-4">
-                <input
-                  type="text"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  placeholder="Enter your executive query..."
-                  className="flex-1 bg-black/50 text-white rounded-xl px-6 py-4 border border-gold/30 focus:border-gold focus:outline-none text-lg backdrop-blur-sm"
-                />
-                <button className="bg-gradient-to-r from-gold to-yellow-400 text-black px-8 py-4 rounded-xl font-bold hover:shadow-lg hover:shadow-gold/30 transition-all duration-300">
-                  Execute ⚡
-                </button>
-              </div>
-              <div className="text-center">
-                <span className="text-gray-400 text-sm">
-                  Powered by Patent No. 10,290,222 • HACP™ Protocol
-                </span>
+              {/* Executive Status Bar */}
+              <div className="flex items-center justify-center gap-12 text-sm">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                  <span className="text-green-400 font-semibold">
+                    Azure Enterprise Live
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                  <span className="text-blue-400 font-semibold">
+                    GPT-4o Turbo Active
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-gold rounded-full"></div>
+                  <span className="text-gold font-semibold">
+                    Patent 10,290,222
+                  </span>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Executive Summary */}
-          <div className="mt-16 text-center">
-            <div className="inline-flex items-center gap-8 bg-gradient-to-r from-gray-900/60 to-black/60 backdrop-blur-xl border border-gold/20 rounded-2xl px-12 py-6">
-              <div className="text-center">
-                <div className="text-2xl font-black text-green-400 mb-1">
-                  ✅
-                </div>
-                <div className="text-white font-semibold text-sm">
-                  Enterprise Ready
-                </div>
-              </div>
-              <div className="w-px h-8 bg-gold/30"></div>
-              <div className="text-center">
-                <div className="text-2xl font-black text-blue-400 mb-1">⚡</div>
-                <div className="text-white font-semibold text-sm">
-                  Real-time Sync
-                </div>
-              </div>
-              <div className="w-px h-8 bg-gold/30"></div>
-              <div className="text-center">
-                <div className="text-2xl font-black text-gold mb-1">🏛️</div>
-                <div className="text-white font-semibold text-sm">
-                  Patent Protected
-                </div>
-              </div>
-            </div>
+          {/* Clean Authority Footer */}
+          <div className="mt-20 text-center">
+            <p className="text-gray-400 text-lg">
+              We own this space.{" "}
+              <span className="text-gold">Patent No. 10,290,222</span> ensures
+              market leadership.
+            </p>
           </div>
         </div>
       </div>
