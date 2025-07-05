@@ -145,97 +145,87 @@ export default function Console() {
             </div>
           </div>
 
-          {/* Active Chat Interface */}
-          <div className="bg-gray-900 rounded-xl border border-gray-700 overflow-hidden">
-            <div className="p-4 bg-gray-800 border-b border-gray-700">
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-gold rounded-full flex items-center justify-center text-black font-bold">
-                  {companions[currentChat as keyof typeof companions].name[0]}
+          {/* Executive Command Interface */}
+          <div className="bg-gradient-to-br from-gray-900/50 to-black/70 backdrop-blur-xl border-2 border-gold/30 rounded-3xl overflow-hidden shadow-2xl">
+            <div className="p-8 bg-gradient-to-r from-gray-800/80 to-gray-900/80 border-b border-gold/20">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-gold to-yellow-400 rounded-2xl flex items-center justify-center shadow-xl">
+                    <span className="text-xl font-black text-black">AI</span>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-white mb-1">
+                      Executive AI Console
+                    </h3>
+                    <p className="text-gray-400">
+                      Azure Cognitive + OpenAI GPT-4o Turbo
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <div className="text-white font-semibold">
-                    {companions[currentChat as keyof typeof companions].name}
-                  </div>
-                  <div className="text-gray-400 text-sm">
-                    {
-                      companions[currentChat as keyof typeof companions]
-                        .subtitle
-                    }
-                  </div>
+                <div className="bg-green-500/20 border border-green-500/40 text-green-300 px-4 py-2 rounded-xl font-bold">
+                  🔹 ENTERPRISE ACTIVE
                 </div>
               </div>
             </div>
 
-            <div className="p-6 h-96 overflow-y-auto">
-              <div className="bg-gray-800 rounded-lg p-4 mb-4 border-l-4 border-gold">
-                <div className="text-gray-300 leading-relaxed">
-                  {
-                    companions[currentChat as keyof typeof companions]
-                      .description
-                  }
+            <div className="p-8 min-h-[300px]">
+              <div className="bg-gradient-to-r from-gold/10 to-yellow-500/10 border border-gold/30 rounded-2xl p-6 mb-6">
+                <div className="text-white text-lg leading-relaxed">
+                  <strong className="text-gold">
+                    Welcome to your Executive AI Console.
+                  </strong>
+                  This patent-protected system combines Azure's enterprise
+                  infrastructure with OpenAI's most advanced models to deliver
+                  intelligent automation for strategic decision making.
                 </div>
               </div>
             </div>
 
-            <div className="p-4 bg-gray-800 border-t border-gray-700">
-              <div className="flex gap-3">
+            <div className="p-8 bg-gradient-to-r from-gray-800/50 to-gray-900/50 border-t border-gold/20">
+              <div className="flex gap-4 mb-4">
                 <input
                   type="text"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  placeholder="Ask your AI Empire Advisor anything..."
-                  className="flex-1 bg-gray-700 text-white rounded-lg px-4 py-3 border border-gray-600 focus:border-gold focus:outline-none"
+                  placeholder="Enter your executive query..."
+                  className="flex-1 bg-black/50 text-white rounded-xl px-6 py-4 border border-gold/30 focus:border-gold focus:outline-none text-lg backdrop-blur-sm"
                 />
-                <button className="bg-gold text-black px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors">
-                  Send to AI ⚡
+                <button className="bg-gradient-to-r from-gold to-yellow-400 text-black px-8 py-4 rounded-xl font-bold hover:shadow-lg hover:shadow-gold/30 transition-all duration-300">
+                  Execute ⚡
                 </button>
               </div>
-              <div className="text-center mt-3">
+              <div className="text-center">
                 <span className="text-gray-400 text-sm">
-                  Powered by SaintSal™ Dual Architecture
+                  Powered by Patent No. 10,290,222 • HACP™ Protocol
                 </span>
-                <div className="flex items-center justify-center gap-4 mt-2 text-xs">
-                  <span className="text-blue-400">🔹 GPT-4o Turbo</span>
-                  <span className="text-green-400">
-                    🔹 Azure Cognitive Search
-                  </span>
-                  <span className="text-purple-400">
-                    🔹 Enterprise Security
-                  </span>
-                  <span className="text-yellow-400">
-                    🔹 Real-time Processing
-                  </span>
-                </div>
               </div>
             </div>
           </div>
 
-          {/* Enterprise Integration Status */}
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="bg-gray-900 p-4 rounded-lg border border-green-500/30">
-              <div className="text-green-400 font-bold mb-2">
-                Enterprise-Grade AI Development Team
+          {/* Executive Summary */}
+          <div className="mt-16 text-center">
+            <div className="inline-flex items-center gap-8 bg-gradient-to-r from-gray-900/60 to-black/60 backdrop-blur-xl border border-gold/20 rounded-2xl px-12 py-6">
+              <div className="text-center">
+                <div className="text-2xl font-black text-green-400 mb-1">
+                  ✅
+                </div>
+                <div className="text-white font-semibold text-sm">
+                  Enterprise Ready
+                </div>
               </div>
-              <div className="text-gray-300 text-sm">
-                Azure OpenAI + Custom fine-tuning for SAINTSAL™ Empire
-                operations
+              <div className="w-px h-8 bg-gold/30"></div>
+              <div className="text-center">
+                <div className="text-2xl font-black text-blue-400 mb-1">⚡</div>
+                <div className="text-white font-semibold text-sm">
+                  Real-time Sync
+                </div>
               </div>
-            </div>
-            <div className="bg-gray-900 p-4 rounded-lg border border-blue-500/30">
-              <div className="text-blue-400 font-bold mb-2">
-                Real-time Integration Layer
-              </div>
-              <div className="text-gray-300 text-sm">
-                Live data sync with CRM, lead discovery, and pipeline management
-              </div>
-            </div>
-            <div className="bg-gray-900 p-4 rounded-lg border border-purple-500/30">
-              <div className="text-purple-400 font-bold mb-2">
-                Patent-Protected Architecture
-              </div>
-              <div className="text-gray-300 text-sm">
-                HACP™ Protocol ensures competitive moat and enterprise
-                compliance
+              <div className="w-px h-8 bg-gold/30"></div>
+              <div className="text-center">
+                <div className="text-2xl font-black text-gold mb-1">🏛️</div>
+                <div className="text-white font-semibold text-sm">
+                  Patent Protected
+                </div>
               </div>
             </div>
           </div>
