@@ -47,48 +47,95 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Quick Actions */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          {/* Executive Quick Access */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
             <Link
               to="/console"
-              className="empire-card hover:gold-glow transform hover:scale-105 transition-all duration-300"
+              className="group bg-gradient-to-br from-gray-900/40 to-black/60 backdrop-blur-xl border border-gold/30 rounded-3xl p-12 hover:border-gold/60 transition-all duration-500 hover:shadow-2xl hover:shadow-gold/20"
             >
-              <div className="text-3xl mb-4">💬</div>
-              <h3 className="text-lg font-bold text-gold mb-2">AI Console</h3>
-              <p className="text-gray-400 text-sm">
-                Launch intelligent conversations
+              <div className="flex items-center gap-6 mb-8">
+                <div className="w-16 h-16 bg-gradient-to-br from-gold to-yellow-400 rounded-2xl flex items-center justify-center text-2xl font-black text-black shadow-xl">
+                  AI
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-gold transition-colors">
+                    Dual AI Console
+                  </h3>
+                  <p className="text-gray-400 text-lg">
+                    Azure Cognitive + OpenAI GPT-4o Turbo
+                  </p>
+                </div>
+              </div>
+              <p className="text-gray-300 text-lg leading-relaxed">
+                Enterprise-grade AI companion for strategic decision making and
+                intelligent automation.
               </p>
-            </Link>
-
-            <Link
-              to="/builder"
-              className="empire-card hover:gold-glow transform hover:scale-105 transition-all duration-300"
-            >
-              <div className="text-3xl mb-4">🚀</div>
-              <h3 className="text-lg font-bold text-gold mb-2">Builder</h3>
-              <p className="text-gray-400 text-sm">Create dynamic layouts</p>
+              <div className="flex items-center gap-3 mt-6">
+                <span className="bg-green-500 text-black px-3 py-1 rounded-full text-sm font-bold">
+                  LIVE
+                </span>
+                <span className="text-gold text-sm font-semibold">
+                  Patent Protected
+                </span>
+              </div>
             </Link>
 
             <Link
               to="/crm"
-              className="empire-card hover:gold-glow transform hover:scale-105 transition-all duration-300"
+              className="group bg-gradient-to-br from-gray-900/40 to-black/60 backdrop-blur-xl border border-gold/30 rounded-3xl p-12 hover:border-gold/60 transition-all duration-500 hover:shadow-2xl hover:shadow-gold/20"
             >
-              <div className="text-3xl mb-4">👥</div>
-              <h3 className="text-lg font-bold text-gold mb-2">CRM Tools</h3>
-              <p className="text-gray-400 text-sm">Manage relationships</p>
-            </Link>
-
-            <Link
-              to="/upgrade"
-              className="empire-card hover:gold-glow transform hover:scale-105 transition-all duration-300"
-            >
-              <div className="text-3xl mb-4">⚡</div>
-              <h3 className="text-lg font-bold text-gold mb-2">Upgrade</h3>
-              <p className="text-gray-400 text-sm">Unlock more power</p>
+              <div className="flex items-center gap-6 mb-8">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center text-2xl font-black text-white shadow-xl">
+                  ⚡
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-gold transition-colors">
+                    PartnerTech.ai
+                  </h3>
+                  <p className="text-gray-400 text-lg">
+                    Lead Discovery & Pipeline
+                  </p>
+                </div>
+              </div>
+              <p className="text-gray-300 text-lg leading-relaxed">
+                Intent-triggered SaaS platform that executes actions, not just
+                collects data.
+              </p>
+              <div className="flex items-center gap-3 mt-6">
+                <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                  ACTIVE
+                </span>
+                <span className="text-gold text-sm font-semibold">
+                  U.S. Patent 10,290,222
+                </span>
+              </div>
             </Link>
           </div>
 
-          {/* Stats Grid */}
+          {/* Patent Authority Statement */}
+          <div className="mb-16">
+            <div className="bg-gradient-to-r from-gold/10 via-yellow-500/10 to-gold/10 border-2 border-gold/40 rounded-3xl p-8 text-center">
+              <h2 className="text-3xl font-bold text-white mb-4">
+                🏛️ We <span className="text-gold">OWN</span> This Space
+              </h2>
+              <p className="text-xl text-gray-300 mb-6 max-w-4xl mx-auto leading-relaxed">
+                Protected by{" "}
+                <strong className="text-gold">
+                  U.S. Patent No. 10,290,222
+                </strong>{" "}
+                - HACP™ Protocol. The only platform that executes intelligent
+                actions, not just conversations.
+              </p>
+              <div className="flex items-center justify-center gap-8 text-sm">
+                <span className="text-blue-400">🔹 Azure Enterprise</span>
+                <span className="text-green-400">🔹 OpenAI GPT-4o Turbo</span>
+                <span className="text-purple-400">🔹 Patent Protected</span>
+                <span className="text-gold">🔹 Market Leading</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Executive Metrics */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
               <div className="empire-card">
