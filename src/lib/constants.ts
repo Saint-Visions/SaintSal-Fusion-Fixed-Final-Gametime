@@ -1,13 +1,14 @@
-// CDN Space ID from environment variable only
-export const CDN_SPACE_ID = import.meta.env.VITE_CDN_SPACE_ID;
+// Environment configuration for SaintSal™ Empire Platform
+export const APP_CONFIG = {
+  name: "SaintSal™ Empire",
+  version: "1.0.0",
+  environment: import.meta.env.MODE || "development",
+};
 
-// Helper function to create CDN image URLs
-export const getCdnImageUrl = (assetId: string, width: number = 800) => {
-  if (!CDN_SPACE_ID) {
-    console.warn("VITE_CDN_SPACE_ID not configured, using placeholder URL");
-    return `https://via.placeholder.com/800x600/000000/FFD700?text=Configure+VITE_CDN_SPACE_ID`;
-  }
-  // Using dynamic domain construction to avoid security scanners
-  const domain = ["cdn", "builder", "io"].join(".");
-  return `https://${domain}/api/v1/image/assets%2F${CDN_SPACE_ID}%2F${assetId}?format=webp&width=${width}`;
+// Helper function for placeholder images
+export const getPlaceholderImage = (
+  width: number = 800,
+  height: number = 600,
+) => {
+  return `https://via.placeholder.com/${width}x${height}/000000/FFD700?text=SaintSal`;
 };

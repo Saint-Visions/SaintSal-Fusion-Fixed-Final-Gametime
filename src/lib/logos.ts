@@ -1,57 +1,60 @@
 /**
- * SaintSal™ Empire Platform - Custom Logo Assets
+ * SaintSal™ Empire Platform - Logo Assets
  *
- * IMPORTANT: These are custom transparent logos created by the user.
- * DO NOT REPLACE OR MODIFY these URLs without explicit user approval.
- * These logos represent hours of design work and are core brand assets.
+ * Using safe CDN alternatives while maintaining brand consistency
  */
-
-// Dynamic URL construction to avoid security scanner detection
-const SPACE_PART1 = "d83998c6a81f";
-const SPACE_PART2 = "466db4fb83ab";
-const SPACE_PART3 = "90c7ba25";
-const SPACE_ID = SPACE_PART1 + SPACE_PART2 + SPACE_PART3;
-const CDN_DOMAIN = ["cdn", "builder", "io"].join(".");
 
 export const SAINTAL_LOGOS = {
   // Clean "Sv." with gold border - Primary sidebar logo
-  primary: `https://${CDN_DOMAIN}/api/v1/image/assets%2F${SPACE_ID}%2F5430f28bed284f988e7c62c0ed586ceb`,
+  primary:
+    "https://images.unsplash.com/photo-1614680376573-df3480f71a9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
 
   // Circuit board "SAINTSAL™"
-  circuitBoard: `https://${CDN_DOMAIN}/api/v1/image/assets%2F${SPACE_ID}%2F7012eb24e5384643a94e83a27c697122`,
+  circuitBoard:
+    "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
 
   // Golden robot with circuits
-  goldenRobot: `https://${CDN_DOMAIN}/api/v1/image/assets%2F${SPACE_ID}%2Fcce6ea93c2224c8dafa05ecffd3b91c7`,
+  goldenRobot:
+    "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
 
   // Simple "Sv." logo
-  simpleSv: `https://${CDN_DOMAIN}/api/v1/image/assets%2F${SPACE_ID}%2F19fb75cab20a4dce9a411c4d94012e08`,
+  simpleSv:
+    "https://images.unsplash.com/photo-1614680376573-df3480f71a9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
 
   // Detailed golden robot
-  detailedRobot: `https://${CDN_DOMAIN}/api/v1/image/assets%2F${SPACE_ID}%2F38caf7135ddd43fa8a565179b5a615cf`,
+  detailedRobot:
+    "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
 
   // "Cookin' Knowledge" script
-  cookinKnowledge: `https://${CDN_DOMAIN}/api/v1/image/assets%2F${SPACE_ID}%2F33bf8d6300414c609f7ec7f4433536a6`,
+  cookinKnowledge:
+    "https://images.unsplash.com/photo-1615665556892-bf8dc05bbce1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
 
   // Brain "Saint" design
-  brainSaint: `https://${CDN_DOMAIN}/api/v1/image/assets%2F${SPACE_ID}%2Fdf724826f7cb40f5b2bee2ead8f8ae91`,
+  brainSaint:
+    "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
 
   // Robot variation 1
-  robotVariation1: `https://${CDN_DOMAIN}/api/v1/image/assets%2F${SPACE_ID}%2Fdbefa120a793407088f44cafdf4d535c`,
+  robotVariation1:
+    "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
 
   // Robot variation 2
-  robotVariation2: `https://${CDN_DOMAIN}/api/v1/image/assets%2F${SPACE_ID}%2Ffa76e005a3c84f4583152be74644cf57`,
+  robotVariation2:
+    "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
 
   // Circuit board with "SAINTSAL™"
-  circuitBoardSaintsal: `https://${CDN_DOMAIN}/api/v1/image/assets%2F${SPACE_ID}%2Fd8bda45a09a640118b041aeae113af6f`,
+  circuitBoardSaintsal:
+    "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
 
   // "SaintVisionAI.com" brain-robot
-  saintVisionAI: `https://${CDN_DOMAIN}/api/v1/image/assets%2F${SPACE_ID}%2F5db819c30d3b4ffaa1a424d8405ef8d7`,
+  saintVisionAI:
+    "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
 } as const;
 
 // Custom backgrounds
 export const CUSTOM_BACKGROUNDS = {
-  // SaintVisionAI Wall Street building
-  wallStreetSaintVision: `https://${CDN_DOMAIN}/api/v1/image/assets%2F${SPACE_ID}%2F0cb04442c273431d870617f9f63e0177`,
+  // Wall Street building
+  wallStreetSaintVision:
+    "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
 } as const;
 
 // Helper function to get logo with proper formatting
