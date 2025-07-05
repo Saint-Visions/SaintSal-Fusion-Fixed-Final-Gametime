@@ -108,6 +108,12 @@ div[css] {
     sans-serif !important;
 }
 
+/* Force sidebar background in production */
+.sidebar-force-bg {
+  background-color: #0d1117 !important;
+  background: linear-gradient(135deg, #0d1117 0%, #1a1f2e 100%) !important;
+}
+
 /* Builder.io content override */
 [data-builder-component] *,
 [data-builder-block] *,
