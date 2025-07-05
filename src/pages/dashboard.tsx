@@ -57,8 +57,8 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Executive Quick Access */}
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+          {/* Command Center Quick Access */}
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 mb-8">
             <Link
               to="/console"
               className="group bg-gray-900/40 backdrop-blur-sm border border-gold/20 rounded-lg p-4 hover:border-gold/50 transition-all duration-300 hover:shadow-lg"
