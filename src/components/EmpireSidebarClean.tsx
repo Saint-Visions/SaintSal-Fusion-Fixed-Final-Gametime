@@ -53,6 +53,7 @@ export default function EmpireSidebarClean() {
             className="w-12 h-12"
             style={{
               filter: "drop-shadow(0 0 20px rgba(255, 215, 0, 0.8))",
+              mixBlendMode: "screen",
             }}
           />
           <div>
