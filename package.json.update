@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "pushgate": "node scripts/pushGateCheck.js",
+    "pushgate:fix": "node scripts/pushGateCheck.js --fix",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "glob": "^8.1.0",
+    "husky": "^8.0.3"
+  }
+}

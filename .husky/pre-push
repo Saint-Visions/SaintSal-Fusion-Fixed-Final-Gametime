@@ -1,0 +1,11 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🔐 SAINTSAL™ PushGate™ Activation..."
+echo ""
+
+# Run the PushGate™ quality checks
+node scripts/pushGateCheck.js
+
+# If the script exits with code 1, the push will be blocked
+# If it exits with code 0, the push will proceed
