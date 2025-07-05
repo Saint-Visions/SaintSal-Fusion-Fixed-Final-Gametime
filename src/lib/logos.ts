@@ -50,6 +50,14 @@ export const SAINTAL_LOGOS = {
   // "SaintVisionAI.com" brain-robot
   saintVisionAI:
     "https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F5db819c30d3b4ffaa1a424d8405ef8d7",
+
+  // Wall Street background for Command Center
+  wallStreetBg:
+    "https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F0cb04442c273431d870617f9f63e0177",
+
+  // New Cookin Knowledge watermark
+  cookinWatermark:
+    "https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F33bf8d6300414c609f7ec7f4433536a6",
 } as const;
 
 /**
