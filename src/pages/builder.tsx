@@ -1,15 +1,7 @@
-import { BuilderComponent, builder } from "@builder.io/react";
 import { useEffect, useState } from "react";
 
-// Initialize Builder with SaintSal™ empire configuration
-const builderToken = import.meta.env.VITE_BUILDER_TOKEN;
-if (builderToken) {
-  builder.init(builderToken);
-} else {
-  console.warn(
-    "Builder token not configured. Set VITE_BUILDER_TOKEN environment variable.",
-  );
-}
+// SaintSal™ Page Builder Interface
+const pageBuilderToken = import.meta.env.VITE_PAGE_TOKEN;
 
 export default function BuilderPage() {
   const [content, setContent] = useState<any>(null);
@@ -98,8 +90,8 @@ export default function BuilderPage() {
               BUILDER COMMAND DECK
             </h1>
             <p className="text-white mb-6">
-              No Builder.io content found for this route. This is your canvas
-              for creating dynamic SaintSal™ experiences.
+              No content found for this route. This is your canvas for creating
+              dynamic SaintSal™ experiences.
             </p>
             <p className="text-gray-400 text-sm">
               This space powers SaintSal™ — the AI agent and digital executor
