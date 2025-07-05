@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { SAINTAL_LOGOS } from "../lib/logos";
 
 const navLinks = [
   { label: "Main Dashboard", path: "/dashboard" },
@@ -55,7 +56,7 @@ export default function EmpireSidebarClean() {
         {/* Cookin' Knowledge Watermark - Bigger & Centered */}
         <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F33bf8d6300414c609f7ec7f4433536a6?format=webp&width=800"
+            src={`${SAINTAL_LOGOS.cookinKnowledge}?format=webp&width=800`}
             alt=""
             className="w-[150px]"
             style={{ opacity: 0.08 }}
@@ -63,7 +64,7 @@ export default function EmpireSidebarClean() {
         </div>
         <div className="relative z-10 flex items-center gap-3 mb-8">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F5430f28bed284f988e7c62c0ed586ceb?format=webp&width=800"
+            src={`${SAINTAL_LOGOS.primary}?format=webp&width=800`}
             alt="SaintSal Logo"
             className="w-16 h-16"
             style={{
