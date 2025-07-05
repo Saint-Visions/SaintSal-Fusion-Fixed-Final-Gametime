@@ -92,15 +92,12 @@ export default function Dashboard() {
 
             <Link
               to="/partnertech"
-              className="group bg-gray-900/60 border border-gold/30 rounded-lg p-3 hover:border-gold transition-all duration-200 text-center"
+              className="group bg-gray-900/80 border border-gold/20 rounded-md p-2 hover:border-gold transition-all duration-200 text-center"
             >
-              <div className="w-6 h-6 bg-blue-600 rounded mx-auto mb-2 flex items-center justify-center text-xs">
+              <div className="w-4 h-4 bg-blue-600 rounded-sm mx-auto mb-1 flex items-center justify-center text-xs">
                 ⚡
               </div>
-              <h3 className="text-sm font-semibold text-white group-hover:text-gold">
-                PartnerTech
-              </h3>
-              <p className="text-xs text-gray-400">CRM</p>
+              <p className="text-xs text-white group-hover:text-gold">CRM</p>
             </Link>
 
             <Link
