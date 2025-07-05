@@ -50,7 +50,7 @@ export default function EmpireSidebarClean() {
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fefe3754c5ada494e86c5bd626d08fbd2?format=webp&width=800"
             alt="SaintSal Logo"
-            className="w-12 h-12"
+            className="w-16 h-16"
             style={{
               filter: "drop-shadow(0 0 20px rgba(255, 215, 0, 0.8))",
             }}
