@@ -5,7 +5,7 @@ export default function PartnerTech() {
         minHeight: "100vh",
         backgroundColor: "#000000",
         backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fe6fee031e91c479b882f7caa3f2b64cb?format=webp&width=800')`,
-        backgroundSize: "80%",
+        backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         color: "#ffffff",
@@ -24,7 +24,7 @@ export default function PartnerTech() {
           position: "absolute",
           inset: 0,
           background:
-            "linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8))",
+            "linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5))",
           zIndex: 1,
         }}
       />
@@ -43,13 +43,13 @@ export default function PartnerTech() {
           }}
         >
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fef8992c980974ea59b5d487c8b67ef31?format=webp&width=800"
-            alt="SV Logo"
+            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F07143662f7314ad9960e76f9f231029f?format=webp&width=800"
+            alt="SV Circuit Logo"
             style={{
-              width: "80px",
-              height: "80px",
+              width: "60px",
+              height: "60px",
               objectFit: "contain",
-              filter: "drop-shadow(0 8px 20px rgba(255, 215, 0, 0.5))",
+              filter: "drop-shadow(0 4px 15px rgba(255, 215, 0, 0.6))",
             }}
           />
         </div>
