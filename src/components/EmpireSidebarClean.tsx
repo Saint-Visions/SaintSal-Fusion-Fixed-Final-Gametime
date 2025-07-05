@@ -48,12 +48,11 @@ export default function EmpireSidebarClean() {
       >
         <div className="flex items-center gap-3 mb-8">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F27da5006e3a04e8ba553a4250058d4e9?format=webp&width=800"
-            alt="SV Logo"
-            className="w-10 h-10"
+            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fcfd2c4e2166d45d29a7b5b02d7a5672f?format=webp&width=800"
+            alt="SaintSal Logo"
+            className="w-12 h-12"
             style={{
-              filter: "drop-shadow(0 0 15px rgba(255, 215, 0, 0.6))",
-              mixBlendMode: "screen",
+              filter: "drop-shadow(0 0 20px rgba(255, 215, 0, 0.8))",
             }}
           />
           <div>
