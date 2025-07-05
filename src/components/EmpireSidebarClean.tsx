@@ -47,10 +47,14 @@ export default function EmpireSidebarClean() {
 
       {/* Sidebar */}
       <aside
-        className={`relative w-80 h-screen bg-[#0D1117] text-white px-6 py-10 overflow-hidden border-r border-gold/20 fixed lg:relative z-40 transform transition-transform ${isMobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
+        className={`relative w-80 h-screen text-white px-6 py-10 overflow-hidden border-r border-gold/20 fixed lg:relative z-40 transform transition-transform ${isMobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
         style={{
-          backgroundColor: "#0D1117",
-          background: "#0D1117",
+          backgroundColor: "#0D1117 !important",
+          background: "#0D1117 !important",
+          paddingLeft: "24px",
+          paddingRight: "24px",
+          paddingTop: "40px",
+          paddingBottom: "40px",
         }}
       >
         {/* Cookin' Knowledge Watermark - Bigger & Centered */}
