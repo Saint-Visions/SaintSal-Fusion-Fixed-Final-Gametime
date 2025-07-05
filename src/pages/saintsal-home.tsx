@@ -50,7 +50,7 @@ export default function SaintSalHome() {
         <section
           className="min-h-screen flex items-center justify-center px-4 py-20 relative"
           style={{
-            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F59428e4360c94e2b8301dc3886f4cf56?format=webp&width=800')`,
+            backgroundImage: `url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -64,7 +64,7 @@ export default function SaintSalHome() {
             <div className="mb-12 relative">
               <div className="w-80 h-80 mx-auto relative flex items-center justify-center">
                 <img
-                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fac436fc84fcc40789c93464d58a120d4?format=webp&width=800"
                   alt="SaintVisionAI™ Logo"
                   className="w-full h-full object-contain"
                 />
