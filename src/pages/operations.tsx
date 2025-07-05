@@ -68,22 +68,73 @@ export default function Operations() {
         color: "#ffffff",
         fontFamily: "Inter, system-ui, sans-serif",
         padding: "2rem",
+        position: "relative",
+        overflow: "hidden"
       }}
     >
-      <h1
+      {/* Professional Background Asset */}
+      <div
         style={{
-          fontSize: "3rem",
-          fontWeight: "900",
-          background:
-            "linear-gradient(135deg, #FFC700 0%, #FDE68A 50%, #FFC700 100%)",
-          WebkitBackgroundClip: "text",
-          backgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-          marginBottom: "2rem",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F912ce16de21d42798b26d423e361e376?format=webp&width=800")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          opacity: 0.15,
+          zIndex: 1
         }}
-      >
-        🔥 SaintSal™ Operations Dashboard
-      </h1>
+      />
+
+      <div style={{ position: "relative", zIndex: 2 }}>
+        {/* Enhanced Header with Authority */}
+        <div style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "1.5rem",
+          marginBottom: "3rem",
+          padding: "1.5rem",
+          background: "rgba(0,0,0,0.8)",
+          borderRadius: "1rem",
+          border: "1px solid rgba(255, 199, 0, 0.3)"
+        }}>
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F43808ce2cd5142889ceab9015345e61a?format=webp&width=800"
+            alt="SaintSal Operations Authority"
+            style={{
+              width: "80px",
+              height: "80px",
+              borderRadius: "1rem",
+              border: "2px solid #FFC700",
+              boxShadow: "0 8px 20px rgba(255, 199, 0, 0.3)"
+            }}
+          />
+          <div>
+            <h1
+              style={{
+                fontSize: "3rem",
+                fontWeight: "900",
+                background:
+                  "linear-gradient(135deg, #FFC700 0%, #FDE68A 50%, #FFC700 100%)",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                marginBottom: "0.5rem",
+              }}
+            >
+              🔥 SaintSal™ Operations Dashboard
+            </h1>
+            <div style={{
+              fontSize: "1.25rem",
+              color: "#FFC700",
+              fontWeight: "600"
+            }}>
+              Strategic Integrations • Empire Partners • Live Analytics
+            </div>
+          </div>
+        </div>
 
       {/* Stats Grid */}
       <div

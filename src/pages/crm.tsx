@@ -142,9 +142,9 @@ export default function Crm() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
           <div className="bg-gradient-to-br from-gray-900 to-black rounded-xl p-6 border border-gold/30 relative overflow-hidden">
             <div
-              className="absolute inset-0 opacity-20"
+              className="absolute inset-0 opacity-25"
               style={{
-                backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Ff2274af0f14c4b05a18d2a171e8f6515?format=webp&width=800")`,
+                backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F8c6822a9f71e4621b2f3d478fe6449a8?format=webp&width=800")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}

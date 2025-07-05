@@ -3,18 +3,42 @@ import { Link } from "react-router-dom";
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen bg-black p-8">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-4xl font-black text-white mb-4">
-            Command <span className="text-gold">Center</span>
-          </h1>
-          <p className="text-xl text-gray-300">
-            Your AI empire at a glance. Monitor, manage, and scale your
-            operations.
-          </p>
-        </div>
+    <div className="min-h-screen bg-black relative overflow-hidden">
+      {/* Strategic Background Asset */}
+      <div
+        className="absolute inset-0 opacity-15"
+        style={{
+          backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fac42e9eb2dfa4803b38dcbde07d04084?format=webp&width=800")`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      />
+
+      <div className="relative z-10 p-8">
+        <div className="max-w-7xl mx-auto">
+          {/* Enhanced Header with Authority Assets */}
+          <div className="mb-12 relative">
+            <div className="flex items-center gap-6 mb-6">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fee347a3f9d0e4f03870013d52decc792?format=webp&width=800"
+                alt="SaintSal Empire Authority"
+                className="w-20 h-20 rounded-xl shadow-2xl border-2 border-gold/50"
+              />
+              <div>
+                <h1 className="text-4xl font-black text-white mb-2">
+                  Command <span className="text-gold">Center</span>
+                </h1>
+                <p className="text-xl text-gray-300 mb-2">
+                  Your AI empire at a glance. Monitor, manage, and scale your operations.
+                </p>
+                <div className="flex items-center gap-3 text-gold font-semibold">
+                  <span>Powered by SAINTSAL™ Empire</span>
+                  <div className="bg-green-500 text-black px-2 py-1 rounded text-xs font-bold">LIVE</div>
+                </div>
+              </div>
+            </div>
+          </div>
 
         {/* Quick Actions */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
