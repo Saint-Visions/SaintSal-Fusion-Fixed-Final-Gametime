@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { SAINTAL_LOGOS } from "../lib/logos";
 
 const CommandTile = ({
   title,
