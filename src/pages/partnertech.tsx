@@ -3,8 +3,9 @@ export default function PartnerTech() {
     <div
       style={{
         minHeight: "100vh",
+        backgroundColor: "#000000",
         backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fe6fee031e91c479b882f7caa3f2b64cb?format=webp&width=800')`,
-        backgroundSize: "contain",
+        backgroundSize: "80%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         color: "#ffffff",
@@ -42,13 +43,13 @@ export default function PartnerTech() {
           }}
         >
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F54f4a5a706c74f3a8ed7e30adf56b532?format=webp&width=800"
-            alt="SV Cookin Knowledge Logo"
+            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fef8992c980974ea59b5d487c8b67ef31?format=webp&width=800"
+            alt="SV Logo"
             style={{
-              width: "100%",
-              height: "100%",
+              width: "80px",
+              height: "80px",
               objectFit: "contain",
-              filter: "drop-shadow(0 8px 20px rgba(255, 215, 0, 0.3))",
+              filter: "drop-shadow(0 8px 20px rgba(255, 215, 0, 0.5))",
             }}
           />
         </div>
