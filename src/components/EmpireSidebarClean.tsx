@@ -71,7 +71,7 @@ export default function EmpireSidebarClean() {
           </div>
         </div>
 
-        <nav className="relative z-10 space-y-1 overflow-y-auto max-h-[calc(100vh-200px)]">
+        <nav className="space-y-4 text-sm font-medium text-gray-300 relative z-10 overflow-y-auto max-h-[calc(100vh-200px)]">
           {navLinks.map(({ label, path }) => (
             <Link
               key={path}
