@@ -31,7 +31,7 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-[#10161C] text-white">
       {/* Hero Section with Wall Street Background */}
-      <div className="relative bg-[url('https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0')] bg-cover bg-center">
+      <div className="relative bg-[url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F0cb04442c273431d870617f9f63e0177?format=webp&width=800')] bg-cover bg-center">
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 py-24 text-center px-6 sm:px-12">
           <h1 className="text-[#FFD700] text-4xl sm:text-5xl font-bold">
