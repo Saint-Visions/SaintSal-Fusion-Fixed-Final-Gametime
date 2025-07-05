@@ -27,6 +27,7 @@ import SimpleHome from "./pages/simple-home";
 import SaintSalHome from "./pages/saintsal-home";
 import Showcase from "./pages/showcase";
 import Console from "./pages/console";
+import KickassSaasShowcase from "./components/KickassSaasShowcase";
 
 export default function App() {
   const location = useLocation();
@@ -120,6 +121,7 @@ export default function App() {
                   <Route path="/chat" element={<Chat />} />
                   <Route path="/console" element={<Console />} />
                   <Route path="/showcase" element={<Showcase />} />
+                  <Route path="/kickass" element={<KickassSaasShowcase />} />
                   <Route path="/dashboard" element={<Dashboard />} />
                   <Route path="/builder" element={<Builder />} />
                   <Route path="/crm" element={<Crm />} />
