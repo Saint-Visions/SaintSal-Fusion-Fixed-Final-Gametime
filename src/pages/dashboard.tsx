@@ -31,12 +31,7 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-[#10161C] text-white">
       {/* Hero Section with Wall Street Background */}
-      <div
-        className="relative min-h-screen bg-cover bg-center bg-fixed"
-        style={{
-          backgroundImage: `url('${SAINTAL_LOGOS.wallStreetBg}?format=webp&width=800')`,
-        }}
-      >
+      <div className="relative min-h-screen bg-[url('https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center bg-fixed">
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 flex items-center justify-center min-h-screen text-center px-6 sm:px-12">
           <div>
