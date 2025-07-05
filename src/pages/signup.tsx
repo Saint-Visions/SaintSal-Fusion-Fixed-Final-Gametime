@@ -13,7 +13,7 @@ export default function Signup() {
         fontFamily: "Inter, system-ui, sans-serif",
         padding: "1rem",
         position: "relative",
-        backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fe03228606da64e37bca28bf66fe6a2d8?format=webp&width=800")`,
+        backgroundImage: `url("https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=800")`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

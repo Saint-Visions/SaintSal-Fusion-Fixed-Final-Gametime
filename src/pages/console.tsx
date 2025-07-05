@@ -20,7 +20,7 @@ export default function Console() {
           {/* Clean Executive Header */}
           <div className="text-center mb-20">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F223dc8612ee14e9bb8159050e6235d76?format=webp&width=800"
+              src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=800"
               alt="SaintVision AI"
               className="w-20 h-20 mx-auto mb-8"
               style={{

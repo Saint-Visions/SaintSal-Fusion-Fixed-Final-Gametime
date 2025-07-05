@@ -8,7 +8,7 @@ export default function Dashboard() {
       <div
         className="absolute inset-0 opacity-15"
         style={{
-          backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fac42e9eb2dfa4803b38dcbde07d04084?format=webp&width=800")`,
+          backgroundImage: `url("https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800")`,
           backgroundSize: "cover",
           backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",
