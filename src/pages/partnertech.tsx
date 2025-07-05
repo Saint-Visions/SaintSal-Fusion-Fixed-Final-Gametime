@@ -10,7 +10,7 @@ export default function PartnerTech() {
         backgroundRepeat: "no-repeat",
         color: "#ffffff",
         fontFamily: "Inter, system-ui, sans-serif",
-        padding: "2rem 1rem",
+        padding: "3rem 2rem",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
