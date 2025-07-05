@@ -43,7 +43,7 @@ export default function PartnerTech() {
           }}
         >
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F223dc8612ee14e9bb8159050e6235d76?format=webp&width=800"
+            src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800"
             alt="SV Circuit Logo"
             style={{
               width: "80px",
