@@ -19,11 +19,11 @@ export default function Dashboard() {
         className="relative z-10 p-8"
         style={{
           backgroundImage:
-            "url(https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2000)",
+            "url(https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F0c51add9770a483da3d69367347e4536)",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
-          opacity: "0.9",
+          opacity: "0.7",
         }}
       >
         <div className="max-w-7xl mx-auto">
