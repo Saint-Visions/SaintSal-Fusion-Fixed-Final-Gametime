@@ -1,27 +1,7 @@
 import React, { useState } from "react";
 
 export default function Console() {
-  const [currentChat, setCurrentChat] = useState("azure");
   const [message, setMessage] = useState("");
-
-  const companions = {
-    azure: {
-      name: "SaintSal™ Cognitive Companion",
-      subtitle: "Azure Cognitive Search + OpenAI GPT-4o Turbo",
-      status: "Enterprise Ready",
-      color: "from-blue-600 to-blue-800",
-      description:
-        "Welcome to the SaintSal™ Empire AI Command Center. I'm your cognitive companion, powered by dual Azure OpenAI 4o Turbo architecture. How may I assist you in expanding your empire today?",
-    },
-    openai: {
-      name: "Empire AI Advisor",
-      subtitle: "OpenAI GPT-4o Turbo + Custom Training",
-      status: "Live",
-      color: "from-green-600 to-green-800",
-      description:
-        "Greetings! I'm your Empire AI Advisor, trained specifically on SAINTSAL™ methodologies and patent-protected HACP™ protocols. Ready to execute high-level strategic operations?",
-    },
-  };
 
   return (
     <div className="min-h-screen bg-black relative overflow-hidden">
@@ -35,110 +15,75 @@ export default function Console() {
         }}
       />
 
-      <div className="relative z-10 p-8">
-        <div className="max-w-7xl mx-auto">
-          {/* Executive Authority Header */}
-          <div className="mb-16 text-center">
-            <div className="inline-flex items-center gap-4 mb-6">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F223dc8612ee14e9bb8159050e6235d76?format=webp&width=800"
-                alt="SaintVision AI"
-                className="w-16 h-16"
-                style={{
-                  filter: "drop-shadow(0 0 20px rgba(255, 215, 0, 0.6))",
-                  mixBlendMode: "screen",
-                }}
-              />
-              <div className="text-left">
-                <h1 className="text-4xl font-black text-white mb-2">
-                  <span className="text-gold">SaintVision AI™</span> Executive
-                  Console
-                </h1>
-                <p className="text-xl text-gray-300">
-                  Patent-Protected Dual Cognitive Architecture
-                </p>
-              </div>
-            </div>
+      <div className="relative z-10 p-12">
+        <div className="max-w-6xl mx-auto">
+          {/* Clean Executive Header */}
+          <div className="text-center mb-20">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F223dc8612ee14e9bb8159050e6235d76?format=webp&width=800"
+              alt="SaintVision AI"
+              className="w-20 h-20 mx-auto mb-8"
+              style={{
+                filter: "drop-shadow(0 0 25px rgba(255, 215, 0, 0.7))",
+                mixBlendMode: "screen",
+              }}
+            />
 
-            {/* Patent Authority Badge */}
-            <div className="inline-flex items-center gap-6 bg-gradient-to-r from-gold/20 to-yellow-500/20 border-2 border-gold/50 rounded-2xl px-8 py-4">
-              <div className="text-center">
-                <div className="text-gold font-bold text-lg">
-                  🏛️ U.S. PATENT
-                </div>
-                <div className="text-white font-black text-2xl">10,290,222</div>
-              </div>
-              <div className="w-px h-12 bg-gold/30"></div>
-              <div className="flex items-center gap-4">
-                <span className="bg-green-500 text-black px-3 py-1 rounded-full text-sm font-bold">
-                  LIVE
+            <h1 className="text-5xl font-black text-white mb-6">
+              Executive <span className="text-gold">AI Console</span>
+            </h1>
+
+            <p className="text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+              Patent-protected dual cognitive architecture for strategic
+              decision making
+            </p>
+
+            {/* Clean Patent Badge */}
+            <div className="inline-block bg-gradient-to-r from-gold/10 to-yellow-500/10 border border-gold/40 rounded-2xl px-8 py-4">
+              <div className="flex items-center gap-6">
+                <span className="text-gold font-bold">
+                  🏛️ U.S. Patent 10,290,222
                 </span>
-                <span className="text-gold font-semibold">
-                  WE OWN THIS SPACE
+                <span className="w-1 h-1 bg-gold rounded-full"></span>
+                <span className="text-green-400 font-bold">
+                  LIVE Enterprise
+                </span>
+                <span className="w-1 h-1 bg-gold rounded-full"></span>
+                <span className="text-white font-semibold">
+                  We Own This Space
                 </span>
               </div>
             </div>
           </div>
 
-          {/* Executive AI Modules */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <div className="group bg-gradient-to-br from-blue-900/30 to-blue-600/20 backdrop-blur-xl border-2 border-blue-500/40 rounded-3xl p-10 hover:border-gold/60 transition-all duration-500 cursor-pointer">
-              <div className="flex items-center justify-between mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center shadow-xl">
-                  <span className="text-2xl font-black text-white">AI</span>
+          {/* Single Executive AI Interface */}
+          <div className="max-w-4xl mx-auto mb-20">
+            <div className="bg-gradient-to-br from-gray-900/40 to-black/60 backdrop-blur-xl border border-gold/30 rounded-3xl p-12 text-center">
+              <div className="mb-10">
+                <div className="w-24 h-24 bg-gradient-to-br from-gold to-yellow-400 rounded-3xl mx-auto mb-8 flex items-center justify-center shadow-2xl">
+                  <span className="text-3xl font-black text-black">AI</span>
                 </div>
-                <div className="bg-blue-500/20 text-blue-300 px-4 py-2 rounded-full text-sm font-bold border border-blue-500/30">
-                  ENTERPRISE READY
-                </div>
-              </div>
 
-              <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-gold transition-colors">
-                Azure Cognitive Engine
-              </h3>
-              <p className="text-blue-200 text-lg mb-6">
-                Enterprise-grade cognitive search with OpenAI GPT-4o Turbo
-                integration
-              </p>
+                <h2 className="text-4xl font-bold text-white mb-6">
+                  Azure + OpenAI{" "}
+                  <span className="text-gold">Executive Suite</span>
+                </h2>
 
-              <div className="bg-yellow-500/20 border border-yellow-500/40 rounded-xl p-6">
-                <div className="text-yellow-300 font-bold text-lg mb-2">
-                  🎯 Executive Mode Active
-                </div>
-                <div className="text-yellow-200 text-sm">
-                  Advanced intelligence for strategic decision making
-                </div>
-              </div>
-            </div>
+                <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
+                  Enterprise-grade cognitive architecture combining Azure's
+                  infrastructure with OpenAI's most advanced models for
+                  strategic intelligence.
+                </p>
 
-            <div className="group bg-gradient-to-br from-green-900/30 to-green-600/20 backdrop-blur-xl border-2 border-green-500/40 rounded-3xl p-10 hover:border-gold/60 transition-all duration-500 cursor-pointer">
-              <div className="flex items-center justify-between mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl flex items-center justify-center shadow-xl">
-                  <span className="text-2xl font-black text-white">⚡</span>
-                </div>
-                <div className="bg-green-500/20 text-green-300 px-4 py-2 rounded-full text-sm font-bold border border-green-500/30">
-                  LIVE
-                </div>
-              </div>
-
-              <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-gold transition-colors">
-                Empire AI Advisor
-              </h3>
-              <p className="text-green-200 text-lg mb-6">
-                Custom-trained on SAINTSAL™ methodologies and patent-protected
-                protocols
-              </p>
-
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span className="text-green-300 text-sm">
-                    Real-time execution capabilities
+                <div className="flex items-center justify-center gap-8 mb-10">
+                  <span className="bg-blue-500/20 border border-blue-500/40 text-blue-300 px-4 py-2 rounded-xl font-semibold">
+                    Azure Enterprise
                   </span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span className="text-green-300 text-sm">
-                    HACP™ Protocol protected
+                  <span className="bg-green-500/20 border border-green-500/40 text-green-300 px-4 py-2 rounded-xl font-semibold">
+                    GPT-4o Turbo
+                  </span>
+                  <span className="bg-gold/20 border border-gold/40 text-gold px-4 py-2 rounded-xl font-semibold">
+                    Patent Protected
                   </span>
                 </div>
               </div>
