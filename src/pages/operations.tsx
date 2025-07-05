@@ -80,7 +80,7 @@ export default function Operations() {
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F43808ce2cd5142889ceab9015345e61a?format=webp&width=800")`,
+          backgroundImage: `url("https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=800")`,
           backgroundSize: "cover",
           backgroundPosition: "center top",
           opacity: 0.2,
@@ -103,7 +103,7 @@ export default function Operations() {
           }}
         >
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F223dc8612ee14e9bb8159050e6235d76?format=webp&width=800"
+            src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=800"
             alt="SaintSal Operations Authority"
             style={{
               width: "60px",

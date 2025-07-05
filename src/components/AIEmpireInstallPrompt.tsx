@@ -24,7 +24,7 @@ const AIEmpireInstallPrompt: React.FC<AIEmpireInstallPromptProps> = ({
         {/* Left side - Logo and text */}
         <div className="flex items-center gap-3">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fb4d1baacd79944e59033e0f3fcf7229e?format=webp&width=800"
+            src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800"
             alt="SaintSal Logo"
             className="w-6 h-6 object-contain"
           />

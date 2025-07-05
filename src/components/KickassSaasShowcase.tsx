@@ -8,7 +8,7 @@ export default function KickassSaasShowcase() {
       <div
         className="absolute inset-0 opacity-15"
         style={{
-          backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fa87ba7594d8b4359b3abdac217653de3?format=webp&width=800")`,
+          backgroundImage: `url("https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=800")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

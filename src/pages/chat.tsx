@@ -40,7 +40,7 @@ export default function Chat() {
           }}
         >
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F29856441de964e35a366faa6c7cd2b37?format=webp&width=800"
+            src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800"
             alt="SaintSal Logo"
             className="w-12 h-12 object-contain"
             style={{
