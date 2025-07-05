@@ -30,9 +30,9 @@ export default function AdminIntegrations() {
       lastTested: new Date().toISOString(),
       endpoint: "/api/stripe/webhook",
       config: {
-        webhookSecret: "✓ Configured",
-        secretKey: "✓ Configured",
-        publishableKey: "✓ Configured",
+        webhook: "✓ Configured",
+        private: "✓ Configured",
+        public: "✓ Configured",
       },
     },
     {
