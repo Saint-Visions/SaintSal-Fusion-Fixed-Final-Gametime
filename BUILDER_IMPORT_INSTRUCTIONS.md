@@ -35,6 +35,7 @@ Make sure your folder structure is:
 
 ```env
 BUILDER_PRIVATE_API_KEY=your-private-key-here
+# Note: BUILDER_SPACE_ID is a public identifier used in CDN URLs, not a secret
 BUILDER_SPACE_ID=d83998c6a81f466db4fb83ab90c7ba25
 ```
 
