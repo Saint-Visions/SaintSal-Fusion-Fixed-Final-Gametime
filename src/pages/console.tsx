@@ -35,16 +35,20 @@ export default function Console() {
         }}
       />
 
-      <div className="relative z-10 p-6">
+      <div className="relative z-10 p-8">
         <div className="max-w-7xl mx-auto">
           {/* Authority Header */}
           <div className="mb-8 p-6 bg-gradient-to-r from-black/90 to-black/70 rounded-xl border border-gold/30">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F4ed3f8ee7b6049b2831f9879427f69e5?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F223dc8612ee14e9bb8159050e6235d76?format=webp&width=800"
                   alt="Dual AI Architecture"
-                  className="w-16 h-16 rounded-lg shadow-xl"
+                  className="w-12 h-12 rounded-lg"
+                  style={{
+                    filter: "drop-shadow(0 0 12px rgba(255, 215, 0, 0.5))",
+                    mixBlendMode: "screen",
+                  }}
                 />
                 <div>
                   <h1 className="text-3xl font-bold text-white mb-1">

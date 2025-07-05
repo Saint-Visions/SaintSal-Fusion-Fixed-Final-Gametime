@@ -21,9 +21,13 @@ export default function Dashboard() {
           <div className="mb-12 relative">
             <div className="flex items-center gap-6 mb-6">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fee347a3f9d0e4f03870013d52decc792?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F223dc8612ee14e9bb8159050e6235d76?format=webp&width=800"
                 alt="SaintSal Empire Authority"
-                className="w-20 h-20 rounded-xl shadow-2xl border-2 border-gold/50"
+                className="w-16 h-16 rounded-xl"
+                style={{
+                  filter: "drop-shadow(0 0 15px rgba(255, 215, 0, 0.6))",
+                  mixBlendMode: "screen",
+                }}
               />
               <div>
                 <h1 className="text-4xl font-black text-white mb-2">

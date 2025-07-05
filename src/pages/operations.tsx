@@ -82,8 +82,8 @@ export default function Operations() {
           bottom: 0,
           backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F43808ce2cd5142889ceab9015345e61a?format=webp&width=800")`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
-          opacity: 0.15,
+          backgroundPosition: "center top",
+          opacity: 0.2,
           zIndex: 1,
         }}
       />
@@ -103,14 +103,13 @@ export default function Operations() {
           }}
         >
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F43808ce2cd5142889ceab9015345e61a?format=webp&width=800"
+            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F223dc8612ee14e9bb8159050e6235d76?format=webp&width=800"
             alt="SaintSal Operations Authority"
             style={{
-              width: "80px",
-              height: "80px",
-              borderRadius: "1rem",
-              border: "2px solid #FFC700",
-              boxShadow: "0 8px 20px rgba(255, 199, 0, 0.3)",
+              width: "60px",
+              height: "60px",
+              filter: "drop-shadow(0 0 15px rgba(255, 215, 0, 0.7))",
+              mixBlendMode: "screen",
             }}
           />
           <div>
