@@ -52,8 +52,7 @@ export default function EmpireSidebarClean() {
         <img
           src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F33bf8d6300414c609f7ec7f4433536a6?format=webp&width=800"
           alt=""
-          className="absolute bottom-12 left-1/2 transform -translate-x-1/2 w-[110px] h-auto opacity-[0.04] pointer-events-none z-0"
-          style={{ filter: "brightness(0.7) contrast(1.1)" }}
+          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-[120px] opacity-[0.05] pointer-events-none z-0"
         />
         <div className="relative z-10 flex items-center gap-3 mb-8">
           <img
