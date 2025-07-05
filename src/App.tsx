@@ -93,7 +93,7 @@ export default function App() {
               <main
                 className="flex-1 overflow-auto"
                 style={{
-                  backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fda7345e5d1b241689f70c94e27233a42?format=webp&width=800')`,
+                  backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://cdn.builder.io/api/v1/image/assets/TEMP/d284a9f35d498a25f9143c2e4b0d4fa383f25ce1?width=4624')`,
                   backgroundSize: "cover",
                   backgroundPosition: "center top",
                   backgroundRepeat: "no-repeat",
