@@ -48,8 +48,11 @@ export default function Dashboard() {
           </div>
 
           {/* Quick Actions */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <Link to="/console" className="empire-card hover:gold-glow">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <Link
+              to="/console"
+              className="empire-card hover:gold-glow transform hover:scale-105 transition-all duration-300"
+            >
               <div className="text-3xl mb-4">💬</div>
               <h3 className="text-lg font-bold text-gold mb-2">AI Console</h3>
               <p className="text-gray-400 text-sm">
@@ -57,19 +60,28 @@ export default function Dashboard() {
               </p>
             </Link>
 
-            <Link to="/builder" className="empire-card hover:gold-glow">
+            <Link
+              to="/builder"
+              className="empire-card hover:gold-glow transform hover:scale-105 transition-all duration-300"
+            >
               <div className="text-3xl mb-4">🚀</div>
               <h3 className="text-lg font-bold text-gold mb-2">Builder</h3>
               <p className="text-gray-400 text-sm">Create dynamic layouts</p>
             </Link>
 
-            <Link to="/crm" className="empire-card hover:gold-glow">
+            <Link
+              to="/crm"
+              className="empire-card hover:gold-glow transform hover:scale-105 transition-all duration-300"
+            >
               <div className="text-3xl mb-4">👥</div>
               <h3 className="text-lg font-bold text-gold mb-2">CRM Tools</h3>
               <p className="text-gray-400 text-sm">Manage relationships</p>
             </Link>
 
-            <Link to="/upgrade" className="empire-card hover:gold-glow">
+            <Link
+              to="/upgrade"
+              className="empire-card hover:gold-glow transform hover:scale-105 transition-all duration-300"
+            >
               <div className="text-3xl mb-4">⚡</div>
               <h3 className="text-lg font-bold text-gold mb-2">Upgrade</h3>
               <p className="text-gray-400 text-sm">Unlock more power</p>
