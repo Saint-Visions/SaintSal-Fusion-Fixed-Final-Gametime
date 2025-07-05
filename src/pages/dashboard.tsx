@@ -1,105 +1,96 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+const CommandTile = ({
+  title,
+  badge,
+  description,
+  to,
+  badgeColor = "bg-green-600",
+}: {
+  title: string;
+  badge: string;
+  description: string;
+  to: string;
+  badgeColor?: string;
+}) => (
+  <Link to={to}>
+    <div className="relative w-full max-w-[420px] p-6 bg-[#121212] text-white rounded-2xl border border-yellow-400/20 hover:shadow-xl transition cursor-pointer">
+      <div className="text-lg font-semibold mb-1">{title}</div>
+      <div className="text-sm text-gray-400">{description}</div>
+      <span
+        className={`absolute top-4 right-4 text-xs px-2 py-1 rounded-md font-semibold ${badgeColor} text-white`}
+      >
+        {badge}
+      </span>
+    </div>
+  </Link>
+);
+
 export default function Dashboard() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#10161C" }}>
-      <div className="max-w-7xl mx-auto px-6 py-8">
-        {/* Command Center Header */}
-        <div className="mb-8">
-          <h1 className="text-4xl font-bold" style={{ color: "#FFD700" }}>
+    <div className="min-h-screen bg-[#10161C] text-white">
+      {/* Hero Section with Wall Street Background */}
+      <div className="relative bg-[url('https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0')] bg-cover bg-center">
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative z-10 py-24 text-center px-6 sm:px-12">
+          <h1 className="text-[#FFD700] text-4xl sm:text-5xl font-bold">
             Command Center
           </h1>
-          <p className="text-lg text-gray-400 mt-2">
+          <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
             Your AI empire at a glance. Monitor, manage, scale.
           </p>
         </div>
+      </div>
 
-        {/* Command Center Grid */}
-        <div className="grid grid-cols-2 gap-6 mt-12">
-          {/* Dual AI Console Card */}
-          <Link
-            to="/console"
-            className="bg-gray-900 text-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 border border-yellow-500/20 hover:border-yellow-500/50 max-w-md min-h-[240px]"
-          >
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-xl font-bold text-white">Dual AI Console</h3>
-              <span className="bg-green-500 text-black px-2 py-1 rounded text-xs font-bold">
-                LIVE
-              </span>
-            </div>
-            <p className="text-gray-300 mb-4">
-              Azure Cognitive + OpenAI GPT-4o Turbo execution engine
-            </p>
-            <div className="text-yellow-500 text-sm font-semibold">
-              Patent Protected →
-            </div>
-          </Link>
-
-          {/* PartnerTech.ai Card */}
-          <Link
-            to="/partnertech"
-            className="bg-gray-900 text-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 border border-yellow-500/20 hover:border-yellow-500/50 max-w-md min-h-[240px]"
-          >
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-xl font-bold text-white">PartnerTech.ai</h3>
-              <span className="bg-blue-500 text-white px-2 py-1 rounded text-xs font-bold">
-                ACTIVE
-              </span>
-            </div>
-            <p className="text-gray-300 mb-4">
-              Intent-triggered SaaS platform for lead discovery
-            </p>
-            <div className="text-yellow-500 text-sm font-semibold">
-              U.S. Patent 10,290,222 →
-            </div>
-          </Link>
-
-          {/* My Companion Card */}
-          <Link
-            to="/companion"
-            className="bg-gray-900 text-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 border border-yellow-500/20 hover:border-yellow-500/50 max-w-md min-h-[240px]"
-          >
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-xl font-bold text-white">My Companion</h3>
-              <span className="bg-green-500 text-black px-2 py-1 rounded text-xs font-bold">
-                READY
-              </span>
-            </div>
-            <p className="text-gray-300 mb-4">
-              Personalized AI assistant for task management
-            </p>
-            <div className="text-yellow-500 text-sm font-semibold">
-              HACP™ Protocol →
-            </div>
-          </Link>
-
-          {/* AI Tools Card */}
-          <Link
-            to="/ai-tools"
-            className="bg-gray-900 text-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 border border-yellow-500/20 hover:border-yellow-500/50 max-w-md min-h-[240px]"
-          >
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-xl font-bold text-white">AI Tools</h3>
-              <span className="bg-purple-500 text-white px-2 py-1 rounded text-xs font-bold">
-                TOOLS
-              </span>
-            </div>
-            <p className="text-gray-300 mb-4">
-              Advanced AI utilities and automation suite
-            </p>
-            <div className="text-yellow-500 text-sm font-semibold">
-              Enterprise Grade →
-            </div>
-          </Link>
+      {/* CRM Snapshot Bar */}
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="bg-[#181818] mt-12 rounded-xl p-4 grid grid-cols-2 sm:grid-cols-4 text-center text-white text-sm font-medium">
+          <div>
+            <strong>12</strong> Leads
+          </div>
+          <div>
+            <strong>4</strong> Docs Pending
+          </div>
+          <div>
+            <strong>7</strong> Sent to Lender
+          </div>
+          <div>
+            <strong>3</strong> Funded
+          </div>
         </div>
+      </div>
 
-        {/* Bottom Status */}
-        <div className="mt-12 text-center">
-          <p className="text-gray-500 text-sm">
-            SAINTSAL™ Empire • Patent Protected Technology
-          </p>
-        </div>
+      {/* Command Tiles Grid */}
+      <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <CommandTile
+          title="Dual AI Console"
+          badge="LIVE"
+          description="Azure Cognitive + OpenAI GPT-4o Turbo execution engine"
+          to="/console"
+          badgeColor="bg-green-600"
+        />
+        <CommandTile
+          title="PartnerTech.ai"
+          badge="ACTIVE"
+          description="Intent-triggered SaaS platform for lead discovery"
+          to="/partnertech"
+          badgeColor="bg-blue-600"
+        />
+        <CommandTile
+          title="My Companion"
+          badge="READY"
+          description="Personalized AI assistant for task management"
+          to="/companion"
+          badgeColor="bg-green-600"
+        />
+        <CommandTile
+          title="AI Tools"
+          badge="TOOLS"
+          description="Advanced AI utilities and automation suite"
+          to="/ai-tools"
+          badgeColor="bg-purple-600"
+        />
       </div>
     </div>
   );
