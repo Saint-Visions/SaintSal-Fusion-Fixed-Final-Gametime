@@ -43,13 +43,15 @@ export default function PartnerTech() {
           }}
         >
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F223dc8612ee14e9bb8159050e6235d76?format=webp&width=800"
+            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F569f838498b74102b7bef2b6a58bcb2c?format=webp&width=800"
             alt="SV Circuit Logo"
             style={{
               width: "80px",
               height: "80px",
               objectFit: "contain",
-              filter: "drop-shadow(0 0 20px rgba(255, 215, 0, 0.7))",
+              filter:
+                "drop-shadow(0 0 20px rgba(255, 215, 0, 0.8)) drop-shadow(0 0 40px rgba(255, 215, 0, 0.4))",
+              mixBlendMode: "screen",
             }}
           />
         </div>
