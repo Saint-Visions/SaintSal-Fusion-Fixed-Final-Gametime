@@ -55,12 +55,12 @@ export default function EmpireSidebarClean() {
           paddingBottom: "40px",
         }}
       >
-        {/* Cookin' Knowledge Watermark - Corrected Placement & Opacity */}
-        <div className="absolute inset-0 flex justify-center items-end pointer-events-none">
+        {/* Cookin' Knowledge Watermark - Bigger & Centered */}
+        <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F33bf8d6300414c609f7ec7f4433536a6?format=webp&width=800"
             alt=""
-            className="w-[120px] mb-6"
+            className="w-[150px]"
             style={{ opacity: 0.08 }}
           />
         </div>
