@@ -89,7 +89,7 @@ export default function EmpireSidebarClean() {
         </nav>
 
         {/* Patent Authority Footer */}
-        <div className="absolute bottom-6 left-6 right-6">
+        <div className="absolute bottom-4 left-0 w-full px-6 z-10">
           <div className="bg-gray-900/50 p-3 rounded-lg border border-gold/20">
             <p className="text-xs text-gold font-semibold">
               HACP™ + OPATENT™
