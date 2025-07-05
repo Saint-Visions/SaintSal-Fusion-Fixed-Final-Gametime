@@ -4,21 +4,18 @@
  * Using environment-based construction to preserve custom branding
  */
 
-// Asset URL construction with fallback system
+// Asset URL construction using only environment variables
 const getAssetUrl = (assetId: string) => {
-  // Primary: Use environment variable if available
+  // Use environment variable for space ID (must be set in Vercel)
   const spaceId = import.meta.env.VITE_ASSET_SPACE_ID;
-  if (spaceId) {
-    return `https://cdn.builder.io/api/v1/image/assets%2F${spaceId}%2F${assetId}`;
+  const cdnDomain = import.meta.env.VITE_CDN_DOMAIN || "via.placeholder.com";
+
+  if (spaceId && cdnDomain !== "via.placeholder.com") {
+    return `https://${cdnDomain}/api/v1/image/assets%2F${spaceId}%2F${assetId}`;
   }
 
-  // Fallback: Construct URL using known patterns
-  const domains = ["cdn", "builder", "io"];
-  const parts = ["d83998c6a81f", "466db4fb83ab", "90c7ba25"];
-  const domain = domains.join(".");
-  const space = parts.join("");
-
-  return `https://${domain}/api/v1/image/assets%2F${space}%2F${assetId}`;
+  // Safe fallback with golden SaintSal branding
+  return `https://via.placeholder.com/400x300/FFD700/000000?text=SaintSal+${assetId.slice(0, 8)}`;
 };
 
 export const SAINTAL_LOGOS = {
