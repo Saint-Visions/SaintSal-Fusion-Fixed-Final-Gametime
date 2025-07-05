@@ -24,7 +24,7 @@ export default function Dashboard() {
           backgroundPosition: "center",
           backgroundSize: "cover",
           opacity: "0.7",
-          fontWeight: "100",
+          fontWeight: "400",
         }}
       >
         <div className="max-w-7xl mx-auto">
