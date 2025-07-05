@@ -5,7 +5,7 @@ export default function Setup() {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     aiModel: "gpt-4",
-    accessToken: "",
+    credentials: "",
     avatar: "saint",
     voiceEnabled: true,
     name: "",
@@ -200,10 +200,10 @@ export default function Setup() {
             </h2>
             <input
               type="password"
-              placeholder="Your OpenAI Access Token (optional)"
-              value={formData.accessToken}
+              placeholder="Your OpenAI Credentials (optional)"
+              value={formData.credentials}
               onChange={(e) =>
-                setFormData({ ...formData, accessToken: e.target.value })
+                setFormData({ ...formData, credentials: e.target.value })
               }
               style={{
                 width: "100%",

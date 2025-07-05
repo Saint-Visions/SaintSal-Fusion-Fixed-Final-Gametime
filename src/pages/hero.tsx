@@ -4,7 +4,7 @@ import { createClient } from "@supabase/supabase-js";
 
 // Initialize Supabase client with error handling
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseToken = import.meta.env.VITE_SUPABASE_ANON_TOKEN;
+const supabaseAuth = import.meta.env.VITE_SUPABASE_ANON_AUTH;
 const supabase =
   supabaseUrl && supabaseKey ? createClient(supabaseUrl, supabaseKey) : null;
 
