@@ -95,9 +95,10 @@ export default function App() {
                 style={{
                   backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fd277f0ca010843b4bd70b0c64b3d86fd?format=webp&width=800')`,
                   backgroundSize: "cover",
-                  backgroundPosition: "center",
+                  backgroundPosition: "center top",
                   backgroundRepeat: "no-repeat",
                   backgroundAttachment: "fixed",
+                  minHeight: "100vh",
                 }}
               >
                 <Routes>
