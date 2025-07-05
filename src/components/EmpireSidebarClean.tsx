@@ -74,7 +74,9 @@ export default function EmpireSidebarClean() {
             }}
           />
           <div>
-            <h2 className="text-xl font-bold text-gold">SaintSal™</h2>
+            <h2 className="text-xl font-bold" style={{ color: "#FFD700" }}>
+              SaintSal™
+            </h2>
             <p className="text-xs text-gray-400">Empire Platform</p>
           </div>
         </div>
