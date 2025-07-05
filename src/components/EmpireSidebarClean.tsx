@@ -60,7 +60,8 @@ export default function EmpireSidebarClean() {
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F33bf8d6300414c609f7ec7f4433536a6?format=webp&width=800"
             alt=""
-            className="w-[120px] opacity-[0.03] mb-6"
+            className="w-[120px] mb-6"
+            style={{ opacity: 0.08 }}
           />
         </div>
         <div className="relative z-10 flex items-center gap-3 mb-8">
