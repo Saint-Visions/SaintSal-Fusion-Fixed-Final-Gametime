@@ -2,9 +2,14 @@ import { BuilderComponent, builder } from "@builder.io/react";
 import { useEffect, useState } from "react";
 
 // Initialize Builder with SaintSal™ empire configuration
-builder.init(
-  import.meta.env.VITE_BUILDER_API_KEY || "d83998c6a81f466db4fb83ab90c7ba25",
-);
+const builderApiKey = import.meta.env.VITE_BUILDER_API_KEY;
+if (builderApiKey) {
+  builder.init(builderApiKey);
+} else {
+  console.warn(
+    "Builder.io API key not configured. Set VITE_BUILDER_API_KEY environment variable.",
+  );
+}
 
 export default function BuilderPage() {
   const [content, setContent] = useState<any>(null);
