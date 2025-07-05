@@ -40,8 +40,16 @@ const run = async () => {
     console.log(`🟡 Importing ${file} → ${urlPath}`);
 
     try {
+      const apiKey = process.env.BUILDER_PRIVATE_API_KEY;
+      if (!apiKey) {
+        console.error(
+          "❌ BUILDER_PRIVATE_API_KEY not found in environment variables",
+        );
+        process.exit(1);
+      }
+
       const res = await axios.post(
-        `https://builder.io/api/v1/write/page?apiKey=${process.env.BUILDER_PRIVATE_API_KEY}`,
+        `https://builder.io/api/v1/write/page?apiKey=${apiKey}`,
         {
           data: {
             ...JSON.parse(content),
