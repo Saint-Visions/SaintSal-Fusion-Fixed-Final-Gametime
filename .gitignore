@@ -1,10 +1,9 @@
-# Environment files
-.env*
-!.env.vault
-
 # Build output
 dist/
 build/
 
 # Dependencies
 node_modules/
+
+# Environment configuration
+config/
