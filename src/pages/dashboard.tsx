@@ -15,7 +15,17 @@ export default function Dashboard() {
         }}
       />
 
-      <div className="relative z-10 p-8">
+      <div
+        className="relative z-10 p-8"
+        style={{
+          backgroundImage:
+            "url(https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2000)",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          opacity: "0.9",
+        }}
+      >
         <div className="max-w-7xl mx-auto">
           {/* Enhanced Header with Authority Assets */}
           <div className="mb-12 relative">
