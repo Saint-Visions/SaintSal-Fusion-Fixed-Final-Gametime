@@ -46,7 +46,14 @@ export default function EmpireSidebarClean() {
 
       {/* Sidebar */}
       <aside
-        className={`relative w-80 h-screen bg-[#0D1117] text-white px-6 py-10 overflow-hidden border-r border-gold/20 fixed lg:relative z-40 transform transition-transform ${isMobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
+        className={`relative w-80 h-screen text-white overflow-hidden border-r border-gold/20 fixed lg:relative z-40 transform transition-transform ${isMobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
+        style={{
+          backgroundColor: "#0D1117",
+          paddingLeft: "24px",
+          paddingRight: "24px",
+          paddingTop: "40px",
+          paddingBottom: "40px",
+        }}
       >
         {/* Cookin' Knowledge Watermark - Corrected Placement & Opacity */}
         <div className="absolute inset-0 flex justify-center items-end pointer-events-none">
