@@ -116,6 +116,40 @@ export default function Dashboard() {
                 </span>
               </div>
             </Link>
+
+            <Link
+              to="/companion"
+              className="group bg-gray-900/40 backdrop-blur-sm border border-gold/20 rounded-lg p-4 hover:border-gold/50 transition-all duration-300 hover:shadow-lg"
+            >
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center text-sm font-bold text-white">
+                  🤖
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-white group-hover:text-gold transition-colors">
+                    My Companion
+                  </h3>
+                  <p className="text-gray-400 text-sm">AI Assistant</p>
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              to="/ai-tools"
+              className="group bg-gray-900/40 backdrop-blur-sm border border-gold/20 rounded-lg p-4 hover:border-gold/50 transition-all duration-300 hover:shadow-lg"
+            >
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center text-sm font-bold text-white">
+                  🛠️
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-white group-hover:text-gold transition-colors">
+                    AI Tools
+                  </h3>
+                  <p className="text-gray-400 text-sm">Automation</p>
+                </div>
+              </div>
+            </Link>
           </div>
 
           {/* Patent Authority Statement */}
@@ -155,7 +189,7 @@ export default function Dashboard() {
                   </div>
                   <div className="flex justify-between items-center p-4 bg-green-900/20 rounded-lg border border-green-500/30">
                     <span className="text-white">Builder Platform</span>
-                    <span className="text-green-400 font-bold">✅ ONLINE</span>
+                    <span className="text-green-400 font-bold">�� ONLINE</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-green-900/20 rounded-lg border border-green-500/30">
                     <span className="text-white">CRM Integration</span>
