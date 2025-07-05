@@ -46,8 +46,15 @@ export default function EmpireSidebarClean() {
 
       {/* Sidebar */}
       <aside
-        className={`bg-black text-white h-screen p-6 w-80 border-r border-gold/20 fixed lg:relative z-40 transform transition-transform ${isMobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
+        className={`relative bg-[#0D1117] text-white h-screen p-6 w-80 border-r border-gold/20 fixed lg:relative z-40 transform transition-transform overflow-hidden ${isMobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
       >
+        {/* Cookin' Knowledge Watermark Background */}
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F766ceb5b4dea47a4a1c0d16a1a6058b2?format=webp&width=800"
+          alt=""
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-[110px] h-[110px] opacity-[0.03] pointer-events-none z-0 fixed"
+          style={{ filter: "brightness(1.2) contrast(0.8)" }}
+        />
         <div className="flex items-center gap-3 mb-8">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F5430f28bed284f988e7c62c0ed586ceb?format=webp&width=800"
