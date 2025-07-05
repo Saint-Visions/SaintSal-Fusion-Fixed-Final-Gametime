@@ -71,9 +71,18 @@ export default function Setup() {
             style={{
               color: "#9CA3AF",
               fontSize: "0.875rem",
+              marginBottom: "0.5rem",
             }}
           >
             Step {step} of {totalSteps} • Multi-step onboarding wizard
+          </p>
+          <p
+            style={{
+              color: "#6B7280",
+              fontSize: "0.75rem",
+            }}
+          >
+            Escalation logic backed by OPATENT™
           </p>
         </div>
 

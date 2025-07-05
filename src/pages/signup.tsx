@@ -126,6 +126,17 @@ export default function Signup() {
           🔐 Dual AI access • GPT-4 + Azure • Smart onboarding • Upgrade anytime
         </p>
 
+        <p
+          style={{
+            marginTop: "0.75rem",
+            fontSize: "0.65rem",
+            color: "#6B7280",
+            textAlign: "center",
+          }}
+        >
+          Powered by Saint Vision Protocols · Pat. 10,290,222
+        </p>
+
         <div style={{ marginTop: "1rem", fontSize: "0.875rem" }}>
           <Link
             to="/login"
