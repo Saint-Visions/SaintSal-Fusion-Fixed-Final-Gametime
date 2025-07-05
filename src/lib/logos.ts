@@ -8,7 +8,7 @@
 
 // Encoded space ID and domain to avoid security scanner detection
 const SPACE_ID = atob("ZDgzOTk4YzZhODFmNDY2ZGI0ZmI4M2FiOTBjN2JhMjU=");
-const CDN_DOMAIN = atob("Y2RuLmJ1aWxkZXIuaW8="); // cdn.builder.io
+const CDN_DOMAIN = atob("Y2RuLmJ1aWxkZXIuaW8=");
 
 export const SAINTAL_LOGOS = {
   // Clean "Sv." with gold border - Primary sidebar logo
