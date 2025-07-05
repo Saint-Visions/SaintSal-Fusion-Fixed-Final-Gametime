@@ -58,22 +58,20 @@ export default function Dashboard() {
           </div>
 
           {/* Executive Quick Access */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
             <Link
               to="/console"
-              className="group bg-gradient-to-br from-gray-900/40 to-black/60 backdrop-blur-xl border border-gold/30 rounded-3xl p-12 hover:border-gold/60 transition-all duration-500 hover:shadow-2xl hover:shadow-gold/20"
+              className="group bg-gray-900/40 backdrop-blur-sm border border-gold/20 rounded-lg p-4 hover:border-gold/50 transition-all duration-300 hover:shadow-lg"
             >
-              <div className="flex items-center gap-6 mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-gold to-yellow-400 rounded-2xl flex items-center justify-center text-2xl font-black text-black shadow-xl">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 bg-gold rounded-lg flex items-center justify-center text-sm font-bold text-black">
                   AI
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-gold transition-colors">
+                  <h3 className="text-lg font-bold text-white group-hover:text-gold transition-colors">
                     Dual AI Console
                   </h3>
-                  <p className="text-gray-400 text-lg">
-                    Azure Cognitive + OpenAI GPT-4o Turbo
-                  </p>
+                  <p className="text-gray-400 text-sm">Azure + OpenAI GPT-4o</p>
                 </div>
               </div>
               <p className="text-gray-300 text-lg leading-relaxed">
