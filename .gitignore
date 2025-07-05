@@ -1,3 +1,10 @@
-environment_files
-import-builder-pages.js
-saintsal_full_builder_pages/
+# Environment files
+.env*
+!.env.vault
+
+# Build output
+dist/
+build/
+
+# Dependencies
+node_modules/
