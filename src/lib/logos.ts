@@ -7,7 +7,7 @@
 // Asset URL construction using only environment variables
 const getAssetUrl = (assetId: string) => {
   // Use environment variable for space ID (must be set in Vercel)
-  const spaceId = import.meta.env.VITE_ASSET_SPACE_ID;
+  const spaceId = import.meta.env.VITE_ASSET_SPACE;
   const cdnDomain = import.meta.env.VITE_CDN_DOMAIN || "via.placeholder.com";
 
   if (spaceId && cdnDomain !== "via.placeholder.com") {
