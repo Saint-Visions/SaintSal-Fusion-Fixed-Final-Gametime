@@ -1,6 +1,6 @@
-// Public Builder.io Space ID for CDN assets
-// This is a public identifier, not a secret - it's used in CDN URLs
-export const BUILDER_SPACE_ID = "d83998c6a81f466db4fb83ab90c7ba25";
+// Public Builder.io Space ID for CDN assets from environment
+export const BUILDER_SPACE_ID =
+  import.meta.env.VITE_BUILDER_SPACE_ID || "public-space-id-not-configured";
 
 // Helper function to create Builder.io image URLs
 export const getBuilderImageUrl = (assetId: string, width: number = 800) => {
