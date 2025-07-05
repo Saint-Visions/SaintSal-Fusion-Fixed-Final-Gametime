@@ -44,7 +44,7 @@ export default function AdminIntegrations() {
       lastTested: new Date().toISOString(),
       endpoint: "/api/chat",
       config: {
-        apiKey: "✓ Active",
+        credentials: "✓ Configured",
         model: "gpt-4o",
         streaming: "✓ Enabled",
       },
@@ -99,7 +99,7 @@ export default function AdminIntegrations() {
       description: "Drag-drop editing, component registry, visual builder",
       lastTested: new Date().toISOString(),
       config: {
-        apiKey: "✓ Active",
+        credentials: "✓ Configured",
         modelName: "page",
         registry: "✓ Clean",
       },
