@@ -3,60 +3,20 @@ import { Link } from "react-router-dom";
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden">
-      {/* Strategic Background Asset */}
-      <div
-        className="absolute inset-0 opacity-15"
-        style={{
-          backgroundImage: `url("https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800")`,
-          backgroundSize: "cover",
-          backgroundPosition: "center top",
-          backgroundRepeat: "no-repeat",
-        }}
-      />
+    <div className="min-h-screen" style={{ backgroundColor: "#10161C" }}>
+      <div className="max-w-7xl mx-auto px-6 py-8">
+        {/* Command Center Header */}
+        <div className="mb-8">
+          <h1 className="text-4xl font-bold" style={{ color: "#FFD700" }}>
+            Command Center
+          </h1>
+          <p className="text-lg text-gray-400 mt-2">
+            Your AI empire at a glance. Monitor, manage, scale.
+          </p>
+        </div>
 
-      <div
-        className="relative z-10 p-8"
-        style={{
-          backgroundImage:
-            "url(https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F0c51add9770a483da3d69367347e4536)",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          opacity: "0.7",
-          fontWeight: "400",
-        }}
-      >
-        <div className="max-w-7xl mx-auto">
-          {/* Command Center Header */}
-          <div className="mb-12 relative">
-            <div className="flex items-center gap-6 mb-6">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F4fc64208ddf14c6e898d03dab82562ec?format=webp&width=800"
-                alt="SaintSal Empire Authority"
-                className="w-16 h-16 rounded-xl"
-                style={{
-                  filter: "drop-shadow(0 0 15px rgba(255, 215, 0, 0.6))",
-                }}
-              />
-              <div>
-                <h1 className="text-4xl font-black text-white mb-2">
-                  Command <span className="text-gold">Center</span>
-                </h1>
-                <p className="text-xl text-gray-300 mb-2">
-                  Your AI empire at a glance. Monitor, manage, and scale your
-                  operations.
-                </p>
-                <div className="flex items-center gap-3 text-gold font-semibold">
-                  <span>Powered by SAINTSAL™ Empire</span>
-                  <div className="bg-green-500 text-black px-2 py-1 rounded text-xs font-bold">
-                    LIVE
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+        {/* Command Center Grid */}
+        <div className="grid grid-cols-2 gap-6 mt-12">
           {/* Command Center Quick Access */}
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 mb-8">
             <Link
