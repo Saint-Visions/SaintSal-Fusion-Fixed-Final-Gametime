@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { getBuilderImageUrl } from "../lib/constants";
 
 const navLinks = [
   { label: "Main Dashboard", path: "/dashboard", icon: "🏢" },
@@ -48,7 +49,7 @@ export default function EmpireSidebarClean() {
       >
         <div className="flex items-center gap-3 mb-8">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F9c0d734ea7eb41ccad2a749e77ffaeb0?format=webp&width=800"
+            src={getBuilderImageUrl("9c0d734ea7eb41ccad2a749e77ffaeb0")}
             alt="SaintSal Logo"
             className="w-16 h-16"
             style={{
