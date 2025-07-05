@@ -1,108 +1,58 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-// SaintSal™ Page Builder Interface
-const pageBuilderToken = import.meta.env.VITE_PAGE_TOKEN;
-
-export default function BuilderPage() {
-  const [content, setContent] = useState<any>(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Fetch Builder content with SaintSal™ context
-    builder
-      .get("page", {
-        url: window.location.pathname,
-        // Include user context for conditional rendering
-        userAttributes: {
-          tier: "enterprise", // Dynamic from Supabase auth
-          isAuthenticated: true,
-        },
-      })
-      .toPromise()
-      .then((res) => {
-        setContent(res);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error("Builder.io fetch error:", error);
-        setLoading(false);
-      });
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-black flex items-center justify-center">
-        <div className="empire-card text-center">
-          <div className="animate-pulse text-gold text-2xl mb-4">⚡</div>
-          <p className="text-white">Loading SaintSal™ Builder Interface...</p>
-          <p className="text-gray-400 text-sm mt-2">
-            Divine execution engine initializing
-          </p>
-        </div>
-      </div>
-    );
-  }
+export default function PageBuilderPage() {
+  const [loading, setLoading] = useState(false);
 
   return (
-    <div
-      className="min-h-screen bg-black"
-      style={{
-        fontFamily: "Inter, system-ui, -apple-system, sans-serif !important",
-      }}
-    >
-      {content ? (
-        <div
-          style={{
-            fontFamily:
-              "Inter, system-ui, -apple-system, sans-serif !important",
-          }}
-        >
-          <BuilderComponent
-            model="page"
-            content={content}
-            // Pass empire-level styling context
-            data={{
-              theme: "empire",
-              brandColors: {
-                gold: "#FFC700",
-                charcoal: "#10161C",
-                glowYellow: "#FDE68A",
-              },
-            }}
-          />
+    <div className="min-h-screen bg-[#10161C] text-white">
+      {loading ? (
+        <div className="flex flex-col items-center justify-center min-h-screen">
+          <div className="animate-pulse text-gold text-2xl mb-4">⚡</div>
+          <p className="text-white">Loading SaintSal™ Page Interface...</p>
+          <p className="text-gray-400 text-sm mt-2">
+            Initializing visual editor...
+          </p>
         </div>
       ) : (
-        <div
-          className="min-h-screen bg-black flex items-center justify-center"
-          style={{
-            fontFamily:
-              "Inter, system-ui, -apple-system, sans-serif !important",
-          }}
-        >
-          <div
-            className="empire-card text-center max-w-2xl"
-            style={{
-              fontFamily:
-                "Inter, system-ui, -apple-system, sans-serif !important",
-            }}
-          >
+        <div className="max-w-7xl mx-auto px-6 py-8">
+          <div className="text-center">
             <h1 className="text-3xl font-black text-gold mb-4">
-              BUILDER COMMAND DECK
+              PAGE COMMAND DECK
             </h1>
             <p className="text-white mb-6">
               No content found for this route. This is your canvas for creating
               dynamic SaintSal™ experiences.
             </p>
-            <p className="text-gray-400 text-sm">
-              This space powers SaintSal™ — the AI agent and digital executor
-              for your empire. Every visual component is wired to live systems:
-              CRM sync, Supabase auth, GPT routing, Stripe billing, Azure
-              functions.
-            </p>
-            <div className="mt-8 p-4 bg-gold/10 rounded-xl border border-gold/20">
-              <p className="text-gold font-semibold">
-                "This isn't a landing page — it's the frontend to an empire."
+            <div className="bg-gray-900/50 rounded-xl p-8 border border-gold/20">
+              <h2 className="text-xl font-bold text-gold mb-4">
+                🔥 Ready for Content Creation
+              </h2>
+              <p className="text-gray-300 mb-6">
+                This space is prepared for your custom page content and visual
+                editing experience.
               </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="bg-gray-800/50 p-4 rounded-lg">
+                  <h3 className="text-gold font-semibold mb-2">
+                    Visual Editor
+                  </h3>
+                  <p className="text-gray-400 text-sm">
+                    Drag & drop interface ready
+                  </p>
+                </div>
+                <div className="bg-gray-800/50 p-4 rounded-lg">
+                  <h3 className="text-gold font-semibold mb-2">Components</h3>
+                  <p className="text-gray-400 text-sm">
+                    SaintSal™ design system
+                  </p>
+                </div>
+                <div className="bg-gray-800/50 p-4 rounded-lg">
+                  <h3 className="text-gold font-semibold mb-2">Publishing</h3>
+                  <p className="text-gray-400 text-sm">
+                    Instant deploy pipeline
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
