@@ -63,20 +63,19 @@ export default function EmpireSidebarClean() {
           </div>
         </div>
 
-        <nav className="space-y-2 overflow-y-auto max-h-[calc(100vh-200px)]">
-          {navLinks.map(({ label, path, icon }) => (
+        <nav className="space-y-1 overflow-y-auto max-h-[calc(100vh-200px)]">
+          {navLinks.map(({ label, path }) => (
             <Link
               key={path}
               to={path}
               onClick={() => setIsMobileOpen(false)}
-              className={`flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-800/50 transition-all duration-200 text-sm ${
+              className={`block px-4 py-3 rounded-lg hover:bg-gray-800/50 transition-all duration-200 text-sm font-medium ${
                 location.pathname === path
                   ? "bg-gold text-black font-semibold"
-                  : "text-white hover:text-gold"
+                  : "text-gray-300 hover:text-white"
               }`}
             >
-              <span className="text-lg">{icon}</span>
-              <span className="truncate">{label}</span>
+              {label}
             </Link>
           ))}
         </nav>
