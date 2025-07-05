@@ -58,7 +58,7 @@ export default function EmpireSidebarClean() {
         {/* Cookin' Knowledge Watermark - Bigger & Centered */}
         <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
           <img
-            src={`${SAINTAL_LOGOS.cookinWatermark}?format=webp&width=800`}
+            src="https://images.unsplash.com/photo-1615665556892-bf8dc05bbce1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
             alt=""
             className="w-[150px]"
             style={{ opacity: 0.08 }}
