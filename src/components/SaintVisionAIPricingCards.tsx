@@ -13,14 +13,14 @@ const plans = [
     price: "$27/mo",
     features: ["Unlimited Chat", "Save History", "Companion Mode"],
     button: "Upgrade to Pro",
-    link: import.meta.env.VITE_STRIPE_PRO_PLAN,
+    link: "#pro-upgrade",
   },
   {
     title: "Enterprise",
     price: "$497/mo",
     features: ["CRM Tools", "Admin Console", "Webhook Automations"],
     button: "Join Enterprise",
-    link: import.meta.env.VITE_STRIPE_ENTERPRISE_PLAN,
+    link: "#enterprise-upgrade",
   },
 ];
 

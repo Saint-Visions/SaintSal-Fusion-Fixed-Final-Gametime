@@ -2,7 +2,7 @@
 export const APP_CONFIG = {
   name: "SaintSal™ Empire",
   version: "1.0.0",
-  environment: import.meta.env.MODE || "development",
+  environment: "production",
 };
 
 // Helper function for placeholder images
