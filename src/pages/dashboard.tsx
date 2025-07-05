@@ -28,7 +28,7 @@ export default function Dashboard() {
         }}
       >
         <div className="max-w-7xl mx-auto">
-          {/* Enhanced Header with Authority Assets */}
+          {/* Command Center Header */}
           <div className="mb-12 relative">
             <div className="flex items-center gap-6 mb-6">
               <img
