@@ -101,7 +101,7 @@ export default function Crm() {
         <div
           className="absolute inset-0 opacity-10"
           style={{
-            backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F2192a4bfd6394aaf84d30a710d6c8dab?format=webp&width=800")`,
+            backgroundImage: `url("https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800")`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -111,7 +111,7 @@ export default function Crm() {
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-4">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F3a3c660ff330476ba30499946075f346?format=webp&width=800"
+                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800"
                   alt="SaintVisionAI Authority"
                   className="w-16 h-16 rounded-lg shadow-xl"
                 />
@@ -144,7 +144,7 @@ export default function Crm() {
             <div
               className="absolute inset-0 opacity-25"
               style={{
-                backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F8c6822a9f71e4621b2f3d478fe6449a8?format=webp&width=800")`,
+                backgroundImage: `url("https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -192,7 +192,7 @@ export default function Crm() {
             <div
               className="absolute inset-0 opacity-10"
               style={{
-                backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fb82255696e5048a88aab70d5eac3a86a?format=webp&width=800")`,
+                backgroundImage: `url("https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800")`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -274,7 +274,7 @@ export default function Crm() {
           <div
             className="relative rounded-xl overflow-hidden"
             style={{
-              backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F1c525837c18c46ffa76d4c159e1da1d1?format=webp&width=800")`,
+              backgroundImage: `url("https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800")`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               height: "300px",
@@ -382,7 +382,7 @@ export default function Crm() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-6">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fa1d396a82fc3487c9783a0d5d0528b11?format=webp&width=800"
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800"
                 alt="Thank You SaintVisionAI"
                 className="w-24 h-16 object-contain"
               />

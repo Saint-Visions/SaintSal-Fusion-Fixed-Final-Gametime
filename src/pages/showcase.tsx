@@ -20,7 +20,7 @@ export default function Showcase() {
           <div
             className="absolute inset-0 opacity-30 rounded-2xl"
             style={{
-              backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fac42e9eb2dfa4803b38dcbde07d04084?format=webp&width=800")`,
+              backgroundImage: `url("https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800")`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -31,7 +31,7 @@ export default function Showcase() {
             <div className="mb-12">
               <div className="flex items-center justify-center gap-6 mb-8">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fee347a3f9d0e4f03870013d52decc792?format=webp&width=800"
+                  src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800"
                   alt="SaintSal Empire Authority"
                   className="w-24 h-24 rounded-2xl shadow-2xl border-4 border-gold/70"
                 />
@@ -146,7 +146,7 @@ export default function Showcase() {
           <div
             className="absolute inset-0 opacity-25 rounded-2xl"
             style={{
-              backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F912ce16de21d42798b26d423e361e376?format=webp&width=800")`,
+              backgroundImage: `url("https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800")`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -240,7 +240,7 @@ export default function Showcase() {
         <div>
           <div className="text-center mb-8">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F4ed3f8ee7b6049b2831f9879427f69e5?format=webp&width=800"
+              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800"
               alt="Dual AI Architecture"
               className="w-24 h-24 mx-auto rounded-lg shadow-xl mb-4"
             />
@@ -460,7 +460,7 @@ export default function Showcase() {
         <div className="text-center">
           <div className="mb-8">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F43808ce2cd5142889ceab9015345e61a?format=webp&width=800"
+              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800"
               alt="Patent Authority"
               className="w-32 h-32 mx-auto rounded-xl shadow-2xl border-4 border-gold/50 mb-6"
             />
@@ -637,7 +637,7 @@ export default function Showcase() {
       <div
         className="absolute inset-0 opacity-15"
         style={{
-          backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fac42e9eb2dfa4803b38dcbde07d04084?format=webp&width=800")`,
+          backgroundImage: `url("https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           animation: "subtle-zoom 20s ease-in-out infinite",
@@ -653,7 +653,7 @@ export default function Showcase() {
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <div className="flex items-center gap-6">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fee347a3f9d0e4f03870013d52decc792?format=webp&width=800"
+                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800"
                 alt="SaintSal Empire"
                 className="w-16 h-16 rounded-xl shadow-2xl border-2 border-gold/50 hover:border-gold transition-all duration-300"
               />
