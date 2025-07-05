@@ -67,7 +67,7 @@ export default function EmpireSidebarClean() {
         </div>
         <div className="relative z-10 flex items-center gap-3 mb-8">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F5430f28bed284f988e7c62c0ed586ceb?format=webp&width=800"
+            src={`${SAINTAL_LOGOS.primary}?format=webp&width=800`}
             alt="SaintSal Logo"
             className="w-16 h-16"
             style={{
