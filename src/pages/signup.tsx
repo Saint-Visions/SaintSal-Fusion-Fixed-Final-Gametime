@@ -12,19 +12,37 @@ export default function Signup() {
         color: "#ffffff",
         fontFamily: "Inter, system-ui, sans-serif",
         padding: "1rem",
+        position: "relative",
+        backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fe03228606da64e37bca28bf66fe6a2d8?format=webp&width=800")`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
+      {/* Dark overlay for text contrast */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background:
+            "linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.8))",
+          zIndex: 1,
+        }}
+      />
       <div
         style={{
           width: "100%",
           maxWidth: "400px",
-          background: "rgba(16, 22, 28, 0.8)",
-          backdropFilter: "blur(8px)",
-          border: "1px solid rgba(255, 199, 0, 0.2)",
+          background: "rgba(0, 0, 0, 0.85)",
+          backdropFilter: "blur(12px)",
+          border: "2px solid rgba(255, 199, 0, 0.4)",
           borderRadius: "1.5rem",
           padding: "2rem",
-          boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1)",
+          boxShadow:
+            "0 25px 50px -12px rgba(255, 199, 0, 0.25), 0 0 0 1px rgba(255, 199, 0, 0.1)",
           textAlign: "center",
+          position: "relative",
+          zIndex: 2,
         }}
       >
         <div style={{ marginBottom: "2rem" }}>

@@ -5,8 +5,25 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black">
       {/* Hero Section */}
-      <section className="relative empire-gradient pt-20 pb-32 px-8">
-        <div className="max-w-7xl mx-auto text-center">
+      <section
+        className="relative pt-20 pb-32 px-8"
+        style={{
+          backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fa87ba7594d8b4359b3abdac217653de3?format=webp&width=800")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        {/* Clean overlay for text readability */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.8))",
+            zIndex: 1,
+          }}
+        />
+        <div className="max-w-7xl mx-auto text-center relative z-10">
           <h1 className="hero-text mb-8 leading-tight">SaintSal™ EMPIRE</h1>
           <p className="text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
             The future of AI-powered business intelligence. Where vision meets

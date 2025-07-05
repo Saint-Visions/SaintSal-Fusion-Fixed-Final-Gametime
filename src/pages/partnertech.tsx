@@ -3,7 +3,7 @@ export default function PartnerTech() {
     <div
       style={{
         minHeight: "100vh",
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fa0de47a13f81485185ab52961085693d?format=webp&width=800')`,
+        backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F1ac6e1f7aa8745db837fd111fad85cea?format=webp&width=800')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -17,21 +17,16 @@ export default function PartnerTech() {
         position: "relative",
       }}
     >
-      {/* Premium AI Lab Overlay */}
+      {/* Clean dark gradient overlay */}
       <div
         style={{
           position: "absolute",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
+          inset: 0,
           background:
-            "linear-gradient(145deg, rgba(0,0,0,0.3) 0%, rgba(10,10,10,0.5) 50%, rgba(0,0,0,0.7) 100%)",
-          backdropFilter: "blur(1px)",
+            "linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8))",
           zIndex: 1,
         }}
       />
-
       {/* Content Container */}
       <div style={{ position: "relative", zIndex: 2, width: "100%" }}>
         {/* Logo with transparent background */}
