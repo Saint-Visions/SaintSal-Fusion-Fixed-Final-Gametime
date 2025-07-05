@@ -27,6 +27,7 @@ import SimpleHome from "./pages/simple-home";
 import SaintSalHome from "./pages/saintsal-home";
 import Showcase from "./pages/showcase";
 import Console from "./pages/console";
+import Vision from "./pages/vision";
 import KickassSaasShowcase from "./components/KickassSaasShowcase";
 
 export default function App() {
@@ -80,6 +81,14 @@ export default function App() {
           element={
             <div className="min-h-screen w-full bg-black text-white font-sans">
               <Signup />
+            </div>
+          }
+        />
+        <Route
+          path="/vision"
+          element={
+            <div className="min-h-screen w-full bg-[#10161C] text-white font-sans">
+              <Vision />
             </div>
           }
         />
