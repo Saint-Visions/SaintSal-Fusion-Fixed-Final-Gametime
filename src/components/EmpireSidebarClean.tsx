@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { getBuilderImageUrl } from "../lib/constants";
 
 const navLinks = [
   { label: "Main Dashboard", path: "/dashboard", icon: "🏢" },
