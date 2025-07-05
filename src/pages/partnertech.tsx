@@ -50,9 +50,9 @@ export default function PartnerTech() {
               height: "80px",
               objectFit: "contain",
               filter:
-                "brightness(1.2) contrast(1.1) drop-shadow(0 0 20px rgba(255, 215, 0, 0.8)) drop-shadow(0 0 40px rgba(255, 215, 0, 0.4))",
-              mixBlendMode: "screen",
-              background: "transparent",
+                "brightness(2) saturate(1.5) drop-shadow(0 0 15px rgba(255, 215, 0, 0.9)) drop-shadow(0 0 30px rgba(255, 215, 0, 0.5))",
+              mixBlendMode: "lighten",
+              opacity: 0.95,
             }}
           />
         </div>
