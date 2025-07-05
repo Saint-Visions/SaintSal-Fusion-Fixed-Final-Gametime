@@ -1,0 +1,14 @@
+# GitGuardian configuration file
+version: v1
+
+# Exclude patterns that are known to be safe
+exclude:
+  # Builder.io Space ID - this is a public identifier used in CDN URLs, not a secret
+  - "d83998c6a81f466db4fb83ab90c7ba25"
+
+# File patterns to ignore entirely
+paths-ignore:
+  - "**/*.md" # Documentation files
+  - "**/node_modules/**"
+  - "**/dist/**"
+  - "**/build/**"
