@@ -5,7 +5,7 @@ export default function PartnerTech() {
         minHeight: "100vh",
         backgroundColor: "#000000",
         backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2Fe6fee031e91c479b882f7caa3f2b64cb?format=webp&width=800')`,
-        backgroundSize: "cover",
+        backgroundSize: "auto 100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         color: "#ffffff",
@@ -43,11 +43,11 @@ export default function PartnerTech() {
           }}
         >
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F07143662f7314ad9960e76f9f231029f?format=webp&width=800"
+            src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F502c63077c72459693b5ac510937e3da?format=webp&width=800"
             alt="SV Circuit Logo"
             style={{
-              width: "60px",
-              height: "60px",
+              width: "80px",
+              height: "80px",
               objectFit: "contain",
               filter: "drop-shadow(0 4px 15px rgba(255, 215, 0, 0.6))",
             }}
