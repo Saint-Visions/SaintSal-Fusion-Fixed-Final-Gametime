@@ -87,7 +87,9 @@ export default function EmpireSidebarClean() {
               HACP™ + OPATENT™
             </p>
             <p className="text-xs text-gray-400">U.S. Patent No. 10,290,222</p>
-            <p className="text-xs text-gold mt-1">We Own This Space</p>
+            <p className="text-xs text-gold mt-1">
+              Patent Protected Technology
+            </p>
           </div>
         </div>
       </aside>
