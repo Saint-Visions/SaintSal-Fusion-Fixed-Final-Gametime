@@ -1,4 +1,4 @@
-// Font fix utility to eliminate Times font from Builder.io components
+// Font fix utility to eliminate Times font from page builder components
 export function applyInterFontFix() {
   // Override any inline styles with Times font
   function fixFonts() {

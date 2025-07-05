@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 export default function FontOverride() {
   useEffect(() => {
-    // Override Builder.io CSS-in-JS font styles
+    // Override page builder CSS-in-JS font styles
     const forceInterFont = () => {
       document.querySelectorAll("*").forEach((el) => {
         const computedStyle = window.getComputedStyle(el);

@@ -93,7 +93,7 @@ export default function AdminIntegrations() {
     },
     {
       id: "builder",
-      name: "Builder.io Live Edit",
+      name: "Page Editor Live Edit",
       status: "active",
       type: "Visual CMS",
       description: "Drag-drop editing, component registry, visual builder",

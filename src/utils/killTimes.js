@@ -1,6 +1,6 @@
 // NUCLEAR OPTION: ELIMINATE ALL TIMES FONTS INCLUDING CSS-IN-JS
 function killTimesFonts() {
-  // Kill CSS-in-JS Times fonts (like Builder.io content)
+  // Kill CSS-in-JS Times fonts (like page builder content)
   const killCSSinJS = () => {
     document.querySelectorAll("*").forEach((el) => {
       // Check for CSS-in-JS objects

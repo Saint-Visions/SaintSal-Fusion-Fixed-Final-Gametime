@@ -59,7 +59,7 @@ export default function EmpireLive() {
             <h3 className="text-xl font-bold text-gold mb-4">🧩 Components</h3>
             <ul className="space-y-2 text-gray-300">
               <li>• Dynamic Registration</li>
-              <li>• Builder.io Integration</li>
+              <li>• Page Editor Integration</li>
               <li>• Infinite Scalability</li>
               <li>• Auto-Documentation</li>
             </ul>

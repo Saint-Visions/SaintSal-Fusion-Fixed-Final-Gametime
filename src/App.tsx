@@ -56,7 +56,7 @@ export default function App() {
     }
   }, [isLoading]);
 
-  // Temporarily disabled for Builder.io editing
+  // Temporarily disabled for page editing
   // if (isLoading) {
   //   return <Loading onComplete={() => setIsLoading(false)} />;
   // }
