@@ -69,7 +69,7 @@ export default function Operations() {
         fontFamily: "Inter, system-ui, sans-serif",
         padding: "2rem",
         position: "relative",
-        overflow: "hidden"
+        overflow: "hidden",
       }}
     >
       {/* Professional Background Asset */}
@@ -84,22 +84,24 @@ export default function Operations() {
           backgroundSize: "cover",
           backgroundPosition: "center",
           opacity: 0.15,
-          zIndex: 1
+          zIndex: 1,
         }}
       />
 
       <div style={{ position: "relative", zIndex: 2 }}>
         {/* Enhanced Header with Authority */}
-        <div style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "1.5rem",
-          marginBottom: "3rem",
-          padding: "1.5rem",
-          background: "rgba(0,0,0,0.8)",
-          borderRadius: "1rem",
-          border: "1px solid rgba(255, 199, 0, 0.3)"
-        }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "1.5rem",
+            marginBottom: "3rem",
+            padding: "1.5rem",
+            background: "rgba(0,0,0,0.8)",
+            borderRadius: "1rem",
+            border: "1px solid rgba(255, 199, 0, 0.3)",
+          }}
+        >
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2Fd83998c6a81f466db4fb83ab90c7ba25%2F43808ce2cd5142889ceab9015345e61a?format=webp&width=800"
             alt="SaintSal Operations Authority"
@@ -108,7 +110,7 @@ export default function Operations() {
               height: "80px",
               borderRadius: "1rem",
               border: "2px solid #FFC700",
-              boxShadow: "0 8px 20px rgba(255, 199, 0, 0.3)"
+              boxShadow: "0 8px 20px rgba(255, 199, 0, 0.3)",
             }}
           />
           <div>
@@ -126,230 +128,233 @@ export default function Operations() {
             >
               🔥 SaintSal™ Operations Dashboard
             </h1>
-            <div style={{
-              fontSize: "1.25rem",
-              color: "#FFC700",
-              fontWeight: "600"
-            }}>
+            <div
+              style={{
+                fontSize: "1.25rem",
+                color: "#FFC700",
+                fontWeight: "600",
+              }}
+            >
               Strategic Integrations • Empire Partners • Live Analytics
             </div>
           </div>
         </div>
 
-      {/* Stats Grid */}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-          gap: "1.5rem",
-          marginBottom: "3rem",
-        }}
-      >
-        <StatCard
-          label="Leads Discovered"
-          value="247"
-          color="blue"
-          description="AI-powered lookup"
-        />
-        <StatCard
-          label="Active Referrals"
-          value="18"
-          color="green"
-          description="Partner tracking"
-        />
-        <StatCard
-          label="Deals Analyzed"
-          value="156"
-          color="purple"
-          description="GPT-4 insights"
-        />
-        <StatCard
-          label="Mobile Users"
-          value="89"
-          color="pink"
-          description="iOS/Android apps"
-        />
-      </div>
-
-      {/* Quick Access Modules */}
-      <section style={{ marginBottom: "3rem" }}>
-        <h2
-          style={{
-            fontSize: "1.5rem",
-            fontWeight: "700",
-            color: "#FFC700",
-            marginBottom: "1.5rem",
-          }}
-        >
-          Quick Access Modules
-        </h2>
-
+        {/* Stats Grid */}
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
             gap: "1.5rem",
+            marginBottom: "3rem",
           }}
         >
-          <Link
-            to="/console"
-            style={{
-              background: "rgba(16, 22, 28, 0.8)",
-              border: "1px solid rgba(255, 199, 0, 0.2)",
-              borderRadius: "1rem",
-              padding: "1.5rem",
-              textDecoration: "none",
-              color: "inherit",
-              transition: "all 0.3s ease",
-            }}
-          >
-            <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>🧠</div>
-            <h3
-              style={{
-                color: "#FFC700",
-                fontSize: "1.25rem",
-                fontWeight: "600",
-                marginBottom: "0.5rem",
-              }}
-            >
-              Dual AI Console
-            </h3>
-            <p style={{ color: "#9CA3AF", fontSize: "0.875rem" }}>
-              SaintVision AI + Empire AI chat interface
-            </p>
-          </Link>
-
-          <Link
-            to="/crm"
-            style={{
-              background: "rgba(16, 22, 28, 0.8)",
-              border: "1px solid rgba(34, 197, 94, 0.2)",
-              borderRadius: "1rem",
-              padding: "1.5rem",
-              textDecoration: "none",
-              color: "inherit",
-              transition: "all 0.3s ease",
-            }}
-          >
-            <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>👥</div>
-            <h3
-              style={{
-                color: "#22C55E",
-                fontSize: "1.25rem",
-                fontWeight: "600",
-                marginBottom: "0.5rem",
-              }}
-            >
-              CRM Integration
-            </h3>
-            <p style={{ color: "#9CA3AF", fontSize: "0.875rem" }}>
-              GHL pipeline management and lead routing
-            </p>
-          </Link>
-
-          <Link
-            to="/partnertech"
-            style={{
-              background: "rgba(16, 22, 28, 0.8)",
-              border: "1px solid rgba(168, 85, 247, 0.2)",
-              borderRadius: "1rem",
-              padding: "1.5rem",
-              textDecoration: "none",
-              color: "inherit",
-              transition: "all 0.3s ease",
-            }}
-          >
-            <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>🚀</div>
-            <h3
-              style={{
-                color: "#A855F7",
-                fontSize: "1.25rem",
-                fontWeight: "600",
-                marginBottom: "0.5rem",
-              }}
-            >
-              PartnerTech.AI
-            </h3>
-            <p style={{ color: "#9CA3AF", fontSize: "0.875rem" }}>
-              Chrome extension and SaaS tier pricing
-            </p>
-          </Link>
+          <StatCard
+            label="Leads Discovered"
+            value="247"
+            color="blue"
+            description="AI-powered lookup"
+          />
+          <StatCard
+            label="Active Referrals"
+            value="18"
+            color="green"
+            description="Partner tracking"
+          />
+          <StatCard
+            label="Deals Analyzed"
+            value="156"
+            color="purple"
+            description="GPT-4 insights"
+          />
+          <StatCard
+            label="Mobile Users"
+            value="89"
+            color="pink"
+            description="iOS/Android apps"
+          />
         </div>
-      </section>
 
-      {/* Referral Network */}
-      <section>
-        <h2
-          style={{
-            fontSize: "1.5rem",
-            fontWeight: "700",
-            color: "#ffffff",
-            marginBottom: "1rem",
-          }}
-        >
-          Referral Network
-        </h2>
-        <div
-          style={{
-            background: "rgba(255, 255, 255, 0.05)",
-            borderRadius: "1rem",
-            padding: "1.5rem",
-            border: "1px solid rgba(255, 199, 0, 0.2)",
-          }}
-        >
+        {/* Quick Access Modules */}
+        <section style={{ marginBottom: "3rem" }}>
+          <h2
+            style={{
+              fontSize: "1.5rem",
+              fontWeight: "700",
+              color: "#FFC700",
+              marginBottom: "1.5rem",
+            }}
+          >
+            Quick Access Modules
+          </h2>
+
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-              gap: "2rem",
-              textAlign: "center",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+              gap: "1.5rem",
             }}
           >
-            <div>
-              <div
+            <Link
+              to="/console"
+              style={{
+                background: "rgba(16, 22, 28, 0.8)",
+                border: "1px solid rgba(255, 199, 0, 0.2)",
+                borderRadius: "1rem",
+                padding: "1.5rem",
+                textDecoration: "none",
+                color: "inherit",
+                transition: "all 0.3s ease",
+              }}
+            >
+              <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>🧠</div>
+              <h3
                 style={{
-                  fontSize: "2rem",
-                  fontWeight: "900",
                   color: "#FFC700",
+                  fontSize: "1.25rem",
+                  fontWeight: "600",
+                  marginBottom: "0.5rem",
                 }}
               >
-                18
-              </div>
-              <div style={{ color: "#9CA3AF", fontSize: "0.875rem" }}>
-                Total Referrals
-              </div>
-            </div>
-            <div>
-              <div
+                Dual AI Console
+              </h3>
+              <p style={{ color: "#9CA3AF", fontSize: "0.875rem" }}>
+                SaintVision AI + Empire AI chat interface
+              </p>
+            </Link>
+
+            <Link
+              to="/crm"
+              style={{
+                background: "rgba(16, 22, 28, 0.8)",
+                border: "1px solid rgba(34, 197, 94, 0.2)",
+                borderRadius: "1rem",
+                padding: "1.5rem",
+                textDecoration: "none",
+                color: "inherit",
+                transition: "all 0.3s ease",
+              }}
+            >
+              <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>👥</div>
+              <h3
                 style={{
-                  fontSize: "2rem",
-                  fontWeight: "900",
                   color: "#22C55E",
+                  fontSize: "1.25rem",
+                  fontWeight: "600",
+                  marginBottom: "0.5rem",
                 }}
               >
-                12.5%
-              </div>
-              <div style={{ color: "#9CA3AF", fontSize: "0.875rem" }}>
-                Conversion Rate
-              </div>
-            </div>
-            <div>
-              <div
+                CRM Integration
+              </h3>
+              <p style={{ color: "#9CA3AF", fontSize: "0.875rem" }}>
+                GHL pipeline management and lead routing
+              </p>
+            </Link>
+
+            <Link
+              to="/partnertech"
+              style={{
+                background: "rgba(16, 22, 28, 0.8)",
+                border: "1px solid rgba(168, 85, 247, 0.2)",
+                borderRadius: "1rem",
+                padding: "1.5rem",
+                textDecoration: "none",
+                color: "inherit",
+                transition: "all 0.3s ease",
+              }}
+            >
+              <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>🚀</div>
+              <h3
                 style={{
-                  fontSize: "2rem",
-                  fontWeight: "900",
-                  color: "#3B82F6",
+                  color: "#A855F7",
+                  fontSize: "1.25rem",
+                  fontWeight: "600",
+                  marginBottom: "0.5rem",
                 }}
               >
-                $47K
+                PartnerTech.AI
+              </h3>
+              <p style={{ color: "#9CA3AF", fontSize: "0.875rem" }}>
+                Chrome extension and SaaS tier pricing
+              </p>
+            </Link>
+          </div>
+        </section>
+
+        {/* Referral Network */}
+        <section>
+          <h2
+            style={{
+              fontSize: "1.5rem",
+              fontWeight: "700",
+              color: "#ffffff",
+              marginBottom: "1rem",
+            }}
+          >
+            Referral Network
+          </h2>
+          <div
+            style={{
+              background: "rgba(255, 255, 255, 0.05)",
+              borderRadius: "1rem",
+              padding: "1.5rem",
+              border: "1px solid rgba(255, 199, 0, 0.2)",
+            }}
+          >
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+                gap: "2rem",
+                textAlign: "center",
+              }}
+            >
+              <div>
+                <div
+                  style={{
+                    fontSize: "2rem",
+                    fontWeight: "900",
+                    color: "#FFC700",
+                  }}
+                >
+                  18
+                </div>
+                <div style={{ color: "#9CA3AF", fontSize: "0.875rem" }}>
+                  Total Referrals
+                </div>
               </div>
-              <div style={{ color: "#9CA3AF", fontSize: "0.875rem" }}>
-                Revenue Generated
+              <div>
+                <div
+                  style={{
+                    fontSize: "2rem",
+                    fontWeight: "900",
+                    color: "#22C55E",
+                  }}
+                >
+                  12.5%
+                </div>
+                <div style={{ color: "#9CA3AF", fontSize: "0.875rem" }}>
+                  Conversion Rate
+                </div>
+              </div>
+              <div>
+                <div
+                  style={{
+                    fontSize: "2rem",
+                    fontWeight: "900",
+                    color: "#3B82F6",
+                  }}
+                >
+                  $47K
+                </div>
+                <div style={{ color: "#9CA3AF", fontSize: "0.875rem" }}>
+                  Revenue Generated
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 }
