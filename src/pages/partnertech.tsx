@@ -152,7 +152,7 @@ export default function PartnerTech() {
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-            gap: "1rem",
+            gap: "1.5rem",
             width: "100%",
             maxWidth: "1000px",
             marginBottom: "3rem",
