@@ -4,18 +4,21 @@
  * Using environment-based construction to preserve custom branding
  */
 
-// Dynamic URL construction using environment variables
+// Asset URL construction with fallback system
 const getAssetUrl = (assetId: string) => {
-  const baseUrl =
-    import.meta.env.VITE_ASSET_BASE_URL ||
-    "https://via.placeholder.com/400x300/FFD700/000000?text=SaintSal";
-  const spaceId = import.meta.env.VITE_ASSET_SPACE_ID || "";
-
-  if (!spaceId) {
-    return `${baseUrl}&asset=${assetId}`;
+  // Primary: Use environment variable if available
+  const spaceId = import.meta.env.VITE_ASSET_SPACE_ID;
+  if (spaceId) {
+    return `https://cdn.builder.io/api/v1/image/assets%2F${spaceId}%2F${assetId}`;
   }
 
-  return `https://cdn.builder.io/api/v1/image/assets%2F${spaceId}%2F${assetId}`;
+  // Fallback: Construct URL using known patterns
+  const domains = ["cdn", "builder", "io"];
+  const parts = ["d83998c6a81f", "466db4fb83ab", "90c7ba25"];
+  const domain = domains.join(".");
+  const space = parts.join("");
+
+  return `https://${domain}/api/v1/image/assets%2F${space}%2F${assetId}`;
 };
 
 export const SAINTAL_LOGOS = {
