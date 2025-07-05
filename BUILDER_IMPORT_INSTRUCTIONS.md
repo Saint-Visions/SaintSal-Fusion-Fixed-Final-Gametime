@@ -35,8 +35,8 @@ Make sure your folder structure is:
 
 ```env
 BUILDER_PRIVATE_API_KEY=your-private-key-here
-# Note: BUILDER_SPACE_ID is a public identifier used in CDN URLs, not a secret
-BUILDER_SPACE_ID=d83998c6a81f466db4fb83ab90c7ba25
+BUILDER_SPACE_ID=your-public-space-id-here
+VITE_BUILDER_SPACE_ID=your-public-space-id-here
 ```
 
 ## 🚀 STEP 3: Run the Import
@@ -53,7 +53,7 @@ node import-builder-pages.js
 ✅ Imported /: 200
 🟡 Importing login.json → /login
 ✅ Imported /login: 200
-🟡 Importing dashboard.json → /dashboard
+🟡 Importing dashboard.json ��� /dashboard
 ✅ Imported /dashboard: 200
 ... (all 15 routes)
 ```
