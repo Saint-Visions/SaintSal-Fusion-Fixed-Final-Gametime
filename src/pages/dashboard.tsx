@@ -117,6 +117,13 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
+
+        {/* Subtle Patent Footer */}
+        <div className="text-center mt-16">
+          <p className="text-xs text-gray-600">
+            HACP™ Engine · Patent 10,290,222
+          </p>
+        </div>
       </div>
     </div>
   );

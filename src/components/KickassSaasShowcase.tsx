@@ -78,7 +78,7 @@ export default function KickassSaasShowcase() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ul className="list-disc pl-6 space-y-3 text-lg text-white">
-              <li>Patent-Pending HACP™ Protocol</li>
+              <li>HACP™ + OPATENT™ Protocol (U.S. Patent No. 10,290,222)</li>
               <li>Live Azure + OpenAI Dual Architecture</li>
               <li>15+ Months Enterprise Dev</li>
               <li>Actual GHL Integration (not claims)</li>

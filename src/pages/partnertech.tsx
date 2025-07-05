@@ -80,7 +80,7 @@ export default function PartnerTech() {
             fontSize: "1.25rem",
             color: "#FFC700",
             fontWeight: "600",
-            marginBottom: "2rem",
+            marginBottom: "1rem",
             display: "flex",
             alignItems: "center",
             gap: "0.5rem",
@@ -99,6 +99,18 @@ export default function PartnerTech() {
           >
             LIVE
           </span>
+        </div>
+
+        <div
+          style={{
+            fontSize: "0.875rem",
+            color: "#9CA3AF",
+            fontWeight: "500",
+            marginBottom: "2rem",
+            textAlign: "center",
+          }}
+        >
+          Protected by HACP™ + OPATENT™ · U.S. Patent No. 10,290,222
         </div>
 
         {/* Tagline */}
